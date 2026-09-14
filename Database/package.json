@@ -1,0 +1,24 @@
+{
+  "name": "convex-database-migration",
+  "version": "1.0.0",
+  "description": "Migration of Scheme and Channel Partner JSON databases to Convex",
+  "main": "index.js",
+  "scripts": {
+    "dev": "convex dev",
+    "serve": "tsx convex_server.ts",
+    "migrate": "tsx scripts/migrate.ts",
+    "seed:cloud": "tsx scripts/seed_cloud.ts",
+    "verify": "tsx scripts/verify.ts",
+    "test-app": "tsx scripts/test_app.ts"
+  },
+  "dependencies": {
+    "convex": "^1.11.0",
+    "dotenv": "^17.4.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "convex-test": "^0.0.58",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3"
+  }
+}

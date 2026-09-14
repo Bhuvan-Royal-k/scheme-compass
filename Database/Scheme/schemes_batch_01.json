@@ -1,0 +1,614 @@
+[
+  {
+    "scheme_name": "Stand-Up India",
+    "government_type": "Central",
+    "description": [
+      "Bank loans from ₹10 lakh to ₹1 crore for SC/ST or women to start a first-time non-farm enterprise (greenfield project).",
+      "Eligible: SC/ST or women entrepreneurs, age 18+, first-time enterprise in manufacturing/services/trading.",
+      "At least 51% ownership must be held by SC/ST or woman entrepreneur.",
+      "Applicant should not be in default to any bank/financial institution."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "PAN card",
+      "Caste certificate (for SC/ST applicants)",
+      "Address proof",
+      "Detailed project report for greenfield enterprise",
+      "Financial projections and margin contribution proof",
+      "Bank account details",
+      "Constitution/incorporation documents (if company/partnership)"
+    ],
+    "channel_partner_type": "PSB",
+    "channel_partner_name": "State Bank of India",
+    "npa_percentage": "Approx. 1.9% gross NPA (FY 2025-26, Public Sector Banks)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "₹10 lakh to ₹1 crore per eligible borrower"
+  },
+  {
+    "scheme_name": "Pradhan Mantri Mudra Yojana (PMMY)",
+    "government_type": "Central",
+    "description": [
+      "Collateral-free loans for micro-enterprises in four categories: Shishu (up to ₹50,000), Kishore (₹50,001–₹5 lakh), Tarun (₹5–10 lakh), Tarun Plus (₹10–20 lakh).",
+      "Eligible: Indian citizens, age 18–65, with non-farm income-generating activities (manufacturing, trading, services, allied agriculture).",
+      "Priority to women, SC/ST, OBC entrepreneurs.",
+      "No minimum income ceiling; clean credit history preferred."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "PAN card (if available)",
+      "Address proof (Aadhaar/Voter ID/Utility bill)",
+      "Identity proof (any one: Aadhaar, PAN, Voter ID, Driving License, Passport)",
+      "Business proof (Udyam registration, GST, trade license, or Shop & Establishment certificate)",
+      "Bank account details with 6 months statement",
+      "Passport-size photographs",
+      "Quotation for machinery/equipment (for Tarun category)",
+      "Last 2 years ITR (recommended for Tarun)"
+    ],
+    "channel_partner_type": "PSB",
+    "channel_partner_name": "Punjab National Bank",
+    "npa_percentage": "Approx. 1.9% gross NPA (FY 2025-26, Public Sector Banks)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "Up to ₹20 lakh per borrower (Tarun Plus category)"
+  },
+  {
+    "scheme_name": "Prime Minister's Employment Generation Programme (PMEGP)",
+    "government_type": "Central",
+    "description": [
+      "Government subsidy (15–35%) for setting up new micro-enterprises in manufacturing or services.",
+      "Eligible: Any Indian citizen above 18 years; no income ceiling.",
+      "Project cost limit: ₹50 lakh for manufacturing, ₹20 lakh for services.",
+      "Higher subsidy for SC/ST/OBC, women, and rural applicants.",
+      "Applicant should contribute 5–10% own margin money."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "PAN card",
+      "Educational certificates (where applicable, minimum 8th pass for projects above ₹10 lakh)",
+      "Caste/category certificate (if applicable for higher subsidy)",
+      "Detailed project report",
+      "Quotations for machinery/equipment",
+      "Proof of own margin money contribution",
+      "Bank account details",
+      "Passport-size photographs",
+      "Udyam registration (after loan approval)"
+    ],
+    "channel_partner_type": "PSB",
+    "channel_partner_name": "Bank of Baroda",
+    "npa_percentage": "Approx. 1.9% gross NPA (FY 2025-26, Public Sector Banks)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "Up to ₹50 lakh (manufacturing) or ₹20 lakh (services) with 15–35% subsidy"
+  },
+  {
+    "scheme_name": "Post-Matric Scholarship for SC Students",
+    "government_type": "Central",
+    "description": [
+      "Scholarship for SC students studying after Class 10 (Class 11/12, diploma, graduation, PG, PhD, etc.).",
+      "Covers tuition fees, exam fees, and maintenance allowance.",
+      "Eligible: SC students, family income usually below ₹2.5 lakh per year.",
+      "Must be studying in recognised institutions."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "SC caste certificate",
+      "Family income certificate",
+      "Previous year marksheet/pass certificate",
+      "Current year admission proof and fee receipt",
+      "Bank account details (Aadhaar-seeded)",
+      "Institute bonafide/verification certificate",
+      "Passport-size photographs"
+    ],
+    "channel_partner_type": "CSC/Govt counter",
+    "channel_partner_name": "District Social Welfare Office + CSC centre",
+    "npa_percentage": "Not applicable (not a lending institution)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "Full tuition/exam fees + maintenance allowance (varies by course, typically ₹10,000–₹60,000 per year)"
+  },
+  {
+    "scheme_name": "Sukanya Samriddhi Yojana (SSY)",
+    "government_type": "Central",
+    "description": [
+      "Savings scheme for girl child's future education and marriage expenses.",
+      "Government-backed account with attractive interest rate (compounded annually).",
+      "Eligible: Girl child below 10 years (relaxation up to 12 years in some cases).",
+      "One account per girl child; minimum deposit required annually to keep account active."
+    ],
+    "documents_required": [
+      "Birth certificate of the girl child",
+      "Aadhaar card of girl child (if available) and parent/guardian",
+      "Address proof of parent/guardian",
+      "Passport-size photographs",
+      "Filled SSY account opening form",
+      "Bank account details for deposits"
+    ],
+    "channel_partner_type": "Post Office",
+    "channel_partner_name": "Head Post Office, New Delhi",
+    "npa_percentage": "Not applicable (not a lending institution)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "Government-backed savings account with notified interest rate (currently ~8.2% p.a., compounded annually)"
+  },
+  {
+    "scheme_name": "MGNREGA (Mahatma Gandhi National Rural Employment Guarantee Act)",
+    "government_type": "Central",
+    "description": [
+      "Guarantees at least 100 days of wage employment per financial year to adult members of rural households willing to do unskilled manual work.",
+      "Wages paid directly into bank or post office accounts.",
+      "Eligible: Adult members (18+) of rural households across India.",
+      "No caste, gender, or income bar; open to all rural families.",
+      "Employment is demand-based: household must apply for work when needed."
+    ],
+    "documents_required": [
+      "Aadhaar card of all adult members",
+      "Ration card or other identity proof",
+      "Passport-size photographs of adult members",
+      "Bank or post office account details for wage payment",
+      "Job card application form (available at Gram Panchayat)",
+      "Proof of residence in the Gram Panchayat area"
+    ],
+    "channel_partner_type": "Gram Panchayat",
+    "channel_partner_name": "Gram Panchayat Office, Village – Rampur, District – Barabanki, Uttar Pradesh",
+    "npa_percentage": "Not applicable (not a lending institution)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "At least 100 days of wage employment per household per year (wage rate varies by state, typically ₹200–₹300 per day)"
+  },
+  {
+    "scheme_name": "Central Sector Scholarship for College and University Students (CSSS)",
+    "government_type": "Central",
+    "description": [
+      "Merit-based scholarship for students who scored 80th percentile or above in Class 12 board exams.",
+      "Provides ₹12,000 per year for undergraduate studies and ₹20,000 per year for postgraduate studies.",
+      "Eligible: Indian citizens, family income below ₹8 lakh per year, studying in recognised institutions.",
+      "No caste restriction; merit-based."
+    ],
+    "documents_required": [
+      "Aadhaar card (linked to bank account)",
+      "Class 12 marksheet (showing 80th percentile or above)",
+      "Income certificate of parents/guardians",
+      "Current course admission/enrollment proof with AISHE code",
+      "Bank account details (Aadhaar-seeded)",
+      "Institute bonafide certificate",
+      "Passport-size photographs"
+    ],
+    "channel_partner_type": "CSC/Govt counter",
+    "channel_partner_name": "National Scholarship Portal (NSP) + CSC centre",
+    "npa_percentage": "Not applicable (not a lending institution)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "₹12,000 per year (UG) or ₹20,000 per year (PG) for duration of course"
+  },
+  {
+    "scheme_name": "Top Class Education Scheme for SC Students",
+    "government_type": "Central",
+    "description": [
+      "Scholarship for SC students pursuing top-class education in recognised institutions (engineering, medicine, law, etc.).",
+      "Covers tuition fees, maintenance allowance, books, and other expenses.",
+      "Eligible: SC students, family income below ₹8 lakh per year, admitted to top institutions.",
+      "Merit-based selection."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "SC caste certificate",
+      "Income certificate",
+      "Class 12 documents and marksheet",
+      "Admission/fee proof from recognised institution",
+      "Bank account details (Aadhaar-seeded)",
+      "Passport-size photographs"
+    ],
+    "channel_partner_type": "CSC/Govt counter",
+    "channel_partner_name": "District Social Welfare Office + NSP portal",
+    "npa_percentage": "Not applicable (not a lending institution)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "Full tuition fees + maintenance allowance (up to ₹3–4 lakh per year depending on course)"
+  },
+  {
+    "scheme_name": "Atal Pension Yojana (APY)",
+    "government_type": "Central",
+    "description": [
+      "Pension scheme for unorganised sector workers, guaranteeing fixed monthly pension after age 60.",
+      "Eligible: Indian citizens, age 18–40 years, with bank account.",
+      "Subscribers contribute monthly until age 60; government co-contributes 50% of subscriber's contribution (up to ₹1,000 per year) for 5 years for eligible subscribers (non-income taxpayers, not covered by statutory social security).",
+      "Guaranteed minimum pension: ₹1,000/₹2,000/₹3,000/₹4,000/₹5,000 per month, depending on contribution."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "Bank account details",
+      "Mobile number (linked to Aadhaar)",
+      "Filled APY registration form",
+      "Passport-size photograph"
+    ],
+    "channel_partner_type": "Post Office",
+    "channel_partner_name": "Head Post Office, Mumbai",
+    "npa_percentage": "Not applicable (not a lending institution)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "Guaranteed monthly pension of ₹1,000 to ₹5,000 after age 60, depending on contribution"
+  },
+  {
+    "scheme_name": "Pradhan Mantri Jeevan Jyoti Bima Yojana (PMJJBY)",
+    "government_type": "Central",
+    "description": [
+      "Life insurance scheme with ₹2 lakh cover for death due to any cause.",
+      "Eligible: Indian citizens, age 18–50 years, with bank account.",
+      "Annual premium: ₹436 (auto-debited from bank account).",
+      "Coverage continues till age 55 with annual renewal."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "Bank account details (for auto-debit)",
+      "Mobile number (linked to Aadhaar)",
+      "Filled consent form (available at bank)"
+    ],
+    "channel_partner_type": "PSB",
+    "channel_partner_name": "Canara Bank",
+    "npa_percentage": "Approx. 1.9% gross NPA (FY 2025-26, Public Sector Banks)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "₹2 lakh life insurance cover"
+  },
+  {
+    "scheme_name": "Pradhan Mantri Suraksha Bima Yojana (PMSBY)",
+    "government_type": "Central",
+    "description": [
+      "Accident insurance scheme with ₹2 lakh cover for accidental death or permanent disability, ₹1 lakh for partial disability.",
+      "Eligible: Indian citizens, age 18–70 years, with bank account.",
+      "Annual premium: ₹20 (auto-debited from bank account).",
+      "Coverage continues till age 70 with annual renewal."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "Bank account details (for auto-debit)",
+      "Mobile number (linked to Aadhaar)",
+      "Filled consent form (available at bank)"
+    ],
+    "channel_partner_type": "PSB",
+    "channel_partner_name": "Union Bank of India",
+    "npa_percentage": "Approx. 1.9% gross NPA (FY 2025-26, Public Sector Banks)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "₹2 lakh for accidental death/permanent disability, ₹1 lakh for partial disability"
+  },
+  {
+    "scheme_name": "Pradhan Mantri Awas Yojana - Gramin (PMAY-G)",
+    "government_type": "Central",
+    "description": [
+      "Financial assistance for construction of pucca houses in rural areas.",
+      "Eligible: Rural households living in kutcha/dilapidated houses, prioritised for SC/ST, minorities, women-headed households.",
+      "Benefit: ₹1.20 lakh (plain areas) or ₹1.30 lakh (hilly/difficult areas) in instalments.",
+      "Selection based on Socio-Economic Caste Census (SECC) 2011 data."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "BPL ration card or SECC-listed proof",
+      "Caste certificate (if SC/ST)",
+      "Bank account details (for DBT)",
+      "Passport-size photographs",
+      "Land ownership proof",
+      "Filled application form at Gram Panchayat"
+    ],
+    "channel_partner_type": "Gram Panchayat",
+    "channel_partner_name": "Gram Panchayat Office, Village – Khajuraho, District – Chhatarpur, Madhya Pradesh",
+    "npa_percentage": "Not applicable (not a lending institution)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "₹1.20 lakh (plain areas) or ₹1.30 lakh (hilly/difficult areas) for house construction"
+  },
+  {
+    "scheme_name": "Deendayal Antyodaya Yojana - National Rural Livelihoods Mission (DAY-NRLM)",
+    "government_type": "Central",
+    "description": [
+      "Organises rural poor into Self-Help Groups (SHGs) for sustainable livelihoods and access to credit.",
+      "Eligible: Rural poor households, priority to SC/ST, minorities, women.",
+      "Provides capacity building, financial inclusion, and enterprise promotion support.",
+      "SHGs can access bank loans with government support."
+    ],
+    "documents_required": [
+      "Aadhaar card of all SHG members",
+      "BPL ration card or poverty proof",
+      "Caste certificate (if SC/ST)",
+      "Bank account details of SHG",
+      "SHG registration documents",
+      "Passport-size photographs of members"
+    ],
+    "channel_partner_type": "PSB",
+    "channel_partner_name": "Indian Bank",
+    "npa_percentage": "Approx. 1.9% gross NPA (FY 2025-26, Public Sector Banks)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "Access to bank loans (typically ₹10–15 lakh per SHG) with government support and interest subvention"
+  },
+  {
+    "scheme_name": "National SC/ST Hub (NSSH)",
+    "government_type": "Central",
+    "description": [
+      "Supports SC/ST entrepreneurs in accessing government procurement opportunities.",
+      "Provides handholding, capacity building, and market linkage support.",
+      "Eligible: SC/ST-owned enterprises registered as MSMEs.",
+      "Helps in bidding for government tenders and corporate supply chains."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "PAN card",
+      "Caste certificate (SC/ST)",
+      "Udyam registration (MSME)",
+      "Enterprise registration documents",
+      "Bank account details",
+      "Passport-size photographs"
+    ],
+    "channel_partner_type": "CSC/Govt counter",
+    "channel_partner_name": "NSIC Regional Office + CSC centre",
+    "npa_percentage": "Not applicable (not a lending institution)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "Support for accessing government procurement (tenders worth crores), capacity building, and market linkages"
+  },
+  {
+    "scheme_name": "Mahila Samriddhi Yojana (NSFDC)",
+    "government_type": "Central",
+    "description": [
+      "Micro-finance scheme for SC women for income-generating activities.",
+      "Eligible: SC women, family income below ₹3 lakh per year.",
+      "Loan amount up to ₹50,000 at concessional interest rate.",
+      "Implemented through State Channelizing Agencies and banks."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "SC caste certificate",
+      "Income certificate",
+      "Address proof",
+      "Basic project details for income-generating activity",
+      "Bank account details",
+      "Passport-size photographs"
+    ],
+    "channel_partner_type": "SCA+bank/NBFC",
+    "channel_partner_name": "Uttar Pradesh State SC Development Corporation + State Bank of India",
+    "npa_percentage": "Approx. 1.9% gross NPA (FY 2025-26, Public Sector Banks)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "Up to ₹50,000 micro-finance loan at concessional interest"
+  },
+  {
+    "scheme_name": "Term Loan Scheme (NSFDC)",
+    "government_type": "Central",
+    "description": [
+      "Term loan for SC entrepreneurs for setting up or expanding income-generating activities.",
+      "Eligible: SC individuals, family income below ₹3 lakh per year (rural/urban).",
+      "Loan amount up to ₹15 lakh at concessional interest rate.",
+      "Repayment period up to 7 years with moratorium."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "PAN card",
+      "SC caste certificate",
+      "Income certificate",
+      "Address proof",
+      "Detailed project report",
+      "Quotations for machinery/equipment",
+      "Bank account details",
+      "Passport-size photographs"
+    ],
+    "channel_partner_type": "SCA+bank/NBFC",
+    "channel_partner_name": "Tamil Nadu Adi Dravidar Housing and Development Corporation + Indian Bank",
+    "npa_percentage": "Approx. 1.9% gross NPA (FY 2025-26, Public Sector Banks)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "Up to ₹15 lakh term loan at concessional interest"
+  },
+  {
+    "scheme_name": "Group Loan Scheme (NBCFDC)",
+    "government_type": "Central",
+    "description": [
+      "Loan for Self-Help Groups (SHGs) of OBC/Backward Classes members.",
+      "Eligible: SHGs with majority OBC/BC members, family income below ₹3 lakh per year.",
+      "Loan amount up to ₹10 lakh per SHG at concessional interest.",
+      "Implemented through State Channelizing Agencies and banks."
+    ],
+    "documents_required": [
+      "Aadhaar cards of all SHG members",
+      "OBC/BC caste certificates of members",
+      "Income certificates of members",
+      "SHG registration documents",
+      "Bank account details of SHG",
+      "Basic project details for group activity",
+      "Passport-size photographs of members"
+    ],
+    "channel_partner_type": "SCA+bank/NBFC",
+    "channel_partner_name": "Karnataka State BC Corporation + Canara Bank",
+    "npa_percentage": "Approx. 1.9% gross NPA (FY 2025-26, Public Sector Banks)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "Up to ₹10 lakh per SHG at concessional interest"
+  },
+  {
+    "scheme_name": "Safai Karamchari Livelihood Scheme (NSKFDC)",
+    "government_type": "Central",
+    "description": [
+      "Concessional loan for SC Safai Karamcharis, manual scavengers, and their dependents for self-employment.",
+      "Eligible: SC Safai Karamcharis/manual scavengers or dependents, family income below ₹3 lakh per year.",
+      "Loan amount varies by activity (micro-finance to term loans).",
+      "Implemented through State Channelizing Agencies and banks."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "SC caste certificate",
+      "Safai Karamchari/manual scavenger certificate or dependent proof",
+      "Income certificate",
+      "Address proof",
+      "Basic project details",
+      "Bank account details",
+      "Passport-size photographs"
+    ],
+    "channel_partner_type": "SCA+bank/NBFC",
+    "channel_partner_name": "Rajasthan State SC and ST Corporation + Punjab National Bank",
+    "npa_percentage": "Approx. 1.9% gross NPA (FY 2025-26, Public Sector Banks)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "Varies by activity: micro-finance up to ₹50,000, term loans up to ₹10–15 lakh"
+  },
+  {
+    "scheme_name": "Uttar Pradesh Mukhyamantri Yuva Swarojgar Yojana",
+    "government_type": "State",
+    "state_name": "Uttar Pradesh",
+    "description": [
+      "State scheme providing loan and subsidy for youth to start new enterprises.",
+      "Eligible: UP residents, age 21–45 years, family income below ₹2 lakh per year.",
+      "Loan up to ₹10 lakh with 25% subsidy (30% for SC/ST).",
+      "Priority to women, SC/ST, OBC youth."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "Domicile certificate (UP)",
+      "Caste certificate (if SC/ST/OBC)",
+      "Income certificate",
+      "Educational qualification proof (minimum 8th pass)",
+      "Detailed project report",
+      "Bank account details",
+      "Passport-size photographs"
+    ],
+    "channel_partner_type": "PSB",
+    "channel_partner_name": "State Bank of India",
+    "npa_percentage": "Approx. 1.9% gross NPA (FY 2025-26, Public Sector Banks)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "Up to ₹10 lakh loan with 25–30% subsidy"
+  },
+  {
+    "scheme_name": "Uttar Pradesh Mahila Udyam Nidhi Yojana",
+    "government_type": "State",
+    "state_name": "Uttar Pradesh",
+    "description": [
+      "State scheme providing concessional loans to women entrepreneurs.",
+      "Eligible: Women residents of UP, age 21–55 years, family income below ₹5–7.5 lakh.",
+      "Loan up to ₹10 lakh at 4% interest rate.",
+      "Priority to SC/ST/OBC women."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "Domicile certificate (UP)",
+      "Caste certificate (if SC/ST/OBC)",
+      "Income certificate",
+      "Basic business plan/project estimate",
+      "Bank account details",
+      "Passport-size photographs"
+    ],
+    "channel_partner_type": "PSB",
+    "channel_partner_name": "Indian Bank",
+    "npa_percentage": "Approx. 1.9% gross NPA (FY 2025-26, Public Sector Banks)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "Up to ₹10 lakh loan at 4% interest"
+  },
+  {
+    "scheme_name": "Bihar Mukhyamantri Udyami Yojana",
+    "government_type": "State",
+    "state_name": "Bihar",
+    "description": [
+      "State scheme providing financial assistance to entrepreneurs from EBC, BC, and minority communities.",
+      "Eligible: Bihar residents, age 18–50 years, from EBC/BC/minority categories.",
+      "Financial assistance up to ₹10 lakh (₹5 lakh for general category within EBC/BC).",
+      "Implemented through banks with government support."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "Domicile certificate (Bihar)",
+      "Caste certificate (EBC/BC/minority)",
+      "Income certificate",
+      "Educational qualification proof",
+      "Detailed project report",
+      "Bank account details",
+      "Passport-size photographs"
+    ],
+    "channel_partner_type": "PSB",
+    "channel_partner_name": "Bank of Baroda",
+    "npa_percentage": "Approx. 1.9% gross NPA (FY 2025-26, Public Sector Banks)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "Up to ₹10 lakh financial assistance"
+  },
+  {
+    "scheme_name": "Madhya Pradesh Savitri Bai Phule Swa-Sahayata Samuh Yojana",
+    "government_type": "State",
+    "state_name": "Madhya Pradesh",
+    "description": [
+      "State scheme supporting SC women's self-help groups for self-employment.",
+      "Eligible: SC women residents of MP, age 18–60 years.",
+      "Provides margin money up to ₹15,000 for self-employment projects up to ₹50,000.",
+      "Implemented through banks and district authorities."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "SC caste certificate",
+      "Domicile certificate (MP)",
+      "Income certificate",
+      "SHG registration documents",
+      "Basic project details",
+      "Bank account details",
+      "Passport-size photographs"
+    ],
+    "channel_partner_type": "PSB",
+    "channel_partner_name": "Central Bank of India",
+    "npa_percentage": "Approx. 1.9% gross NPA (FY 2025-26, Public Sector Banks)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "Margin money up to ₹15,000 for projects up to ₹50,000"
+  },
+  {
+    "scheme_name": "Tamil Nadu Women Entrepreneur Scheme",
+    "government_type": "State",
+    "state_name": "Tamil Nadu",
+    "description": [
+      "State scheme providing concessional bank loans and subsidy to women entrepreneurs.",
+      "Eligible: Women residents of Tamil Nadu, age 21–55 years, family income below ₹5–7.5 lakh.",
+      "Priority to SC/ST/OBC women.",
+      "Loan with interest subvention/subsidy for setting up small businesses."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "Domicile certificate (Tamil Nadu)",
+      "Caste certificate (if SC/ST/OBC)",
+      "Income certificate",
+      "Basic business plan/project estimate",
+      "Bank account details",
+      "Passport-size photographs"
+    ],
+    "channel_partner_type": "PSB",
+    "channel_partner_name": "Indian Bank",
+    "npa_percentage": "Approx. 1.9% gross NPA (FY 2025-26, Public Sector Banks)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "Typically up to ₹5–10 lakh loan with interest subvention/subsidy"
+  },
+  {
+    "scheme_name": "Kerala Startup Mission - Startup Kerala",
+    "government_type": "State",
+    "state_name": "Kerala",
+    "description": [
+      "State scheme supporting startups with funding, mentorship, and infrastructure.",
+      "Eligible: Kerala-based startups in innovation/technology sectors.",
+      "Provides equity funding, grants, and incubation support.",
+      "Priority to women, SC/ST entrepreneurs."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "Domicile certificate (Kerala)",
+      "Startup registration with Kerala Startup Mission",
+      "Detailed business plan",
+      "Incorporation documents",
+      "Bank account details",
+      "Passport-size photographs"
+    ],
+    "channel_partner_type": "CSC/Govt counter",
+    "channel_partner_name": "Kerala Startup Mission Office, Thiruvananthapuram",
+    "npa_percentage": "Not applicable (not a lending institution)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "Equity funding up to ₹50 lakh, plus grants and incubation support"
+  },
+  {
+    "scheme_name": "Telangana TS-iPASS (Telangana State Industrial Project Approval and Self-Certification System)",
+    "government_type": "State",
+    "state_name": "Telangana",
+    "description": [
+      "State scheme facilitating easy approvals and incentives for industrial projects.",
+      "Eligible: Entrepreneurs setting up manufacturing/service units in Telangana.",
+      "Provides capital subsidy, power tariff reimbursement, and other incentives.",
+      "Priority to MSMEs, women, SC/ST entrepreneurs."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "Domicile certificate (Telangana)",
+      "Caste certificate (if SC/ST)",
+      "Detailed project report",
+      "Land/plot allotment proof",
+      "Incorporation documents",
+      "Bank account details",
+      "Udyam registration"
+    ],
+    "channel_partner_type": "CSC/Govt counter",
+    "channel_partner_name": "Telangana State Industrial Infrastructure Corporation (TSIIC) Office, Hyderabad",
+    "npa_percentage": "Not applicable (not a lending institution)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "Capital subsidy up to 25% of investment, power tariff reimbursement, and other incentives"
+  }
+]

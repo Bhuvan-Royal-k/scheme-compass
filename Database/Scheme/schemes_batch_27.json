@@ -1,0 +1,540 @@
+[
+  {
+    "scheme_name": "Scheme for Providing Quality Education in Madrasas (SPQEM)",
+    "government_type": "Central",
+    "description": [
+      "Financial assistance for modern education in madrasas.",
+      "Eligible: Madrasa students, no income bar.",
+      "Free modern education + teacher honorarium."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "Madrasa enrollment proof",
+      "Bank account details"
+    ],
+    "channel_partner_type": "CSC/Govt counter",
+    "channel_partner_name": "District Education Office + Madrasa Board",
+    "npa_percentage": "Not applicable (not a lending institution)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "Free modern education + teacher honorarium"
+  },
+  {
+    "scheme_name": "Scheme for Infrastructure Development in Minority Institutions (IDMI)",
+    "government_type": "Central",
+    "description": [
+      "Infrastructure grant for minority educational institutions.",
+      "Eligible: Minority institutions (Muslim, Sikh, Christian, Buddhist, Jain, Parsi).",
+      "Grant for buildings, labs, libraries, hostels."
+    ],
+    "documents_required": [
+      "Institution registration",
+      "Minority status certificate",
+      "Land documents",
+      "Building plan",
+      "Project report"
+    ],
+    "channel_partner_type": "CSC/Govt counter",
+    "channel_partner_name": "State Minority Commission + District Education Office",
+    "npa_percentage": "Not applicable (not a lending institution)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "Grant (₹50 lakh–₹2 crore)"
+  },
+  {
+    "scheme_name": "Begum Hazrat Mahal National Scholarship",
+    "government_type": "Central",
+    "description": [
+      "Scholarship for meritorious minority girls.",
+      "Eligible: Minority girls, Class 9–12, income below ₹2 lakh/year.",
+      "₹10,000 per year for 10 months."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "Minority community certificate",
+      "Income certificate",
+      "Marksheet",
+      "School bonafide"
+    ],
+    "channel_partner_type": "CSC/Govt counter",
+    "channel_partner_name": "School + District Minority Welfare Office",
+    "npa_percentage": "Not applicable (not a lending institution)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "₹10,000 per year for 10 months"
+  },
+  {
+    "scheme_name": "Maulana Azad National Fellowship (MANF)",
+    "government_type": "Central",
+    "description": [
+      "Fellowship for minority M.Phil/Ph.D. students.",
+      "Eligible: Minority students, NET qualified.",
+      "₹31,000–₹35,000 per month for up to 5 years."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "Minority community certificate",
+      "Income certificate",
+      "NET qualification",
+      "M.Phil/Ph.D. admission"
+    ],
+    "channel_partner_type": "CSC/Govt counter",
+    "channel_partner_name": "University/Institution + UGC Portal",
+    "npa_percentage": "Not applicable (not a lending institution)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "₹31,000–₹35,000 per month for up to 5 years"
+  },
+  {
+    "scheme_name": "Pradhan Mantri Jan Dhan Yojana (PMJDY) - Overdraft Facility",
+    "government_type": "Central",
+    "description": [
+      "Overdraft for PMJDY account holders.",
+      "Eligible: PMJDY accounts with 6 months transaction history, age 18–65.",
+      "Overdraft up to ₹10,000."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "PMJDY passbook",
+      "6 months transaction history",
+      "Application form"
+    ],
+    "channel_partner_type": "PSB",
+    "channel_partner_name": "State Bank of India",
+    "npa_percentage": "Approx. 1.9% gross NPA (FY 2025-26, Public Sector Banks)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "Overdraft up to ₹10,000"
+  },
+  {
+    "scheme_name": "Pradhan Mantri Mudra Yojana - Shishu Category",
+    "government_type": "Central",
+    "description": [
+      "Collateral-free loan up to ₹50,000 for micro-enterprises.",
+      "Eligible: Indian citizens, age 18–65, non-farm activities.",
+      "Priority to women, SC/ST, OBC."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "PAN card (if available)",
+      "Address proof",
+      "Business details",
+      "Bank account"
+    ],
+    "channel_partner_type": "RRB",
+    "channel_partner_name": "Tamil Nadu Grama Bank",
+    "npa_percentage": "Approx. 5.3% gross NPA (FY 2025-26, Regional Rural Banks)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "Up to ₹50,000 loan"
+  },
+  {
+    "scheme_name": "Pradhan Mantri Mudra Yojana - Kishore Category",
+    "government_type": "Central",
+    "description": [
+      "Collateral-free loan ₹50,001–₹5 lakh for growing enterprises.",
+      "Eligible: Indian citizens, age 18–65, existing micro-enterprises.",
+      "Priority to women, SC/ST, OBC."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "PAN card",
+      "Address proof",
+      "Business proof (Udyam/GST)",
+      "Bank statement",
+      "Quotations"
+    ],
+    "channel_partner_type": "PSB",
+    "channel_partner_name": "Bank of Baroda",
+    "npa_percentage": "Approx. 1.9% gross NPA (FY 2025-26, Public Sector Banks)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "₹50,001 to ₹5 lakh loan"
+  },
+  {
+    "scheme_name": "Pradhan Mantri Mudra Yojana - Tarun Category",
+    "government_type": "Central",
+    "description": [
+      "Collateral-free loan ₹5–10 lakh for established enterprises.",
+      "Eligible: Indian citizens, age 18–65, established micro-enterprises.",
+      "Priority to women, SC/ST, OBC."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "PAN card",
+      "Address proof",
+      "Business proof",
+      "Bank statement (1 year)",
+      "Project report",
+      "ITR (2 years)"
+    ],
+    "channel_partner_type": "PSB",
+    "channel_partner_name": "Punjab National Bank",
+    "npa_percentage": "Approx. 1.9% gross NPA (FY 2025-26, Public Sector Banks)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "₹5 lakh to ₹10 lakh loan"
+  },
+  {
+    "scheme_name": "Stand-Up India - SC/ST Category",
+    "government_type": "Central",
+    "description": [
+      "Bank loans ₹10 lakh–₹1 crore for SC/ST entrepreneurs.",
+      "Eligible: SC/ST, age 18+, first-time enterprise, 51% ownership.",
+      "Greenfield projects in manufacturing/services/trading."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "PAN card",
+      "SC/ST caste certificate",
+      "Address proof",
+      "Project report",
+      "Financial projections"
+    ],
+    "channel_partner_type": "PSB",
+    "channel_partner_name": "Indian Bank",
+    "npa_percentage": "Approx. 1.9% gross NPA (FY 2025-26, Public Sector Banks)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "₹10 lakh to ₹1 crore loan"
+  },
+  {
+    "scheme_name": "Stand-Up India - Women Category",
+    "government_type": "Central",
+    "description": [
+      "Bank loans ₹10 lakh–₹1 crore for women entrepreneurs.",
+      "Eligible: Women, age 18+, first-time enterprise, 51% ownership.",
+      "Greenfield projects in manufacturing/services/trading."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "PAN card",
+      "Address proof",
+      "Project report",
+      "Financial projections"
+    ],
+    "channel_partner_type": "PSB",
+    "channel_partner_name": "Central Bank of India",
+    "npa_percentage": "Approx. 1.9% gross NPA (FY 2025-26, Public Sector Banks)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "₹10 lakh to ₹1 crore loan"
+  },
+  {
+    "scheme_name": "PMEGP - General Category",
+    "government_type": "Central",
+    "description": [
+      "Government subsidy for new micro-enterprises.",
+      "Eligible: Any Indian citizen above 18, no income ceiling.",
+      "Project cost: ₹50 lakh (mfg), ₹20 lakh (services). Subsidy: 15% (urban), 25% (rural)."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "PAN card",
+      "Educational certificates (8th pass for >₹10 lakh)",
+      "Project report",
+      "Quotations",
+      "Margin money proof (10%)"
+    ],
+    "channel_partner_type": "PSB",
+    "channel_partner_name": "Union Bank of India",
+    "npa_percentage": "Approx. 1.9% gross NPA (FY 2025-26, Public Sector Banks)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "Up to ₹50 lakh (mfg) or ₹20 lakh (services) with 15–25% subsidy"
+  },
+  {
+    "scheme_name": "PMEGP - Special Category (SC/ST/OBC/Women)",
+    "government_type": "Central",
+    "description": [
+      "Higher subsidy for SC/ST/OBC/women entrepreneurs.",
+      "Eligible: SC/ST/OBC/women, above 18 years.",
+      "Project cost: ₹50 lakh (mfg), ₹20 lakh (services). Subsidy: 25% (urban), 35% (rural)."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "PAN card",
+      "Caste certificate (if SC/ST/OBC)",
+      "Educational certificates",
+      "Project report",
+      "Quotations",
+      "Margin money proof (5%)"
+    ],
+    "channel_partner_type": "PSB",
+    "channel_partner_name": "Bank of India",
+    "npa_percentage": "Approx. 1.9% gross NPA (FY 2025-26, Public Sector Banks)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "Up to ₹50 lakh (mfg) or ₹20 lakh (services) with 25–35% subsidy"
+  },
+  {
+    "scheme_name": "NSFDC - Term Loan Scheme",
+    "government_type": "Central",
+    "description": [
+      "Term loan for SC entrepreneurs.",
+      "Eligible: SC individuals, income below ₹3 lakh/year.",
+      "Loan up to ₹15 lakh at concessional interest, repayment up to 7 years."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "PAN card",
+      "SC caste certificate",
+      "Income certificate",
+      "Address proof",
+      "Project report",
+      "Quotations"
+    ],
+    "channel_partner_type": "SCA+bank/NBFC",
+    "channel_partner_name": "Andhra Pradesh State SC Corporation + State Bank of India",
+    "npa_percentage": "Approx. 1.9% gross NPA (FY 2025-26, Public Sector Banks)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "Up to ₹15 lakh term loan at concessional interest"
+  },
+  {
+    "scheme_name": "NSFDC - Micro-finance Scheme",
+    "government_type": "Central",
+    "description": [
+      "Micro-finance for SC individuals.",
+      "Eligible: SC individuals, income below ₹3 lakh/year.",
+      "Loan up to ₹50,000 at concessional interest, repayment up to 3 years."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "SC caste certificate",
+      "Income certificate",
+      "Address proof",
+      "Basic project details"
+    ],
+    "channel_partner_type": "SCA+bank/NBFC",
+    "channel_partner_name": "Kerala State SC Development Corporation + Canara Bank",
+    "npa_percentage": "Approx. 1.9% gross NPA (FY 2025-26, Public Sector Banks)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "Up to ₹50,000 micro-finance loan at concessional interest"
+  },
+  {
+    "scheme_name": "NSFDC - Mahila Samriddhi Yojana",
+    "government_type": "Central",
+    "description": [
+      "Micro-finance for SC women.",
+      "Eligible: SC women, income below ₹3 lakh/year.",
+      "Loan up to ₹50,000 at concessional interest."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "SC caste certificate",
+      "Income certificate",
+      "Address proof",
+      "Basic project details"
+    ],
+    "channel_partner_type": "SCA+bank/NBFC",
+    "channel_partner_name": "Karnataka State SC Corporation + Indian Bank",
+    "npa_percentage": "Approx. 1.9% gross NPA (FY 2025-26, Public Sector Banks)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "Up to ₹50,000 micro-finance loan at concessional interest"
+  },
+  {
+    "scheme_name": "NBCFDC - General Loan Scheme",
+    "government_type": "Central",
+    "description": [
+      "Term loan for OBC/BC individuals.",
+      "Eligible: OBC/BC, income below ₹3 lakh/year (rural), ₹3.5 lakh/year (urban).",
+      "Loan up to ₹15 lakh at concessional interest, repayment up to 7 years."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "PAN card",
+      "OBC/BC caste certificate",
+      "Income certificate",
+      "Address proof",
+      "Project report",
+      "Quotations"
+    ],
+    "channel_partner_type": "SCA+bank/NBFC",
+    "channel_partner_name": "Maharashtra State BC Corporation + Punjab National Bank",
+    "npa_percentage": "Approx. 1.9% gross NPA (FY 2025-26, Public Sector Banks)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "Up to ₹15 lakh term loan at concessional interest"
+  },
+  {
+    "scheme_name": "NBCFDC - Group Loan Scheme",
+    "government_type": "Central",
+    "description": [
+      "Loan for OBC/BC SHGs.",
+      "Eligible: SHGs with majority OBC/BC members, income below ₹3 lakh/year.",
+      "Loan up to ₹10 lakh per SHG at concessional interest."
+    ],
+    "documents_required": [
+      "Aadhaar cards of SHG members",
+      "OBC/BC caste certificates",
+      "Income certificates",
+      "SHG registration",
+      "Bank account of SHG",
+      "Project details"
+    ],
+    "channel_partner_type": "SCA+bank/NBFC",
+    "channel_partner_name": "Gujarat State BC Corporation + Bank of Baroda",
+    "npa_percentage": "Approx. 1.9% gross NPA (FY 2025-26, Public Sector Banks)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "Up to ₹10 lakh per SHG at concessional interest"
+  },
+  {
+    "scheme_name": "NBCFDC - Mahila Samriddhi Yojana",
+    "government_type": "Central",
+    "description": [
+      "Micro-finance for OBC/BC women.",
+      "Eligible: OBC/BC women, income below ₹3 lakh/year.",
+      "Loan up to ₹50,000 at concessional interest."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "OBC/BC caste certificate",
+      "Income certificate",
+      "Address proof",
+      "Basic project details"
+    ],
+    "channel_partner_type": "SCA+bank/NBFC",
+    "channel_partner_name": "West Bengal State BC Corporation + United Bank of India",
+    "npa_percentage": "Approx. 1.9% gross NPA (FY 2025-26, Public Sector Banks)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "Up to ₹50,000 micro-finance loan at concessional interest"
+  },
+  {
+    "scheme_name": "NSKFDC - Safai Karamchari Livelihood Scheme",
+    "government_type": "Central",
+    "description": [
+      "Concessional loan for SC Safai Karamcharis/manual scavengers.",
+      "Eligible: SC Safai Karamcharis or dependents, income below ₹3 lakh/year.",
+      "Loan varies by activity (₹50,000 to ₹15 lakh)."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "SC caste certificate",
+      "Safai Karamchari certificate",
+      "Income certificate",
+      "Address proof",
+      "Project details"
+    ],
+    "channel_partner_type": "SCA+bank/NBFC",
+    "channel_partner_name": "Bihar State SC and ST Development Corporation + Bank of India",
+    "npa_percentage": "Approx. 1.9% gross NPA (FY 2025-26, Public Sector Banks)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "Micro-finance up to ₹50,000, term loans up to ₹10–15 lakh"
+  },
+  {
+    "scheme_name": "NSKFDC - Term Loan Scheme",
+    "government_type": "Central",
+    "description": [
+      "Term loan for SC Safai Karamcharis.",
+      "Eligible: SC Safai Karamcharis or dependents, income below ₹3 lakh/year.",
+      "Loan up to ₹15 lakh at concessional interest, repayment up to 7 years."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "PAN card",
+      "SC caste certificate",
+      "Safai Karamchari certificate",
+      "Income certificate",
+      "Address proof",
+      "Project report"
+    ],
+    "channel_partner_type": "SCA+bank/NBFC",
+    "channel_partner_name": "Odisha State SC and ST Development Corporation + Central Bank of India",
+    "npa_percentage": "Approx. 1.9% gross NPA (FY 2025-26, Public Sector Banks)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "Up to ₹15 lakh term loan at concessional interest"
+  },
+  {
+    "scheme_name": "VCF-SC (Venture Capital Fund for Scheduled Castes)",
+    "government_type": "Central",
+    "description": [
+      "Venture capital for SC entrepreneurs.",
+      "Eligible: SC entrepreneurs with innovative ideas, income below ₹8 lakh/year.",
+      "Equity/soft loan support up to ₹30 lakh."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "PAN card",
+      "SC caste certificate",
+      "Income certificate",
+      "Business plan",
+      "Incorporation documents"
+    ],
+    "channel_partner_type": "SCA+bank/NBFC",
+    "channel_partner_name": "SIDBI + State SC Corporation",
+    "npa_percentage": "Approx. 1.9% gross NPA (FY 2025-26, Public Sector Banks)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "Equity/soft loan support up to ₹30 lakh"
+  },
+  {
+    "scheme_name": "National SC/ST Hub (NSSH)",
+    "government_type": "Central",
+    "description": [
+      "Support for SC/ST entrepreneurs in government procurement.",
+      "Eligible: SC/ST-owned MSMEs.",
+      "Handholding, capacity building, market linkage."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "PAN card",
+      "Caste certificate (SC/ST)",
+      "Udyam registration",
+      "Enterprise documents"
+    ],
+    "channel_partner_type": "CSC/Govt counter",
+    "channel_partner_name": "NSIC Regional Office + CSC centre",
+    "npa_percentage": "Not applicable (not a lending institution)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "Support for government procurement (tenders worth crores)"
+  },
+  {
+    "scheme_name": "Deendayal Disabled Rehabilitation Scheme (DDRS)",
+    "government_type": "Central",
+    "description": [
+      "Financial assistance for rehabilitation of persons with disabilities.",
+      "Eligible: Persons with 40%+ disability, priority to SC/ST, women.",
+      "Grants to NGOs for rehabilitation centres."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "Disability certificate (40%+)",
+      "Caste certificate (if SC/ST)",
+      "Income certificate",
+      "Bank account details"
+    ],
+    "channel_partner_type": "CSC/Govt counter",
+    "channel_partner_name": "District Social Welfare Office, State Disability Commissioner Office",
+    "npa_percentage": "Not applicable (not a lending institution)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "Free education/training through NGOs; grants vary"
+  },
+  {
+    "scheme_name": "National Means-cum-Merit Scholarship (NMMSS)",
+    "government_type": "Central",
+    "description": [
+      "Scholarship for meritorious students from weaker sections.",
+      "Eligible: Class 9 students, income below ₹3.5 lakh/year.",
+      "₹12,000 per year for 4 years (Class 9–12)."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "Income certificate",
+      "Class 8 marksheet",
+      "School bonafide",
+      "Bank account details"
+    ],
+    "channel_partner_type": "CSC/Govt counter",
+    "channel_partner_name": "District Education Office + School, NSP portal",
+    "npa_percentage": "Not applicable (not a lending institution)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "₹12,000 per year for 4 years (Class 9–12)"
+  },
+  {
+    "scheme_name": "Pre-Matric Scholarship for SC Students",
+    "government_type": "Central",
+    "description": [
+      "Scholarship for SC students in Class 9–10.",
+      "Eligible: SC students, income below ₹2.5 lakh/year.",
+      "Admission/tuition fees + maintenance."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "SC caste certificate",
+      "Income certificate",
+      "Marksheet",
+      "School bonafide"
+    ],
+    "channel_partner_type": "CSC/Govt counter",
+    "channel_partner_name": "District Social Welfare Office + School, NSP portal",
+    "npa_percentage": "Not applicable (not a lending institution)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "Admission/tuition fees + maintenance (₹5,000–₹15,000/year)"
+  }
+]

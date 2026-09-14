@@ -1,0 +1,506 @@
+[
+  {
+    "scheme_name": "National Food Security Act (NFSA) - PDS",
+    "government_type": "Central",
+    "description": [
+      "Subsidized foodgrain through PDS.",
+      "Eligible: BPL and AAY families.",
+      "Provides rice at ₹3/kg, wheat at ₹2/kg."
+    ],
+    "documents_required": [
+      "Ration card (BPL/AAY/PHH)",
+      "Aadhaar card (linked)"
+    ],
+    "channel_partner_type": "Gram Panchayat",
+    "channel_partner_name": "Fair Price Shop (PDS) + Gram Panchayat Office",
+    "npa_percentage": "Not applicable (not a lending institution)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "Subsidized foodgrain (rice ₹3/kg, wheat ₹2/kg)"
+  },
+  {
+    "scheme_name": "Pradhan Mantri Gram Sadak Yojana (PMGSY)",
+    "government_type": "Central",
+    "description": [
+      "Rural road connectivity.",
+      "Eligible: Unconnected habitations.",
+      "Provides all-weather roads."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "Proof of residence",
+      "Gram Panchayat certificate"
+    ],
+    "channel_partner_type": "Gram Panchayat",
+    "channel_partner_name": "Gram Panchayat Office + DRDA",
+    "npa_percentage": "Not applicable (not a lending institution)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "All-weather road connectivity"
+  },
+  {
+    "scheme_name": "Pradhan Mantri Krishi Sinchai Yojana (PMKSY)",
+    "government_type": "Central",
+    "description": [
+      "Irrigation for farmers.",
+      "Eligible: Farmers with cultivable land.",
+      "Provides micro-irrigation with 55–75% subsidy."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "Land ownership documents",
+      "Bank account details"
+    ],
+    "channel_partner_type": "Gram Panchayat",
+    "channel_partner_name": "Gram Panchayat Office + District Agriculture Office",
+    "npa_percentage": "Not applicable (not a lending institution)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "Micro-irrigation with 55–75% subsidy"
+  },
+  {
+    "scheme_name": "Pradhan Mantri Matsya Sampada Yojana (PMMSY)",
+    "government_type": "Central",
+    "description": [
+      "Fisheries sector development.",
+      "Eligible: Fishers, fish farmers, women, SC/ST.",
+      "Provides 40–60% subsidy."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "Caste certificate (if SC/ST)",
+      "Proof of engagement in fisheries"
+    ],
+    "channel_partner_type": "PSB",
+    "channel_partner_name": "State Bank of India",
+    "npa_percentage": "Approx. 1.9% gross NPA (FY 2025-26, Public Sector Banks)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "Financial assistance up to ₹10–20 lakh with 40–60% subsidy"
+  },
+  {
+    "scheme_name": "Pradhan Mantri Kisan Maandhan Yojana",
+    "government_type": "Central",
+    "description": [
+      "Pension for small/marginal farmers.",
+      "Eligible: Farmers (up to 2 hectares), age 18–40.",
+      "Provides ₹3,000/month after age 60."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "Land ownership documents (up to 2 hectares)",
+      "Bank account details"
+    ],
+    "channel_partner_type": "Gram Panchayat",
+    "channel_partner_name": "Gram Panchayat Office + District Agriculture Office",
+    "npa_percentage": "Not applicable (not a lending institution)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "₹3,000 per month pension after age 60"
+  },
+  {
+    "scheme_name": "Pradhan Mantri Laghu Vyapari Maandhan Yojana",
+    "government_type": "Central",
+    "description": [
+      "Pension for small traders/shopkeepers.",
+      "Eligible: Traders/shopkeepers, age 18–40, turnover below ₹1.5 crore.",
+      "Provides ₹3,000/month after age 60."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "Bank account details",
+      "Self-declaration"
+    ],
+    "channel_partner_type": "Post Office",
+    "channel_partner_name": "Head Post Office, Ahmedabad",
+    "npa_percentage": "Not applicable (not a lending institution)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "₹3,000 per month pension after age 60"
+  },
+  {
+    "scheme_name": "Pradhan Mantri Vaya Vandana Yojana (PMVVY)",
+    "government_type": "Central",
+    "description": [
+      "Pension for senior citizens.",
+      "Eligible: Age 60+ years.",
+      "Provides 7.4% return per annum."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "Age proof",
+      "Bank account details",
+      "PAN card"
+    ],
+    "channel_partner_type": "Post Office",
+    "channel_partner_name": "Head Post Office, Chennai",
+    "npa_percentage": "Not applicable (not a lending institution)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "7.4% return per annum on up to ₹15 lakh"
+  },
+  {
+    "scheme_name": "Senior Citizens Savings Scheme (SCSS)",
+    "government_type": "Central",
+    "description": [
+      "Savings for senior citizens.",
+      "Eligible: Age 60+ (55+ for retired defence).",
+      "Provides ~8.2% p.a. interest."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "Age proof",
+      "Bank account details",
+      "PAN card"
+    ],
+    "channel_partner_type": "Post Office",
+    "channel_partner_name": "Head Post Office, Bangalore",
+    "npa_percentage": "Not applicable (not a lending institution)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "~8.2% p.a. on up to ₹30 lakh"
+  },
+  {
+    "scheme_name": "Pradhan Mantri Surakshit Matritva Abhiyan (PMSMA)",
+    "government_type": "Central",
+    "description": [
+      "Free antenatal care for pregnant women.",
+      "Eligible: All pregnant women.",
+      "Free check-ups on 9th of every month."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "MCP Card"
+    ],
+    "channel_partner_type": "Gram Panchayat",
+    "channel_partner_name": "PHC + Anganwadi Centre",
+    "npa_percentage": "Not applicable (not a lending institution)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "Free antenatal check-ups"
+  },
+  {
+    "scheme_name": "Pradhan Mantri Swasthya Suraksha Yojana (PMSSY)",
+    "government_type": "Central",
+    "description": [
+      "AIIMS-like institutions and upgraded medical colleges.",
+      "Eligible: Patients seeking tertiary care.",
+      "Affordable quality healthcare."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "Referral letter",
+      "Income certificate"
+    ],
+    "channel_partner_type": "CSC/Govt counter",
+    "channel_partner_name": "AIIMS/Upgraded Medical College",
+    "npa_percentage": "Not applicable (not a lending institution)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "Affordable tertiary healthcare"
+  },
+  {
+    "scheme_name": "Pradhan Mantri National Dialysis Programme",
+    "government_type": "Central",
+    "description": [
+      "Free dialysis for poor patients.",
+      "Eligible: BPL patients with kidney failure.",
+      "Free dialysis at empanelled hospitals."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "BPL ration card",
+      "Medical prescription"
+    ],
+    "channel_partner_type": "CSC/Govt counter",
+    "channel_partner_name": "District Hospital + Dialysis Centre",
+    "npa_percentage": "Not applicable (not a lending institution)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "Free dialysis sessions"
+  },
+  {
+    "scheme_name": "Pradhan Mantri Jan Arogya Yojana (PM-JAY) - Ayushman Bharat",
+    "government_type": "Central",
+    "description": [
+      "Health insurance up to ₹5 lakh per family per year.",
+      "Eligible: BPL families (SECC 2011).",
+      "Cashless treatment at empanelled hospitals."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "Ration card/SECC proof",
+      "Bank account details"
+    ],
+    "channel_partner_type": "CSC/Govt counter",
+    "channel_partner_name": "CSC centre + Empanelled Hospital",
+    "npa_percentage": "Not applicable (not a lending institution)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "₹5 lakh health insurance per family per year"
+  },
+  {
+    "scheme_name": "Integrated Child Development Services (ICDS) - Anganwadi",
+    "government_type": "Central",
+    "description": [
+      "Early childhood care.",
+      "Eligible: Children (0–6 years), pregnant/lactating women.",
+      "Nutrition, pre-school, health check-ups."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "Birth certificate",
+      "Ration card"
+    ],
+    "channel_partner_type": "Gram Panchayat",
+    "channel_partner_name": "Anganwadi Centre + Gram Panchayat Office",
+    "npa_percentage": "Not applicable (not a lending institution)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "Free nutrition, pre-school, health services"
+  },
+  {
+    "scheme_name": "Mid-Day Meal Scheme (MDM)",
+    "government_type": "Central",
+    "description": [
+      "Free meals for school children.",
+      "Eligible: Class 1–8 in government/aided schools.",
+      "Nutritious meal on working days."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "School enrollment proof"
+    ],
+    "channel_partner_type": "Gram Panchayat",
+    "channel_partner_name": "Government School + Gram Panchayat Office",
+    "npa_percentage": "Not applicable (not a lending institution)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "Free nutritious meal on school days"
+  },
+  {
+    "scheme_name": "National Health Mission (NHM) - ASHA Worker Programme",
+    "government_type": "Central",
+    "description": [
+      "Community health worker programme.",
+      "Eligible: Women, age 25–45, minimum Class 10.",
+      "Honorarium + incentives."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "Class 10 certificate",
+      "Age proof",
+      "Residence proof"
+    ],
+    "channel_partner_type": "Gram Panchayat",
+    "channel_partner_name": "Gram Panchayat Office + District Health Office",
+    "npa_percentage": "Not applicable (not a lending institution)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "₹3,000–₹10,000 monthly + incentives"
+  },
+  {
+    "scheme_name": "Pradhan Mantri Ujjwala Yojana (PMUY)",
+    "government_type": "Central",
+    "description": [
+      "Free LPG for BPL households.",
+      "Eligible: Adult woman from BPL, no LPG connection.",
+      "Deposit-free LPG connection."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "BPL ration card",
+      "Bank account details"
+    ],
+    "channel_partner_type": "Post Office",
+    "channel_partner_name": "Head Post Office, Delhi",
+    "npa_percentage": "Not applicable (not a lending institution)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "Free LPG connection (₹3,200 value) + subsidy"
+  },
+  {
+    "scheme_name": "Pradhan Mantri Fasal Bima Yojana (PMFBY)",
+    "government_type": "Central",
+    "description": [
+      "Crop insurance for farmers.",
+      "Eligible: Farmers growing notified crops.",
+      "Insurance against crop loss."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "Land records",
+      "Bank account details",
+      "Crop sowing proof"
+    ],
+    "channel_partner_type": "PSB",
+    "channel_partner_name": "NABARD + SBI",
+    "npa_percentage": "Approx. 1.9% gross NPA (FY 2025-26, Public Sector Banks)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "Insurance cover (varies by crop)"
+  },
+  {
+    "scheme_name": "Pradhan Mantri Kisan Samman Nidhi (PM-KISAN)",
+    "government_type": "Central",
+    "description": [
+      "Income support for farmers.",
+      "Eligible: Farmer families with land.",
+      "₹6,000 per year in 3 instalments."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "Land ownership documents",
+      "Bank account details"
+    ],
+    "channel_partner_type": "Gram Panchayat",
+    "channel_partner_name": "Gram Panchayat Office",
+    "npa_percentage": "Not applicable (not a lending institution)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "₹6,000 per year"
+  },
+  {
+    "scheme_name": "Kisan Credit Card (KCC) Scheme",
+    "government_type": "Central",
+    "description": [
+      "Credit for farmers.",
+      "Eligible: All farmers.",
+      "Credit limit based on landholding."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "Land records",
+      "Bank account details",
+      "Crop proof"
+    ],
+    "channel_partner_type": "RRB",
+    "channel_partner_name": "Odisha Gramya Bank",
+    "npa_percentage": "Approx. 5.3% gross NPA (FY 2025-26, Regional Rural Banks)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "Credit up to ₹3 lakh"
+  },
+  {
+    "scheme_name": "National Agriculture Market (e-NAM)",
+    "government_type": "Central",
+    "description": [
+      "Online agri trading platform.",
+      "Eligible: Farmers, traders in APMC markets.",
+      "Transparent price discovery."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "Land documents",
+      "Bank account details",
+      "APMC registration"
+    ],
+    "channel_partner_type": "CSC/Govt counter",
+    "channel_partner_name": "APMC MarketYard + CSC centre",
+    "npa_percentage": "Not applicable (not a lending institution)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "Better price realization"
+  },
+  {
+    "scheme_name": "Rashtriya Krishi Vikas Yojana (RKVY)",
+    "government_type": "Central",
+    "description": [
+      "Agriculture and allied sector development.",
+      "Eligible: Farmers, FPOs, agri-entrepreneurs.",
+      "Financial support for projects."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "Land documents",
+      "Project proposal",
+      "Bank account details"
+    ],
+    "channel_partner_type": "CSC/Govt counter",
+    "channel_partner_name": "District Agriculture Office + State Agriculture Dept",
+    "npa_percentage": "Not applicable (not a lending institution)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "Project support (₹10–50 lakh)"
+  },
+  {
+    "scheme_name": "Atal Tinkering Lab (ATL) Community Day",
+    "government_type": "Central",
+    "description": [
+      "Innovation programme for students.",
+      "Eligible: Class 6–12 in ATL schools.",
+      "Hands-on with robotics, 3D printing."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "School ID",
+      "Parent consent"
+    ],
+    "channel_partner_type": "CSC/Govt counter",
+    "channel_partner_name": "ATL + School Office",
+    "npa_percentage": "Not applicable (not a lending institution)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "Free innovation lab access"
+  },
+  {
+    "scheme_name": "Startup India Seed Fund Scheme (SISFS)",
+    "government_type": "Central",
+    "description": [
+      "Seed fund for early-stage startups.",
+      "Eligible: DPIIT-recognized startups (<2 years).",
+      "Up to ₹20 lakh grant."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "PAN card",
+      "DPIIT recognition",
+      "Incorporation documents",
+      "Project report"
+    ],
+    "channel_partner_type": "CSC/Govt counter",
+    "channel_partner_name": "Incubator + DPIIT Office",
+    "npa_percentage": "Not applicable (not a lending institution)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "Up to ₹20 lakh grant"
+  },
+  {
+    "scheme_name": "Pradhan Mantri Formalisation of Micro food processing Enterprises (PMFME)",
+    "government_type": "Central",
+    "description": [
+      "Subsidy for micro food processing.",
+      "Eligible: Existing micro food units.",
+      "35% subsidy up to ₹10 lakh."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "PAN card",
+      "Udyam registration",
+      "FSSAI license",
+      "Project report"
+    ],
+    "channel_partner_type": "PSB",
+    "channel_partner_name": "State Bank of India",
+    "npa_percentage": "Approx. 1.9% gross NPA (FY 2025-26, Public Sector Banks)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "35% subsidy up to ₹10 lakh"
+  },
+  {
+    "scheme_name": "Scheme for Promotion of Innovation, Rural Industry and Entrepreneurship (ASPIRE)",
+    "government_type": "Central",
+    "description": [
+      "Innovation and rural entrepreneurship.",
+      "Eligible: Startups in rural/semi-urban areas.",
+      "Funding for incubators."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "PAN card",
+      "Project report",
+      "Bank account details"
+    ],
+    "channel_partner_type": "CSC/Govt counter",
+    "channel_partner_name": "MSME Technology Centre + DIC",
+    "npa_percentage": "Not applicable (not a lending institution)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "Funding (₹10–50 lakh)"
+  },
+  {
+    "scheme_name": "Coir Udyami Yojana",
+    "government_type": "Central",
+    "description": [
+      "Coir manufacturing units.",
+      "Eligible: Individuals, SHGs in coir states.",
+      "25–30% subsidy up to ₹25 lakh."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "PAN card",
+      "Caste certificate (if SC/ST)",
+      "Project report"
+    ],
+    "channel_partner_type": "PSB",
+    "channel_partner_name": "Canara Bank",
+    "npa_percentage": "Approx. 1.9% gross NPA (FY 2025-26, Public Sector Banks)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "25–30% subsidy up to ₹25 lakh"
+  }
+]

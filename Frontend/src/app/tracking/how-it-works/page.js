@@ -1,0 +1,2 @@
+import Link from 'next/link'
+export default function Page(){return <main className="formhero page"><div className="container"><div className="formbox"><h1>how it works</h1><p style={{color:'#64748b',lineHeight:1.8}}>Scheme Compass helps citizens discover relevant government schemes, understand indicative eligibility and financing, locate suitable Channel Partners and prepare for the next step.</p><Link className="btn" href="/find-scheme">Find a Scheme →</Link></div></div></main>}

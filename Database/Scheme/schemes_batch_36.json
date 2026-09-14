@@ -1,0 +1,508 @@
+[
+  {
+    "scheme_name": "NSKFDC - Term Loan Scheme",
+    "government_type": "Central",
+    "description": [
+      "Term loan for SC Safai Karamcharis.",
+      "Eligible: SC Safai Karamcharis or dependents, income below ₹3 lakh/year.",
+      "Loan up to ₹15 lakh at concessional interest, repayment up to 7 years."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "PAN card",
+      "SC caste certificate",
+      "Safai Karamchari certificate",
+      "Income certificate",
+      "Address proof",
+      "Project report"
+    ],
+    "channel_partner_type": "SCA+bank/NBFC",
+    "channel_partner_name": "Odisha State SC and ST Development Corporation + Central Bank of India",
+    "npa_percentage": "Approx. 1.9% gross NPA (FY 2025-26, Public Sector Banks)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "Up to ₹15 lakh term loan at concessional interest"
+  },
+  {
+    "scheme_name": "VCF-SC (Venture Capital Fund for Scheduled Castes)",
+    "government_type": "Central",
+    "description": [
+      "Venture capital for SC entrepreneurs.",
+      "Eligible: SC entrepreneurs with innovative ideas, income below ₹8 lakh/year.",
+      "Equity/soft loan support up to ₹30 lakh."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "PAN card",
+      "SC caste certificate",
+      "Income certificate",
+      "Business plan",
+      "Incorporation documents"
+    ],
+    "channel_partner_type": "SCA+bank/NBFC",
+    "channel_partner_name": "SIDBI + State SC Corporation",
+    "npa_percentage": "Approx. 1.9% gross NPA (FY 2025-26, Public Sector Banks)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "Equity/soft loan support up to ₹30 lakh"
+  },
+  {
+    "scheme_name": "National SC/ST Hub (NSSH)",
+    "government_type": "Central",
+    "description": [
+      "Support for SC/ST entrepreneurs in government procurement.",
+      "Eligible: SC/ST-owned MSMEs.",
+      "Handholding, capacity building, market linkage."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "PAN card",
+      "Caste certificate (SC/ST)",
+      "Udyam registration",
+      "Enterprise documents"
+    ],
+    "channel_partner_type": "CSC/Govt counter",
+    "channel_partner_name": "NSIC Regional Office + CSC centre",
+    "npa_percentage": "Not applicable (not a lending institution)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "Support for government procurement (tenders worth crores)"
+  },
+  {
+    "scheme_name": "Deendayal Disabled Rehabilitation Scheme (DDRS)",
+    "government_type": "Central",
+    "description": [
+      "Financial assistance for rehabilitation of persons with disabilities.",
+      "Eligible: Persons with 40%+ disability, priority to SC/ST, women.",
+      "Grants to NGOs for rehabilitation centres."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "Disability certificate (40%+)",
+      "Caste certificate (if SC/ST)",
+      "Income certificate",
+      "Bank account details"
+    ],
+    "channel_partner_type": "CSC/Govt counter",
+    "channel_partner_name": "District Social Welfare Office, State Disability Commissioner Office",
+    "npa_percentage": "Not applicable (not a lending institution)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "Free education/training through NGOs; grants vary"
+  },
+  {
+    "scheme_name": "National Means-cum-Merit Scholarship (NMMSS)",
+    "government_type": "Central",
+    "description": [
+      "Scholarship for meritorious students from weaker sections.",
+      "Eligible: Class 9 students, income below ₹3.5 lakh/year.",
+      "₹12,000 per year for 4 years (Class 9–12)."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "Income certificate",
+      "Class 8 marksheet",
+      "School bonafide",
+      "Bank account details"
+    ],
+    "channel_partner_type": "CSC/Govt counter",
+    "channel_partner_name": "District Education Office + School, NSP portal",
+    "npa_percentage": "Not applicable (not a lending institution)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "₹12,000 per year for 4 years (Class 9–12)"
+  },
+  {
+    "scheme_name": "Pre-Matric Scholarship for SC Students",
+    "government_type": "Central",
+    "description": [
+      "Scholarship for SC students in Class 9–10.",
+      "Eligible: SC students, income below ₹2.5 lakh/year.",
+      "Admission/tuition fees + maintenance."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "SC caste certificate",
+      "Income certificate",
+      "Marksheet",
+      "School bonafide"
+    ],
+    "channel_partner_type": "CSC/Govt counter",
+    "channel_partner_name": "District Social Welfare Office + School, NSP portal",
+    "npa_percentage": "Not applicable (not a lending institution)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "Admission/tuition fees + maintenance (₹5,000–₹15,000/year)"
+  },
+  {
+    "scheme_name": "Pre-Matric Scholarship for ST Students",
+    "government_type": "Central",
+    "description": [
+      "Scholarship for ST students in Class 9–10.",
+      "Eligible: ST students, income below ₹2.5 lakh/year.",
+      "Admission/tuition fees + maintenance."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "ST caste certificate",
+      "Income certificate",
+      "Marksheet",
+      "School bonafide"
+    ],
+    "channel_partner_type": "CSC/Govt counter",
+    "channel_partner_name": "District Tribal Welfare Office + School, NSP portal",
+    "npa_percentage": "Not applicable (not a lending institution)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "Admission/tuition fees + maintenance (₹5,000–₹15,000/year)"
+  },
+  {
+    "scheme_name": "Post-Matric Scholarship for ST Students",
+    "government_type": "Central",
+    "description": [
+      "Scholarship for ST students after Class 10.",
+      "Eligible: ST students, income below ₹2.5 lakh/year.",
+      "Full tuition/exam fees + maintenance."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "ST caste certificate",
+      "Income certificate",
+      "Marksheet",
+      "Admission proof",
+      "Fee receipt"
+    ],
+    "channel_partner_type": "CSC/Govt counter",
+    "channel_partner_name": "District Tribal Welfare Office + NSP portal",
+    "npa_percentage": "Not applicable (not a lending institution)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "Full tuition/exam fees + maintenance"
+  },
+  {
+    "scheme_name": "National Fellowship for SC Students (NFSC)",
+    "government_type": "Central",
+    "description": [
+      "Fellowship for SC M.Phil/Ph.D. students.",
+      "Eligible: SC students, NET qualified, income below ₹6 lakh/year.",
+      "₹31,000–₹35,000 per month for up to 5 years."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "SC caste certificate",
+      "Income certificate",
+      "NET qualification",
+      "M.Phil/Ph.D. admission"
+    ],
+    "channel_partner_type": "CSC/Govt counter",
+    "channel_partner_name": "University/Institution + NSP portal",
+    "npa_percentage": "Not applicable (not a lending institution)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "₹31,000–₹35,000 per month for up to 5 years"
+  },
+  {
+    "scheme_name": "National Fellowship for ST Students (NFST)",
+    "government_type": "Central",
+    "description": [
+      "Fellowship for ST M.Phil/Ph.D. students.",
+      "Eligible: ST students, NET qualified, income below ₹6 lakh/year.",
+      "₹31,000–₹35,000 per month for up to 5 years."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "ST caste certificate",
+      "Income certificate",
+      "NET qualification",
+      "M.Phil/Ph.D. admission"
+    ],
+    "channel_partner_type": "CSC/Govt counter",
+    "channel_partner_name": "University/Institution + NSP portal",
+    "npa_percentage": "Not applicable (not a lending institution)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "₹31,000–₹35,000 per month for up to 5 years"
+  },
+  {
+    "scheme_name": "Babu Jagjivan Ram Chhatrawas Yojana (Hostel for SC Students)",
+    "government_type": "Central",
+    "description": [
+      "Hostel construction for SC students.",
+      "Eligible: SC students in recognised institutions.",
+      "Subsidized hostel accommodation."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "SC caste certificate",
+      "Income certificate",
+      "Admission proof",
+      "Marksheet"
+    ],
+    "channel_partner_type": "CSC/Govt counter",
+    "channel_partner_name": "Institution Hostel Office + District Social Welfare Office",
+    "npa_percentage": "Not applicable (not a lending institution)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "Subsidized hostel accommodation"
+  },
+  {
+    "scheme_name": "Shabari Sankalp Scheme (Kerala)",
+    "government_type": "State",
+    "state_name": "Kerala",
+    "description": [
+      "Comprehensive development for SC/ST communities.",
+      "Eligible: SC/ST residents of Kerala, priority to women and youth.",
+      "Housing, education, skill training, livelihood."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "Caste certificate (SC/ST)",
+      "Domicile certificate (Kerala)",
+      "Income certificate",
+      "Educational certificates"
+    ],
+    "channel_partner_type": "CSC/Govt counter",
+    "channel_partner_name": "District Tribal Development Office, Kerala",
+    "npa_percentage": "Not applicable (not a lending institution)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "Housing + education + skill training + livelihood support"
+  },
+  {
+    "scheme_name": "Pradhan Mantri Adarsh Gram Yojana (PMAGY)",
+    "government_type": "Central",
+    "description": [
+      "Integrated development of SC-majority villages.",
+      "Eligible: Villages with >50% SC population.",
+      "Infrastructure: roads, water, sanitation, education, health."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "SC caste certificate",
+      "Proof of residence in SC-majority village",
+      "Bank account details"
+    ],
+    "channel_partner_type": "Gram Panchayat",
+    "channel_partner_name": "Gram Panchayat Office, SC-majority village",
+    "npa_percentage": "Not applicable (not a lending institution)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "Infrastructure development"
+  },
+  {
+    "scheme_name": "Pradhan Mantri Anusuchit Jaati Abhyuday Yojana (PM-AJAY)",
+    "government_type": "Central",
+    "description": [
+      "Development scheme for SC communities.",
+      "Eligible: SC communities, priority to aspirational districts.",
+      "Infrastructure, skill training, livelihood support."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "SC caste certificate",
+      "Income certificate",
+      "Bank account details"
+    ],
+    "channel_partner_type": "Gram Panchayat",
+    "channel_partner_name": "Gram Panchayat Office + District Social Welfare Office",
+    "npa_percentage": "Not applicable (not a lending institution)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "Infrastructure + skill training + livelihood"
+  },
+  {
+    "scheme_name": "Pradhan Mantri Garib Kalyan Anna Yojana (PMGKAY)",
+    "government_type": "Central",
+    "description": [
+      "Free foodgrain to BPL families.",
+      "Eligible: BPL families with ration cards.",
+      "5 kg free foodgrain per person per month."
+    ],
+    "documents_required": [
+      "Ration card (BPL/AAY/PHH)",
+      "Aadhaar card (linked)"
+    ],
+    "channel_partner_type": "Gram Panchayat",
+    "channel_partner_name": "Fair Price Shop (PDS) + Gram Panchayat Office",
+    "npa_percentage": "Not applicable (not a lending institution)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "5 kg free foodgrain per person per month"
+  },
+  {
+    "scheme_name": "National Food Security Act (NFSA) - PDS",
+    "government_type": "Central",
+    "description": [
+      "Subsidized foodgrain through PDS.",
+      "Eligible: BPL and AAY families.",
+      "Rice at ₹3/kg, wheat at ₹2/kg."
+    ],
+    "documents_required": [
+      "Ration card (BPL/AAY/PHH)",
+      "Aadhaar card (linked)"
+    ],
+    "channel_partner_type": "Gram Panchayat",
+    "channel_partner_name": "Fair Price Shop (PDS) + Gram Panchayat Office",
+    "npa_percentage": "Not applicable (not a lending institution)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "Subsidized foodgrain (rice ₹3/kg, wheat ₹2/kg)"
+  },
+  {
+    "scheme_name": "Pradhan Mantri Gram Sadak Yojana (PMGSY)",
+    "government_type": "Central",
+    "description": [
+      "Rural road connectivity.",
+      "Eligible: Unconnected habitations (>100 pop plain, >50 hilly/tribal).",
+      "All-weather road connectivity."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "Proof of residence",
+      "Gram Panchayat certificate"
+    ],
+    "channel_partner_type": "Gram Panchayat",
+    "channel_partner_name": "Gram Panchayat Office + DRDA",
+    "npa_percentage": "Not applicable (not a lending institution)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "All-weather road connectivity"
+  },
+  {
+    "scheme_name": "Pradhan Mantri Krishi Sinchai Yojana (PMKSY)",
+    "government_type": "Central",
+    "description": [
+      "Irrigation for farmers.",
+      "Eligible: Farmers with cultivable land.",
+      "Micro-irrigation with 55–75% subsidy."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "Land ownership documents",
+      "Bank account details"
+    ],
+    "channel_partner_type": "Gram Panchayat",
+    "channel_partner_name": "Gram Panchayat Office + District Agriculture Office",
+    "npa_percentage": "Not applicable (not a lending institution)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "Micro-irrigation with 55–75% subsidy"
+  },
+  {
+    "scheme_name": "Pradhan Mantri Matsya Sampada Yojana (PMMSY)",
+    "government_type": "Central",
+    "description": [
+      "Fisheries sector development.",
+      "Eligible: Fishers, fish farmers, women, SC/ST.",
+      "40–60% subsidy on projects."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "Caste certificate (if SC/ST)",
+      "Proof of engagement in fisheries",
+      "Bank account details"
+    ],
+    "channel_partner_type": "PSB",
+    "channel_partner_name": "State Bank of India",
+    "npa_percentage": "Approx. 1.9% gross NPA (FY 2025-26, Public Sector Banks)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "Financial assistance up to ₹10–20 lakh with 40–60% subsidy"
+  },
+  {
+    "scheme_name": "Pradhan Mantri Kisan Maandhan Yojana",
+    "government_type": "Central",
+    "description": [
+      "Pension for small/marginal farmers.",
+      "Eligible: Farmers (up to 2 hectares), age 18–40.",
+      "₹3,000/month pension after age 60."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "Land ownership documents (up to 2 hectares)",
+      "Bank account details (Aadhaar-seeded)"
+    ],
+    "channel_partner_type": "Gram Panchayat",
+    "channel_partner_name": "Gram Panchayat Office + District Agriculture Office",
+    "npa_percentage": "Not applicable (not a lending institution)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "₹3,000 per month pension after age 60"
+  },
+  {
+    "scheme_name": "Pradhan Mantri Laghu Vyapari Maandhan Yojana",
+    "government_type": "Central",
+    "description": [
+      "Pension for small traders/shopkeepers.",
+      "Eligible: Traders/shopkeepers, age 18–40, turnover below ₹1.5 crore.",
+      "₹3,000/month pension after age 60."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "Bank account details (Aadhaar-seeded)",
+      "Self-declaration"
+    ],
+    "channel_partner_type": "Post Office",
+    "channel_partner_name": "Head Post Office, Ahmedabad",
+    "npa_percentage": "Not applicable (not a lending institution)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "₹3,000 per month pension after age 60"
+  },
+  {
+    "scheme_name": "Pradhan Mantri Vaya Vandana Yojana (PMVVY)",
+    "government_type": "Central",
+    "description": [
+      "Pension for senior citizens.",
+      "Eligible: Age 60+ years.",
+      "7.4% return per annum, monthly for 10 years."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "Age proof",
+      "Bank account details",
+      "PAN card"
+    ],
+    "channel_partner_type": "Post Office",
+    "channel_partner_name": "Head Post Office, Chennai",
+    "npa_percentage": "Not applicable (not a lending institution)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "7.4% return per annum on up to ₹15 lakh"
+  },
+  {
+    "scheme_name": "Senior Citizens Savings Scheme (SCSS)",
+    "government_type": "Central",
+    "description": [
+      "Savings for senior citizens.",
+      "Eligible: Age 60+ (55+ for retired defence).",
+      "~8.2% p.a. interest, quarterly payments."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "Age proof",
+      "Bank account details",
+      "PAN card"
+    ],
+    "channel_partner_type": "Post Office",
+    "channel_partner_name": "Head Post Office, Bangalore",
+    "npa_percentage": "Not applicable (not a lending institution)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "~8.2% p.a. on up to ₹30 lakh"
+  },
+  {
+    "scheme_name": "Pradhan Mantri Surakshit Matritva Abhiyan (PMSMA)",
+    "government_type": "Central",
+    "description": [
+      "Free antenatal care for pregnant women.",
+      "Eligible: All pregnant women.",
+      "Free check-ups on 9th of every month."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "MCP Card"
+    ],
+    "channel_partner_type": "Gram Panchayat",
+    "channel_partner_name": "PHC + Anganwadi Centre",
+    "npa_percentage": "Not applicable (not a lending institution)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "Free antenatal check-ups"
+  },
+  {
+    "scheme_name": "Pradhan Mantri Swasthya Suraksha Yojana (PMSSY)",
+    "government_type": "Central",
+    "description": [
+      "AIIMS-like institutions and upgraded medical colleges.",
+      "Eligible: Patients seeking tertiary care.",
+      "Affordable quality healthcare."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "Referral letter",
+      "Income certificate"
+    ],
+    "channel_partner_type": "CSC/Govt counter",
+    "channel_partner_name": "AIIMS/Upgraded Medical College",
+    "npa_percentage": "Not applicable (not a lending institution)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "Affordable tertiary healthcare"
+  }
+]

@@ -1,0 +1,531 @@
+[
+  {
+    "scheme_name": "Coir Udyami Yojana",
+    "government_type": "Central",
+    "description": [
+      "Coir manufacturing units.",
+      "Eligible: Individuals, SHGs in coir states.",
+      "25–30% subsidy up to ₹25 lakh."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "PAN card",
+      "Caste certificate (if SC/ST)",
+      "Project report"
+    ],
+    "channel_partner_type": "PSB",
+    "channel_partner_name": "Canara Bank",
+    "npa_percentage": "Approx. 1.9% gross NPA (FY 2025-26, Public Sector Banks)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "25–30% subsidy up to ₹25 lakh"
+  },
+  {
+    "scheme_name": "Artisan Credit Card (ACC) Scheme",
+    "government_type": "Central",
+    "description": [
+      "Credit for artisans and weavers.",
+      "Eligible: Artisans, weavers, craftspeople.",
+      "Working capital and term loans up to ₹2 lakh."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "PAN card",
+      "Artisan/weaver identity card",
+      "Bank account details"
+    ],
+    "channel_partner_type": "PSB",
+    "channel_partner_name": "Indian Bank",
+    "npa_percentage": "Approx. 1.9% gross NPA (FY 2025-26, Public Sector Banks)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "Credit up to ₹2 lakh with interest subvention"
+  },
+  {
+    "scheme_name": "Handloom Weavers' Comprehensive Welfare Scheme",
+    "government_type": "Central",
+    "description": [
+      "Welfare for handloom weavers.",
+      "Eligible: Handloom weavers and families.",
+      "Health insurance, scholarship, skill training."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "Weaver identity card",
+      "Bank account details"
+    ],
+    "channel_partner_type": "CSC/Govt counter",
+    "channel_partner_name": "District Handloom Office + CSC centre",
+    "npa_percentage": "Not applicable (not a lending institution)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "Health insurance + scholarship + skill training"
+  },
+  {
+    "scheme_name": "National Handicapped Finance and Development Corporation (NHFDC) Schemes",
+    "government_type": "Central",
+    "description": [
+      "Concessional loans for persons with disabilities.",
+      "Eligible: 40%+ disability, income below ₹3–3.5 lakh/year.",
+      "Term loans, micro-finance, skill training."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "Disability certificate (40%+)",
+      "Income certificate",
+      "Project report"
+    ],
+    "channel_partner_type": "SCA+bank/NBFC",
+    "channel_partner_name": "State SC/ST Corporation + Punjab National Bank",
+    "npa_percentage": "Approx. 1.9% gross NPA (FY 2025-26, Public Sector Banks)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "Term loan up to ₹10–15 lakh at concessional interest"
+  },
+  {
+    "scheme_name": "Uttar Pradesh Mukhyamantri Yuva Swarojgar Yojana",
+    "government_type": "State",
+    "state_name": "Uttar Pradesh",
+    "description": [
+      "Loan and subsidy for youth enterprises.",
+      "Eligible: UP residents, age 21–45, income below ₹2 lakh/year.",
+      "Loan up to ₹10 lakh with 25–30% subsidy."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "Domicile certificate (UP)",
+      "Caste certificate",
+      "Income certificate",
+      "Project report"
+    ],
+    "channel_partner_type": "PSB",
+    "channel_partner_name": "State Bank of India",
+    "npa_percentage": "Approx. 1.9% gross NPA (FY 2025-26, Public Sector Banks)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "Up to ₹10 lakh loan with 25–30% subsidy"
+  },
+  {
+    "scheme_name": "Uttar Pradesh Mahila Udyam Nidhi Yojana",
+    "government_type": "State",
+    "state_name": "Uttar Pradesh",
+    "description": [
+      "Concessional loans for women entrepreneurs.",
+      "Eligible: Women, UP residents, age 21–55, income below ₹5–7.5 lakh.",
+      "Loan up to ₹10 lakh at 4% interest."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "Domicile certificate (UP)",
+      "Caste certificate",
+      "Income certificate",
+      "Business plan"
+    ],
+    "channel_partner_type": "PSB",
+    "channel_partner_name": "Indian Bank",
+    "npa_percentage": "Approx. 1.9% gross NPA (FY 2025-26, Public Sector Banks)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "Up to ₹10 lakh loan at 4% interest"
+  },
+  {
+    "scheme_name": "Bihar Mukhyamantri Udyami Yojana",
+    "government_type": "State",
+    "state_name": "Bihar",
+    "description": [
+      "Financial assistance for EBC/BC/minority entrepreneurs.",
+      "Eligible: Bihar residents, age 18–50, EBC/BC/minority.",
+      "Assistance up to ₹10 lakh."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "Domicile certificate (Bihar)",
+      "Caste certificate",
+      "Income certificate",
+      "Project report"
+    ],
+    "channel_partner_type": "PSB",
+    "channel_partner_name": "Bank of Baroda",
+    "npa_percentage": "Approx. 1.9% gross NPA (FY 2025-26, Public Sector Banks)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "Up to ₹10 lakh financial assistance"
+  },
+  {
+    "scheme_name": "Madhya Pradesh Savitri Bai Phule Swa-Sahayata Samuh Yojana",
+    "government_type": "State",
+    "state_name": "Madhya Pradesh",
+    "description": [
+      "Support for SC women's SHGs.",
+      "Eligible: SC women, MP residents, age 18–60.",
+      "Margin money up to ₹15,000 for projects up to ₹50,000."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "SC caste certificate",
+      "Domicile certificate (MP)",
+      "SHG registration"
+    ],
+    "channel_partner_type": "PSB",
+    "channel_partner_name": "Central Bank of India",
+    "npa_percentage": "Approx. 1.9% gross NPA (FY 2025-26, Public Sector Banks)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "Margin money up to ₹15,000 for projects up to ₹50,000"
+  },
+  {
+    "scheme_name": "Tamil Nadu Women Entrepreneur Scheme",
+    "government_type": "State",
+    "state_name": "Tamil Nadu",
+    "description": [
+      "Concessional loans for women entrepreneurs.",
+      "Eligible: Women, TN residents, age 21–55, income below ₹5–7.5 lakh.",
+      "Loan up to ₹5–10 lakh with subsidy."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "Domicile certificate (TN)",
+      "Caste certificate",
+      "Income certificate",
+      "Business plan"
+    ],
+    "channel_partner_type": "PSB",
+    "channel_partner_name": "Indian Bank",
+    "npa_percentage": "Approx. 1.9% gross NPA (FY 2025-26, Public Sector Banks)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "Up to ₹5–10 lakh loan with subsidy"
+  },
+  {
+    "scheme_name": "Kerala Startup Mission - Startup Kerala",
+    "government_type": "State",
+    "state_name": "Kerala",
+    "description": [
+      "Startup support with funding and mentorship.",
+      "Eligible: Kerala-based startups in innovation/tech.",
+      "Equity funding, grants, incubation."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "Domicile certificate (Kerala)",
+      "Startup registration",
+      "Business plan"
+    ],
+    "channel_partner_type": "CSC/Govt counter",
+    "channel_partner_name": "Kerala Startup Mission Office, Thiruvananthapuram",
+    "npa_percentage": "Not applicable (not a lending institution)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "Equity funding up to ₹50 lakh + grants"
+  },
+  {
+    "scheme_name": "Telangana TS-iPASS",
+    "government_type": "State",
+    "state_name": "Telangana",
+    "description": [
+      "Industrial project approvals and incentives.",
+      "Eligible: Entrepreneurs setting up units in Telangana.",
+      "Capital subsidy, power tariff reimbursement."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "Domicile certificate (Telangana)",
+      "Project report",
+      "Land allotment proof"
+    ],
+    "channel_partner_type": "CSC/Govt counter",
+    "channel_partner_name": "TSIIC Office, Hyderabad",
+    "npa_percentage": "Not applicable (not a lending institution)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "Capital subsidy up to 25% + power tariff reimbursement"
+  },
+  {
+    "scheme_name": "Andhra Pradesh YSR Cheyutha",
+    "government_type": "State",
+    "state_name": "Andhra Pradesh",
+    "description": [
+      "Financial assistance for SC/ST/BC women aged 45–60.",
+      "Eligible: Women, age 45–60, SC/ST/BC, AP domicile.",
+      "₹18,750 per year for 4 years (₹75,000 total)."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "Caste certificate",
+      "Domicile certificate",
+      "Age proof"
+    ],
+    "channel_partner_type": "CSC/Govt counter",
+    "channel_partner_name": "DRDA Office, Andhra Pradesh",
+    "npa_percentage": "Not applicable (not a lending institution)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "₹18,750 per year for 4 years (₹75,000 total)"
+  },
+  {
+    "scheme_name": "Karnataka Chief Minister's Apprentice Scheme",
+    "government_type": "State",
+    "state_name": "Karnataka",
+    "description": [
+      "Stipend-based apprenticeship for youth.",
+      "Eligible: Karnataka domicile, age 21–35, graduate/diploma.",
+      "Monthly stipend during apprenticeship."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "Domicile certificate (Karnataka)",
+      "Educational certificates",
+      "Bank account details"
+    ],
+    "channel_partner_type": "CSC/Govt counter",
+    "channel_partner_name": "District Industries Centre (DIC), Karnataka",
+    "npa_percentage": "Not applicable (not a lending institution)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "Monthly stipend (₹5,000–₹10,000)"
+  },
+  {
+    "scheme_name": "West Bengal Kanyashree Prakalpa",
+    "government_type": "State",
+    "state_name": "West Bengal",
+    "description": [
+      "Cash transfer for girl child education.",
+      "Eligible: Unmarried girls, age 13–18, studying Class 8–12, income below ₹1.2 lakh/year.",
+      "₹750 annual + ₹25,000 at age 18."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "Birth certificate",
+      "School enrollment certificate",
+      "Income certificate"
+    ],
+    "channel_partner_type": "PSB",
+    "channel_partner_name": "Bank of Baroda",
+    "npa_percentage": "Approx. 1.9% gross NPA (FY 2025-26, Public Sector Banks)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "₹750 annual scholarship + ₹25,000 one-time grant"
+  },
+  {
+    "scheme_name": "West Bengal Swasthya Sathi Scheme",
+    "government_type": "State",
+    "state_name": "West Bengal",
+    "description": [
+      "Health insurance up to ₹5 lakh per family per year.",
+      "Eligible: All WB residents, no income bar.",
+      "Cashless treatment at empanelled hospitals."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "Ration card",
+      "Bank account details"
+    ],
+    "channel_partner_type": "CSC/Govt counter",
+    "channel_partner_name": "District Health Office + CSC centre, West Bengal",
+    "npa_percentage": "Not applicable (not a lending institution)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "₹5 lakh health insurance per family per year"
+  },
+  {
+    "scheme_name": "Jharkhand Chief Minister's Scholarship Scheme",
+    "government_type": "State",
+    "state_name": "Jharkhand",
+    "description": [
+      "Scholarship for meritorious students.",
+      "Eligible: Jharkhand domicile, Class 10/12 toppers, income below ₹2.5 lakh/year.",
+      "₹50,000 per year for higher education."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "Domicile certificate (Jharkhand)",
+      "Caste certificate",
+      "Marksheet",
+      "Admission proof"
+    ],
+    "channel_partner_type": "CSC/Govt counter",
+    "channel_partner_name": "District Education Office + CSC centre, Jharkhand",
+    "npa_percentage": "Not applicable (not a lending institution)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "₹50,000 per year for higher education"
+  },
+  {
+    "scheme_name": "Jharkhand Mukhyamantri Kisan Yojana",
+    "government_type": "State",
+    "state_name": "Jharkhand",
+    "description": [
+      "Income support for farmers.",
+      "Eligible: Farmer families, Jharkhand, landholding up to 5 acres.",
+      "₹5,000 per year per family."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "Domicile certificate (Jharkhand)",
+      "Land ownership documents",
+      "Bank account details"
+    ],
+    "channel_partner_type": "RRB",
+    "channel_partner_name": "Jharkhand Rajya Gramin Bank",
+    "npa_percentage": "Approx. 5.3% gross NPA (FY 2025-26, Regional Rural Banks)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "₹5,000 per year per farmer family"
+  },
+  {
+    "scheme_name": "Odisha Mo Cycle Scheme",
+    "government_type": "State",
+    "state_name": "Odisha",
+    "description": [
+      "Free bicycle for students.",
+      "Eligible: Class 9–12 students, income below ₹2 lakh/year.",
+      "Bicycle or ₹5,000 for purchase."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "Domicile certificate (Odisha)",
+      "Caste certificate",
+      "Income certificate",
+      "School enrollment"
+    ],
+    "channel_partner_type": "CSC/Govt counter",
+    "channel_partner_name": "School Office + District Education Office, Odisha",
+    "npa_percentage": "Not applicable (not a lending institution)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "Free bicycle or ₹5,000"
+  },
+  {
+    "scheme_name": "Odisha Kalinga Siksha Schem (KSS)",
+    "government_type": "State",
+    "state_name": "Odisha",
+    "description": [
+      "Financial assistance for SC/ST higher education.",
+      "Eligible: SC/ST students, Odisha domicile, income below ₹2.5 lakh/year.",
+      "₹30,000–₹80,000 per year."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "Caste certificate (SC/ST)",
+      "Domicile certificate (Odisha)",
+      "Income certificate",
+      "Admission proof"
+    ],
+    "channel_partner_type": "CSC/Govt counter",
+    "channel_partner_name": "District Social Welfare Office + Odisha Scholarship Portal",
+    "npa_percentage": "Not applicable (not a lending institution)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "₹30,000–₹80,000 per year depending on course"
+  },
+  {
+    "scheme_name": "Chhattisgarh Godhan Nyay Yojana",
+    "government_type": "State",
+    "state_name": "Chhattisgarh",
+    "description": [
+      "Cow dung procurement scheme.",
+      "Eligible: Cattle owners in Chhattisgarh.",
+      "Government procures at ₹2 per kg."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "Domicile certificate (Chhattisgarh)",
+      "Cattle ownership proof",
+      "Bank account details"
+    ],
+    "channel_partner_type": "Gram Panchayat",
+    "channel_partner_name": "Gram Panchayat Office, Raipur, Chhattisgarh",
+    "npa_percentage": "Not applicable (not a lending institution)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "₹2 per kg of cow dung"
+  },
+  {
+    "scheme_name": "Chhattisgarh Suraji Bitiya Yojana",
+    "government_type": "State",
+    "state_name": "Chhattisgarh",
+    "description": [
+      "Financial assistance for girl child education.",
+      "Eligible: Girls, Class 9–12, income below ₹2 lakh/year.",
+      "₹1,000 per month during academic session."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "Domicile certificate (Chhattisgarh)",
+      "Caste certificate",
+      "Income certificate",
+      "School enrollment"
+    ],
+    "channel_partner_type": "PSB",
+    "channel_partner_name": "Chhattisgarh Rajya Gramin Bank",
+    "npa_percentage": "Approx. 5.3% gross NPA (FY 2025-26, Regional Rural Banks)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "₹1,000 per month (10 months/year)"
+  },
+  {
+    "scheme_name": "Gujarat Chief Minister's Yuva Swavlamban Yojana",
+    "government_type": "State",
+    "state_name": "Gujarat",
+    "description": [
+      "Interest subsidy on education loans.",
+      "Eligible: Gujarat domicile, higher education, income below ₹6 lakh/year.",
+      "50% interest subsidy."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "Domicile certificate (Gujarat)",
+      "Caste certificate",
+      "Income certificate",
+      "Admission proof",
+      "Loan sanction letter"
+    ],
+    "channel_partner_type": "PSB",
+    "channel_partner_name": "Bank of Baroda",
+    "npa_percentage": "Approx. 1.9% gross NPA (FY 2025-26, Public Sector Banks)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "50% interest subsidy on education loan"
+  },
+  {
+    "scheme_name": "Gujarat Mukhyamantri Amrutum (MA) Yojana",
+    "government_type": "State",
+    "state_name": "Gujarat",
+    "description": [
+      "Health insurance up to ₹10 lakh per family per year.",
+      "Eligible: All Gujarat residents, no income bar.",
+      "Cashless treatment at empanelled hospitals."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "Ration card",
+      "Bank account details"
+    ],
+    "channel_partner_type": "CSC/Govt counter",
+    "channel_partner_name": "District Health Office + CSC centre, Gujarat",
+    "npa_percentage": "Not applicable (not a lending institution)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "₹10 lakh health insurance per family per year"
+  },
+  {
+    "scheme_name": "Maharashtra Chief Minister's Scholarship for SC/ST Students",
+    "government_type": "State",
+    "state_name": "Maharashtra",
+    "description": [
+      "Scholarship for SC/ST higher education.",
+      "Eligible: SC/ST students, Maharashtra domicile, income below ₹2.5 lakh/year.",
+      "₹50,000–₹1,00,000 per year."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "Caste certificate (SC/ST)",
+      "Domicile certificate (Maharashtra)",
+      "Income certificate",
+      "Admission proof"
+    ],
+    "channel_partner_type": "CSC/Govt counter",
+    "channel_partner_name": "District Social Welfare Office + Maharashtra Scholarship Portal",
+    "npa_percentage": "Not applicable (not a lending institution)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "₹50,000–₹1,00,000 per year"
+  },
+  {
+    "scheme_name": "Maharashtra Mahatma Jyotiba Phule Jan Arogya Yojana",
+    "government_type": "State",
+    "state_name": "Maharashtra",
+    "description": [
+      "Health insurance up to ₹5 lakh per family per year.",
+      "Eligible: BPL families and specific categories in Maharashtra.",
+      "Cashless treatment at empanelled hospitals."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "Ration card (yellow/orange)",
+      "Income certificate",
+      "Bank account details"
+    ],
+    "channel_partner_type": "CSC/Govt counter",
+    "channel_partner_name": "District Health Office + CSC centre, Maharashtra",
+    "npa_percentage": "Not applicable (not a lending institution)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "₹5 lakh health insurance per family per year"
+  }
+]

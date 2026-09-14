@@ -1,0 +1,636 @@
+[
+  {
+    "scheme_name": "Rajasthan Mukhyamantri Yuva Sambal Yojana (Unemployment Allowance)",
+    "government_type": "State",
+    "state_name": "Rajasthan",
+    "description": [
+      "Monthly unemployment allowance for educated, jobless youth while they search for work.",
+      "Eligible: Rajasthan domicile, age up to 30 years (35 for women/SC/ST/OBC/PwD), family income below ₹2 lakh/year.",
+      "Must hold at least Bachelor's degree, be registered with Employment Exchange, and not be in any job/self-employment.",
+      "Maximum 2 members per family can receive allowance simultaneously."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "Domicile certificate (Rajasthan)",
+      "Caste certificate (if SC/ST/OBC)",
+      "Income certificate",
+      "Educational qualification certificates (Bachelor's degree)",
+      "Employment Exchange registration proof",
+      "Bank account details (Aadhaar-seeded)",
+      "Passport-size photographs",
+      "Self-declaration of unemployment"
+    ],
+    "channel_partner_type": "CSC/Govt counter",
+    "channel_partner_name": "District Employment Exchange Office + CSC centre, Rajasthan",
+    "npa_percentage": "Not applicable (not a lending institution)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "Monthly unemployment allowance (amount varies, typically ₹1,000–₹3,000 per month)"
+  },
+  {
+    "scheme_name": "Rajasthan Mukhyamantri Swarojgar Yojana",
+    "government_type": "State",
+    "state_name": "Rajasthan",
+    "description": [
+      "Interest-free loan up to ₹10 lakh for youth to start new businesses.",
+      "Eligible: Rajasthan domicile, age 18–45 years, family income below ₹2.5 lakh/year.",
+      "Priority to women, SC/ST, OBC youth.",
+      "100% interest subsidy on bank loans."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "Jan Aadhaar card (Rajasthan)",
+      "Domicile certificate",
+      "Caste certificate (if SC/ST/OBC)",
+      "Income certificate",
+      "Educational qualification certificates (minimum 8th/10th/12th pass as applicable)",
+      "Detailed project report (DPR) for business",
+      "Bank account details",
+      "Passport-size photographs",
+      "Mobile number and email ID"
+    ],
+    "channel_partner_type": "PSB",
+    "channel_partner_name": "State Bank of Bikaner and Jaipur (now part of State Bank of India)",
+    "npa_percentage": "Approx. 1.9% gross NPA (FY 2025-26, Public Sector Banks)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "Up to ₹10 lakh interest-free loan"
+  },
+  {
+    "scheme_name": "Rajasthan Nari Shakti Prashikshan Evam Kaushal Samvardhan Yojana",
+    "government_type": "State",
+    "state_name": "Rajasthan",
+    "description": [
+      "Free skill training and empowerment programme for women and girls.",
+      "Eligible: Women/girls, age 18–45 years, Rajasthan domicile.",
+      "18% seats reserved for SC, 12% for ST.",
+      "Includes training, stipend, and toolkit support."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "Domicile certificate (Rajasthan)",
+      "Caste certificate (if SC/ST)",
+      "Educational certificates (Class 10th/12th/Graduation as applicable)",
+      "Husband's death certificate (for widows)",
+      "Divorce certificate (for divorced women)",
+      "Affidavit for abandoned women",
+      "Passport-size photographs",
+      "Bank account details"
+    ],
+    "channel_partner_type": "CSC/Govt counter",
+    "channel_partner_name": "District Women and Child Development Office, Rajasthan",
+    "npa_percentage": "Not applicable (not a lending institution)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "Free skill training + ₹500 monthly stipend + ₹1,000 toolkit support"
+  },
+  {
+    "scheme_name": "Rajasthan Post-Matric Scholarship for SC/ST Students",
+    "government_type": "State",
+    "state_name": "Rajasthan",
+    "description": [
+      "Scholarship for SC/ST students studying after Class 10 (Class 11/12, diploma, graduation, PG, etc.).",
+      "Covers tuition fees, exam fees, and maintenance allowance.",
+      "Eligible: SC/ST students, Rajasthan domicile, family income below ₹2.5 lakh/year.",
+      "Must be studying in recognised institutions."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "Caste certificate (SC/ST)",
+      "Domicile certificate (Rajasthan)",
+      "Income certificate",
+      "Previous year marksheet",
+      "Current year admission proof and fee receipt",
+      "Bank account details (Aadhaar-seeded)",
+      "Institute bonafide certificate",
+      "Passport-size photographs",
+      "Jan Aadhaar or Bhamashah ID card"
+    ],
+    "channel_partner_type": "CSC/Govt counter",
+    "channel_partner_name": "District Social Justice Office + SSO Portal, Rajasthan",
+    "npa_percentage": "Not applicable (not a lending institution)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "Full tuition/exam fees + maintenance allowance (varies by course, typically ₹10,000–₹60,000 per year)"
+  },
+  {
+    "scheme_name": "Rajasthan Ambedkar Fellowship Scheme for SC Students",
+    "government_type": "State",
+    "state_name": "Rajasthan",
+    "description": [
+      "Monthly fellowship for SC students pursuing higher education (graduation, PG, research).",
+      "Eligible: SC students, Rajasthan domicile, family income below ₹2.5 lakh/year.",
+      "Provides ₹15,000 per month for up to 3 years.",
+      "Merit-based selection."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "SC caste certificate",
+      "Domicile certificate (Rajasthan)",
+      "Income certificate",
+      "Previous year marksheet",
+      "Current year admission proof",
+      "Bank account details (Aadhaar-seeded)",
+      "Institute bonafide certificate",
+      "Passport-size photographs",
+      "Jan Aadhaar card"
+    ],
+    "channel_partner_type": "CSC/Govt counter",
+    "channel_partner_name": "District Social Justice Office, Rajasthan",
+    "npa_percentage": "Not applicable (not a lending institution)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "₹15,000 per month for up to 3 years"
+  },
+  {
+    "scheme_name": "Rajasthan Charm Prashikshan Yojana (Leather Craft Training)",
+    "government_type": "State",
+    "state_name": "Rajasthan",
+    "description": [
+      "Free leather craft training to promote skills and self-employment.",
+      "Eligible: Rajasthan domicile, age 18–35 years, literate (minimum 8th pass preferred).",
+      "Provides training, ₹500 monthly stipend, and ₹1,000 toolkit.",
+      "Priority to SC/ST/OBC candidates."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "Domicile certificate (Rajasthan)",
+      "Caste certificate (if SC/ST/OBC)",
+      "Educational qualification certificate (minimum 8th pass)",
+      "Passport-size photographs",
+      "Bank account details"
+    ],
+    "channel_partner_type": "CSC/Govt counter",
+    "channel_partner_name": "District Industries Centre (DIC), Rajasthan",
+    "npa_percentage": "Not applicable (not a lending institution)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "Free training + ₹500 monthly stipend + ₹1,000 toolkit"
+  },
+  {
+    "scheme_name": "Punjab Chief Minister's Skill Development Mission",
+    "government_type": "State",
+    "state_name": "Punjab",
+    "description": [
+      "Free skill training and placement support for youth.",
+      "Eligible: Punjab domicile, age 18–35 years, priority to SC/ST/OBC, women.",
+      "Training in various trades with stipend during training.",
+      "Placement assistance after training completion."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "Domicile certificate (Punjab)",
+      "Caste certificate (if SC/ST/OBC)",
+      "Educational qualification certificates",
+      "Income certificate (if applicable)",
+      "Bank account details",
+      "Passport-size photographs",
+      "Mobile number"
+    ],
+    "channel_partner_type": "CSC/Govt counter",
+    "channel_partner_name": "Punjab Skill Development Mission Office, Chandigarh",
+    "npa_percentage": "Not applicable (not a lending institution)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "Free skill training + monthly stipend during training + placement support"
+  },
+  {
+    "scheme_name": "Haryana Chief Minister's Yuva Udyami Scheme",
+    "government_type": "State",
+    "state_name": "Haryana",
+    "description": [
+      "Interest subsidy on bank loans for youth entrepreneurs.",
+      "Eligible: Haryana domicile, age 21–45 years, family income below ₹5 lakh/year.",
+      "Loan up to ₹10 lakh with interest subsidy.",
+      "Priority to women, SC/ST, OBC youth."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "Domicile certificate (Haryana)",
+      "Caste certificate (if SC/ST/OBC)",
+      "Income certificate",
+      "Educational qualification certificates",
+      "Detailed project report",
+      "Bank account details",
+      "Passport-size photographs"
+    ],
+    "channel_partner_type": "PSB",
+    "channel_partner_name": "Punjab National Bank",
+    "npa_percentage": "Approx. 1.9% gross NPA (FY 2025-26, Public Sector Banks)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "Up to ₹10 lakh loan with interest subsidy"
+  },
+  {
+    "scheme_name": "Uttarakhand Chief Minister's Self-Employment Scheme",
+    "government_type": "State",
+    "state_name": "Uttarakhand",
+    "description": [
+      "Financial assistance for youth to start self-employment ventures.",
+      "Eligible: Uttarakhand domicile, age 21–45 years, family income below ₹3 lakh/year.",
+      "Subsidy up to 35% on bank loans.",
+      "Priority to women, SC/ST, OBC youth."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "Domicile certificate (Uttarakhand)",
+      "Caste certificate (if SC/ST/OBC)",
+      "Income certificate",
+      "Educational qualification certificates",
+      "Detailed project report",
+      "Bank account details",
+      "Passport-size photographs"
+    ],
+    "channel_partner_type": "PSB",
+    "channel_partner_name": "State Bank of India",
+    "npa_percentage": "Approx. 1.9% gross NPA (FY 2025-26, Public Sector Banks)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "Up to ₹10 lakh loan with 35% subsidy"
+  },
+  {
+    "scheme_name": "Himachal Pradesh Chief Minister's Mahila Sashaktikaran Yojana",
+    "government_type": "State",
+    "state_name": "Himachal Pradesh",
+    "description": [
+      "Financial assistance for women's self-help groups and individual women entrepreneurs.",
+      "Eligible: Women residents of Himachal Pradesh, age 18–59 years.",
+      "Provides corpus fund for SHGs and individual loans with subsidy.",
+      "Priority to SC/ST women."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "Domicile certificate (Himachal Pradesh)",
+      "Caste certificate (if SC/ST)",
+      "Income certificate",
+      "SHG registration documents (for group loans)",
+      "Basic project details",
+      "Bank account details",
+      "Passport-size photographs"
+    ],
+    "channel_partner_type": "PSB",
+    "channel_partner_name": "Himachal Pradesh Gramin Bank",
+    "npa_percentage": "Approx. 5.3% gross NPA (FY 2025-26, Regional Rural Banks)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "Corpus fund for SHGs + individual loans up to ₹5 lakh with subsidy"
+  },
+  {
+    "scheme_name": "Andhra Pradesh YSR Cheyutha",
+    "government_type": "State",
+    "state_name": "Andhra Pradesh",
+    "description": [
+      "Financial assistance for SC/ST/BC women aged 45–60 years.",
+      "Eligible: Women, age 45–60 years, from SC/ST/BC categories, Andhra Pradesh domicile.",
+      "Provides ₹18,750 per year for 4 years (total ₹75,000).",
+      "Aim: economic empowerment of women."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "Caste certificate (SC/ST/BC)",
+      "Domicile certificate (Andhra Pradesh)",
+      "Age proof",
+      "Bank account details (Aadhaar-seeded)",
+      "Passport-size photographs",
+      "Income certificate (if applicable)"
+    ],
+    "channel_partner_type": "CSC/Govt counter",
+    "channel_partner_name": "District Rural Development Agency (DRDA) Office, Andhra Pradesh",
+    "npa_percentage": "Not applicable (not a lending institution)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "₹18,750 per year for 4 years (total ₹75,000)"
+  },
+  {
+    "scheme_name": "Andhra Pradesh YSR Vahana Mitra",
+    "government_type": "State",
+    "state_name": "Andhra Pradesh",
+    "description": [
+      "Annual financial assistance for auto/taxi drivers owning their vehicles.",
+      "Eligible: Auto/taxi drivers, Andhra Pradesh domicile, owning their vehicles.",
+      "Provides ₹10,000 per year.",
+      "Priority to SC/ST/BC drivers."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "Domicile certificate (Andhra Pradesh)",
+      "Caste certificate (if SC/ST/BC)",
+      "Driving license",
+      "Vehicle registration certificate",
+      "Bank account details (Aadhaar-seeded)",
+      "Passport-size photographs"
+    ],
+    "channel_partner_type": "CSC/Govt counter",
+    "channel_partner_name": "District Transport Office + CSC centre, Andhra Pradesh",
+    "npa_percentage": "Not applicable (not a lending institution)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "₹10,000 per year"
+  },
+  {
+    "scheme_name": "Karnataka Chief Minister's Apprentice Scheme",
+    "government_type": "State",
+    "state_name": "Karnataka",
+    "description": [
+      "Stipend-based apprenticeship for educated youth.",
+      "Eligible: Karnataka domicile, age 21–35 years, graduate/diploma holder.",
+      "Provides monthly stipend during apprenticeship period.",
+      "Priority to women, SC/ST, OBC youth."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "Domicile certificate (Karnataka)",
+      "Caste certificate (if SC/ST/OBC)",
+      "Educational qualification certificates",
+      "Bank account details",
+      "Passport-size photographs",
+      "Mobile number"
+    ],
+    "channel_partner_type": "CSC/Govt counter",
+    "channel_partner_name": "District Industries Centre (DIC), Karnataka",
+    "npa_percentage": "Not applicable (not a lending institution)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "Monthly stipend during apprenticeship (typically ₹5,000–₹10,000 per month)"
+  },
+  {
+    "scheme_name": "Karnataka SC/ST Post-Matric Scholarship",
+    "government_type": "State",
+    "state_name": "Karnataka",
+    "description": [
+      "Scholarship for SC/ST students studying after Class 10.",
+      "Covers tuition fees, exam fees, and maintenance allowance.",
+      "Eligible: SC/ST students, Karnataka domicile, family income below ₹2.5 lakh/year.",
+      "Must be studying in recognised institutions."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "Caste certificate (SC/ST)",
+      "Domicile certificate (Karnataka)",
+      "Income certificate",
+      "Previous year marksheet",
+      "Current year admission proof and fee receipt",
+      "Bank account details (Aadhaar-seeded)",
+      "Institute bonafide certificate",
+      "Passport-size photographs"
+    ],
+    "channel_partner_type": "CSC/Govt counter",
+    "channel_partner_name": "District Social Welfare Office + Karnataka Scholarship Portal",
+    "npa_percentage": "Not applicable (not a lending institution)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "Full tuition/exam fees + maintenance allowance (varies by course)"
+  },
+  {
+    "scheme_name": "Pradhan Mantri Vishwakarma Kaushal Samman (PM Vishwakarma)",
+    "government_type": "Central",
+    "description": [
+      "Support for traditional artisans and craftspeople (Vishwakarmas) with credit, skill training, and market linkage.",
+      "Eligible: Artisans/craftspeople from 18 traditional trades (carpenter, blacksmith, potter, etc.).",
+      "Provides skill training, toolkit incentive, and concessional loans.",
+      "Priority to women, SC/ST artisans."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "Caste certificate (if applicable)",
+      "Proof of engagement in traditional trade (certificate from local authority/panchayat)",
+      "Bank account details",
+      "Passport-size photographs",
+      "Mobile number"
+    ],
+    "channel_partner_type": "PSB",
+    "channel_partner_name": "Bank of India",
+    "npa_percentage": "Approx. 1.9% gross NPA (FY 2025-26, Public Sector Banks)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "Skill training + toolkit incentive (₹15,000) + concessional loan up to ₹3 lakh"
+  },
+  {
+    "scheme_name": "Pradhan Mantri Kaushal Vikas Yojana (PMKVY)",
+    "government_type": "Central",
+    "description": [
+      "Skill development programme offering free training and certification.",
+      "Eligible: Indian citizens, age 18–45 years, priority to women, SC/ST, OBC.",
+      "Provides skill training, assessment, and certification.",
+      "Monetary reward on successful completion of training."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "Educational qualification certificates",
+      "Bank account details (Aadhaar-seeded)",
+      "Passport-size photographs",
+      "Mobile number"
+    ],
+    "channel_partner_type": "CSC/Govt counter",
+    "channel_partner_name": "PMKVY Training Centre + CSC centre",
+    "npa_percentage": "Not applicable (not a lending institution)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "Free skill training + monetary reward (₹5,000–₹20,000 depending on course)"
+  },
+  {
+    "scheme_name": "Deendayal Disabled Rehabilitation Scheme (DDRS)",
+    "government_type": "Central",
+    "description": [
+      "Financial assistance for rehabilitation of persons with disabilities.",
+      "Eligible: Persons with 40%+ disability, priority to SC/ST, women.",
+      "Provides grants to NGOs for running rehabilitation centres.",
+      "Covers education, training, and skill development for disabled persons."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "Disability certificate (40%+ disability)",
+      "Caste certificate (if SC/ST)",
+      "Income certificate",
+      "Bank account details",
+      "Passport-size photographs"
+    ],
+    "channel_partner_type": "CSC/Govt counter",
+    "channel_partner_name": "District Social Welfare Office, State Disability Commissioner Office",
+    "npa_percentage": "Not applicable (not a lending institution)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "Free education/training through empanelled NGOs; grants vary by programme"
+  },
+  {
+    "scheme_name": "National Means-cum-Merit Scholarship (NMMSS)",
+    "government_type": "Central",
+    "description": [
+      "Scholarship for meritorious students from economically weaker sections.",
+      "Eligible: Students studying in Class 9, family income below ₹3.5 lakh/year.",
+      "Provides ₹12,000 per year (₹1,000 per month) for 4 years (Class 9–12).",
+      "Selection through state-level examination."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "Income certificate",
+      "Class 8 marksheet",
+      "School bonafide certificate",
+      "Bank account details (Aadhaar-seeded)",
+      "Passport-size photographs",
+      "Caste certificate (if SC/ST/OBC, for reservation)"
+    ],
+    "channel_partner_type": "CSC/Govt counter",
+    "channel_partner_name": "District Education Office + School, NSP portal",
+    "npa_percentage": "Not applicable (not a lending institution)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "₹12,000 per year for 4 years (Class 9–12)"
+  },
+  {
+    "scheme_name": "Pre-Matric Scholarship for SC Students",
+    "government_type": "Central",
+    "description": [
+      "Scholarship for SC students studying in Class 9 and 10.",
+      "Eligible: SC students, family income below ₹2.5 lakh/year.",
+      "Covers admission fees, tuition fees, maintenance allowance, and other expenses.",
+      "Implemented through states/UTs."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "SC caste certificate",
+      "Income certificate",
+      "Previous year marksheet",
+      "Current year admission proof",
+      "Bank account details (Aadhaar-seeded)",
+      "School bonafide certificate",
+      "Passport-size photographs"
+    ],
+    "channel_partner_type": "CSC/Govt counter",
+    "channel_partner_name": "District Social Welfare Office + School, NSP portal",
+    "npa_percentage": "Not applicable (not a lending institution)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "Admission/tuition fees + maintenance allowance (varies, typically ₹5,000–₹15,000 per year)"
+  },
+  {
+    "scheme_name": "Pre-Matric Scholarship for ST Students",
+    "government_type": "Central",
+    "description": [
+      "Scholarship for ST students studying in Class 9 and 10.",
+      "Eligible: ST students, family income below ₹2.5 lakh/year.",
+      "Covers admission fees, tuition fees, maintenance allowance, and other expenses.",
+      "Implemented through states/UTs."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "ST caste certificate",
+      "Income certificate",
+      "Previous year marksheet",
+      "Current year admission proof",
+      "Bank account details (Aadhaar-seeded)",
+      "School bonafide certificate",
+      "Passport-size photographs"
+    ],
+    "channel_partner_type": "CSC/Govt counter",
+    "channel_partner_name": "District Tribal Welfare Office + School, NSP portal",
+    "npa_percentage": "Not applicable (not a lending institution)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "Admission/tuition fees + maintenance allowance (varies, typically ₹5,000–₹15,000 per year)"
+  },
+  {
+    "scheme_name": "Post-Matric Scholarship for ST Students",
+    "government_type": "Central",
+    "description": [
+      "Scholarship for ST students studying after Class 10.",
+      "Covers tuition fees, exam fees, and maintenance allowance.",
+      "Eligible: ST students, family income below ₹2.5 lakh/year.",
+      "Must be studying in recognised institutions."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "ST caste certificate",
+      "Income certificate",
+      "Previous year marksheet",
+      "Current year admission proof and fee receipt",
+      "Bank account details (Aadhaar-seeded)",
+      "Institute bonafide certificate",
+      "Passport-size photographs"
+    ],
+    "channel_partner_type": "CSC/Govt counter",
+    "channel_partner_name": "District Tribal Welfare Office + NSP portal",
+    "npa_percentage": "Not applicable (not a lending institution)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "Full tuition/exam fees + maintenance allowance (varies by course)"
+  },
+  {
+    "scheme_name": "National Fellowship for SC Students (NFSC)",
+    "government_type": "Central",
+    "description": [
+      "Fellowship for SC students pursuing M.Phil and Ph.D.",
+      "Eligible: SC students, cleared UGC-NET/CSIR-NET or equivalent, family income below ₹6 lakh/year.",
+      "Provides ₹31,000 per month (Junior Research Fellowship) and ₹35,000 per month (Senior Research Fellowship).",
+      "Duration: up to 5 years."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "SC caste certificate",
+      "Income certificate",
+      "NET/SLET qualification certificate",
+      "M.Phil/Ph.D. admission proof",
+      "Bank account details (Aadhaar-seeded)",
+      "University bonafide certificate",
+      "Passport-size photographs"
+    ],
+    "channel_partner_type": "CSC/Govt counter",
+    "channel_partner_name": "University/Institution + NSP portal",
+    "npa_percentage": "Not applicable (not a lending institution)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "₹31,000–₹35,000 per month for up to 5 years"
+  },
+  {
+    "scheme_name": "National Fellowship for ST Students (NFST)",
+    "government_type": "Central",
+    "description": [
+      "Fellowship for ST students pursuing M.Phil and Ph.D.",
+      "Eligible: ST students, cleared UGC-NET/CSIR-NET or equivalent, family income below ₹6 lakh/year.",
+      "Provides ₹31,000 per month (JRF) and ₹35,000 per month (SRF).",
+      "Duration: up to 5 years."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "ST caste certificate",
+      "Income certificate",
+      "NET/SLET qualification certificate",
+      "M.Phil/Ph.D. admission proof",
+      "Bank account details (Aadhaar-seeded)",
+      "University bonafide certificate",
+      "Passport-size photographs"
+    ],
+    "channel_partner_type": "CSC/Govt counter",
+    "channel_partner_name": "University/Institution + NSP portal",
+    "npa_percentage": "Not applicable (not a lending institution)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "₹31,000–₹35,000 per month for up to 5 years"
+  },
+  {
+    "scheme_name": "Babu Jagjivan Ram Chhatrawas Yojana (Hostel for SC Students)",
+    "government_type": "Central",
+    "description": [
+      "Construction of hostels for SC students to promote higher education.",
+      "Eligible: SC students admitted to recognised institutions.",
+      "Provides subsidized hostel accommodation.",
+      "Implemented through state governments and institutions."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "SC caste certificate",
+      "Income certificate",
+      "Admission proof in recognised institution",
+      "Previous year marksheet",
+      "Bank account details",
+      "Passport-size photographs"
+    ],
+    "channel_partner_type": "CSC/Govt counter",
+    "channel_partner_name": "Institution Hostel Office + District Social Welfare Office",
+    "npa_percentage": "Not applicable (not a lending institution)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "Subsidized hostel accommodation (value varies by institution)"
+  },
+  {
+    "scheme_name": "Shabari Sankalp Scheme (Kerala)",
+    "government_type": "State",
+    "state_name": "Kerala",
+    "description": [
+      "Comprehensive development scheme for SC/ST communities in Kerala.",
+      "Eligible: SC/ST residents of Kerala, priority to women and youth.",
+      "Provides housing, education, skill training, and livelihood support.",
+      "Implemented through tribal development department."
+    ],
+    "documents_required": [
+      "Aadhaar card",
+      "Caste certificate (SC/ST)",
+      "Domicile certificate (Kerala)",
+      "Income certificate",
+      "Educational qualification certificates",
+      "Bank account details",
+      "Passport-size photographs"
+    ],
+    "channel_partner_type": "CSC/Govt counter",
+    "channel_partner_name": "District Tribal Development Office, Kerala",
+    "npa_percentage": "Not applicable (not a lending institution)",
+    "fund_availability_status": "Good",
+    "maximum_benefit": "Housing assistance + education support + skill training + livelihood support (varies by component)"
+  }
+]
