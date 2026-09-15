@@ -1,13 +1,14 @@
-const CONVEX_URL = process.env.NEXT_PUBLIC_CONVEX_URL || "http://localhost:3210";
+const CONVEX_URL = process.env.NEXT_PUBLIC_CONVEX_URL || "https://healthy-seal-288.convex.cloud";
 
 export async function fetchConvexFunction(path, args = {}, type = "query") {
   try {
-    const res = await fetch(`${CONVEX_URL}/${type}/${path}`, {
+    const functionPath = path.includes("/") ? path.replace("/", ":") : path;
+    const res = await fetch(`${CONVEX_URL}/api/${type}`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify(args),
+      body: JSON.stringify({ path: functionPath, args }),
       cache: "no-store",
     });
 
@@ -17,10 +18,10 @@ export async function fetchConvexFunction(path, args = {}, type = "query") {
 
     const json = await res.json();
     if (json.status === "error") {
-      throw new Error(json.message || `Error in Convex call ${path}`);
+      throw new Error(json.errorMessage || json.message || `Error in Convex call ${path}`);
     }
 
-    return json.data;
+    return json.value !== undefined ? json.value : json.data;
   } catch (err) {
     console.error(`Convex client error (${path}):`, err);
     throw err;

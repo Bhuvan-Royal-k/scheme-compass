@@ -92,9 +92,12 @@ function BusinessFormContent() {
           });
           return;
         }
+      } else {
+        setErrorMsg("Sorry, we couldn't understand your request right now. Please try again.");
       }
     } catch (err) {
-      console.warn("Sarvam NLU intent extraction fallback:", err.message);
+      console.error("Sarvam NLU intent extraction error:", err);
+      setErrorMsg("Sorry, we couldn't understand your request right now. Please try again.");
     } finally {
       setExtracting(false);
     }
@@ -226,13 +229,14 @@ function BusinessFormContent() {
           <button
             type="submit"
             className="btn"
+            disabled={extracting}
             style={{
               width: "100%",
               padding: "14px 24px",
               fontSize: "16px",
               fontWeight: "700",
-              cursor: "pointer",
-              backgroundColor: "#1877F2",
+              cursor: extracting ? "not-allowed" : "pointer",
+              backgroundColor: extracting ? "#93c5fd" : "#1877F2",
               color: "#ffffff",
               borderRadius: "10px",
               boxShadow: "0 4px 12px rgba(24, 119, 242, 0.25)",
@@ -240,7 +244,7 @@ function BusinessFormContent() {
               marginBottom: "16px",
             }}
           >
-            Find Matching Schemes →
+            {extracting ? "Understanding your request…" : "Find Matching Schemes →"}
           </button>
 
           {/* VISUAL SECONDARY BUTTON (Part A & Part O) */}
