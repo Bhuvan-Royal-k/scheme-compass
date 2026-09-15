@@ -17,11 +17,13 @@ export function buildMapplsDirectionsUrl(origin, destination) {
   const destEloc = destination.eloc || destination.eLoc || destination.mapplsPin;
   const destLat = destination.lat ?? destination.latitude;
   const destLng = destination.lng ?? destination.longitude;
+  const destName = destination.branch_name || destination.name || "";
 
-  if (destEloc) {
+  if (destLat != null && destLng != null) {
+    const nameParam = destName ? `,${encodeURIComponent(destName)}` : "";
+    return `https://mappls.com/navigation?places=${destLat},${destLng}${nameParam}&isNav=true&mode=driving`;
+  } else if (destEloc) {
     return `https://mappls.com/direction?places=${originLat},${originLng};${destEloc}`;
-  } else if (destLat != null && destLng != null) {
-    return `https://mappls.com/direction?places=${originLat},${originLng};${destLat},${destLng}`;
   } else if (destination.navigation_url && destination.navigation_url.startsWith("https://mappls.com/")) {
     return destination.navigation_url;
   }
@@ -379,7 +381,7 @@ function PartnersContent() {
                           gap: "4px",
                         }}
                       >
-                        Get Directions →
+                        🧭 Open Directions in Mappls
                       </a>
                     ) : (
                       <span style={{ color: "#94a3b8", fontSize: "12px" }}>

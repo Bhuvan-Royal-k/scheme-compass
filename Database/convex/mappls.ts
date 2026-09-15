@@ -13,18 +13,20 @@ const CATEGORY_KEYWORDS: Record<string, string[]> = {
 
 export function buildMapplsDirectionsUrl(
   origin: { lat: number; lng: number },
-  destination: { eloc?: string | null; lat?: number | null; lng?: number | null; navigation_url?: string | null }
+  destination: { eloc?: string | null; lat?: number | null; lng?: number | null; branch_name?: string | null; name?: string | null; navigation_url?: string | null }
 ): string | null {
   if (!origin || origin.lat == null || origin.lng == null) return null;
 
   const destEloc = destination?.eloc;
   const destLat = destination?.lat;
   const destLng = destination?.lng;
+  const destName = destination?.branch_name || destination?.name || "";
 
-  if (destEloc) {
+  if (destLat != null && destLng != null) {
+    const nameParam = destName ? `,${encodeURIComponent(destName)}` : "";
+    return `https://mappls.com/navigation?places=${destLat},${destLng}${nameParam}&isNav=true&mode=driving`;
+  } else if (destEloc) {
     return `https://mappls.com/direction?places=${origin.lat},${origin.lng};${destEloc}`;
-  } else if (destLat != null && destLng != null) {
-    return `https://mappls.com/direction?places=${origin.lat},${origin.lng};${destLat},${destLng}`;
   } else if (destination?.navigation_url && destination.navigation_url.startsWith("https://mappls.com/")) {
     return destination.navigation_url;
   }
@@ -118,7 +120,7 @@ export async function getNearbyPartnersHelper(queryRunner: any, args: any) {
               const distKm = Number((distanceM / 1000).toFixed(2));
               const navUrl = buildMapplsDirectionsUrl(
                 { lat: userLat, lng: userLon },
-                { eloc: eloc || null, lat: itemLat, lng: itemLng }
+                { eloc: eloc || null, lat: itemLat, lng: itemLng, branch_name: placeName, name: partnerName }
               ) || "";
 
               discoveredBranches.push({
@@ -172,7 +174,7 @@ export async function getNearbyPartnersHelper(queryRunner: any, args: any) {
                 const distKm = Number((distanceM / 1000).toFixed(2));
                 const navUrl = buildMapplsDirectionsUrl(
                   { lat: userLat, lng: userLon },
-                  { eloc: eloc || null, lat: itemLat, lng: itemLng }
+                  { eloc: eloc || null, lat: itemLat, lng: itemLng, branch_name: placeName, name: selectedCat }
                 ) || "";
 
                 discoveredBranches.push({
