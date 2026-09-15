@@ -39,13 +39,13 @@ function BusinessFormContent() {
     router.push(`/recommendations?${queryParams.toString()}`);
   };
 
-  // Primary Handler: Natural Language AI Extraction & Submission
+  // Primary Handler: Natural Language Intent Extraction & Submission
   const handleNaturalSubmit = async (e) => {
     if (e) e.preventDefault();
     setErrorMsg("");
 
     if (!naturalText.trim()) {
-      setErrorMsg("Please describe your financial need or project requirement.");
+      setErrorMsg(t("error_describe_need"));
       return;
     }
 
@@ -53,7 +53,7 @@ function BusinessFormContent() {
     if (extractedData) {
       const finalState = stateName || extractedData.state_name;
       if (!finalState || !finalState.trim()) {
-        setErrorMsg("Which state are you applying from?");
+        setErrorMsg(t("error_select_state"));
         return;
       }
       submitWithParams({
@@ -93,11 +93,11 @@ function BusinessFormContent() {
           return;
         }
       } else {
-        setErrorMsg("Sorry, we couldn't understand your request right now. Please try again.");
+        setErrorMsg(t("error_nlu_failed"));
       }
     } catch (err) {
-      console.error("Sarvam NLU intent extraction error:", err);
-      setErrorMsg("Sorry, we couldn't understand your request right now. Please try again.");
+      console.error("NLU intent extraction error:", err);
+      setErrorMsg(t("error_nlu_failed"));
     } finally {
       setExtracting(false);
     }
@@ -109,24 +109,24 @@ function BusinessFormContent() {
     setErrorMsg("");
 
     if (!socialCategory) {
-      setErrorMsg("Please select your social category.");
+      setErrorMsg(t("error_select_category"));
       return;
     }
 
     const costNum = Number(projectCost);
     if (!projectCost || isNaN(costNum) || costNum <= 0) {
-      setErrorMsg("Please enter a valid positive project cost / required amount (e.g. 200000).");
+      setErrorMsg(t("error_valid_cost"));
       return;
     }
 
     const incomeNum = Number(annualIncome);
     if (annualIncome === "" || isNaN(incomeNum) || incomeNum < 0) {
-      setErrorMsg("Please enter a valid annual family income (e.g. 150000).");
+      setErrorMsg(t("error_valid_income"));
       return;
     }
 
     if (!stateName.trim()) {
-      setErrorMsg("Please enter your resident state (e.g. Kerala, Delhi).");
+      setErrorMsg(t("error_valid_state"));
       return;
     }
 
@@ -144,17 +144,15 @@ function BusinessFormContent() {
   return (
     <div className="formbox" style={{ maxWidth: "640px", margin: "0 auto", padding: "32px 28px" }}>
       <span className="badge" style={{ backgroundColor: "#e0f2fe", color: "#0369a1", fontWeight: "700" }}>
-        SCHEME COMPASS AI
+        {t("ai_badge")}
       </span>
 
       <h1 style={{ marginTop: "12px", marginBottom: "8px", fontSize: "28px", color: "#0f172a" }}>
-        {showGuidedForm ? "Guided Application Form" : "Tell us what you need"}
+        {showGuidedForm ? t("guided_form_title") : t("natural_form_title")}
       </h1>
 
       <p className="muted" style={{ fontSize: "15px", lineHeight: "1.5", marginBottom: "24px", color: "#64748b" }}>
-        {showGuidedForm
-          ? "Fill in your details manually to discover matching government schemes."
-          : "Describe your need in your own words. Our AI will understand it and find relevant government schemes."}
+        {showGuidedForm ? t("guided_form_desc") : t("natural_form_desc")}
       </p>
 
       {errorMsg && (
@@ -163,7 +161,7 @@ function BusinessFormContent() {
         </div>
       )}
 
-      {/* PRIMARY EXPERIENCE — NATURAL LANGUAGE CHATGPT / AI TEXTAREA */}
+      {/* PRIMARY EXPERIENCE — NATURAL LANGUAGE AI TEXTAREA */}
       {!showGuidedForm ? (
         <form onSubmit={handleNaturalSubmit}>
           <div style={{ marginBottom: "20px" }}>
@@ -174,7 +172,7 @@ function BusinessFormContent() {
                 setNaturalText(e.target.value);
                 if (extractedData) setExtractedData(null);
               }}
-              placeholder='e.g. "I need a ₹2.5 lakh business loan to start a chicken shop in Kerala. I am SC and my annual family income is ₹1.5 lakh."'
+              placeholder={t("natural_input_ph")}
               style={{
                 width: "100%",
                 padding: "16px",
@@ -194,25 +192,25 @@ function BusinessFormContent() {
           {extracting ? (
             <div style={{ padding: "20px", textAlign: "center", backgroundColor: "#eff6ff", borderRadius: "10px", border: "1px solid #bfdbfe", marginBottom: "20px" }}>
               <p style={{ margin: 0, color: "#1d4ed8", fontWeight: "600", fontSize: "15px" }}>
-                🤖 Sarvam AI is extracting requirements from your text...
+                🤖 {t("understanding_request")}
               </p>
             </div>
           ) : extractedData && !extractedData.state_name ? (
             <div style={{ marginBottom: "20px", padding: "20px", backgroundColor: "#f0f9ff", borderRadius: "12px", border: "1.5px solid #0284c7" }}>
               <h3 style={{ margin: "0 0 12px 0", color: "#0369a1", fontSize: "17px" }}>
-                ✨ Here's what I understood
+                {t("here_is_what_understood")}
               </h3>
 
               <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "10px", fontSize: "14px", marginBottom: "16px" }}>
-                <div>Business / Project: <b>{projectType || extractedData.project_type || "Business"}</b></div>
-                <div>Amount: <b>₹{(Number(projectCost || extractedData.project_cost) || 0).toLocaleString()}</b></div>
-                <div>Annual Income: <b>₹{(Number(annualIncome || extractedData.annual_income) || 0).toLocaleString()}</b></div>
-                <div>Social Category: <b>{socialCategory || extractedData.social_category || "General"}</b></div>
+                <div>{t("business_project")}: <b>{projectType || extractedData.project_type || "Business"}</b></div>
+                <div>{t("amount")}: <b>₹{(Number(projectCost || extractedData.project_cost) || 0).toLocaleString()}</b></div>
+                <div>{t("annual_income")}: <b>₹{(Number(annualIncome || extractedData.annual_income) || 0).toLocaleString()}</b></div>
+                <div>{t("social_category")}: <b>{socialCategory || extractedData.social_category || "General"}</b></div>
               </div>
 
               <div style={{ borderTop: "1px solid #bae6fd", paddingTop: "14px", marginTop: "10px" }}>
                 <label style={{ fontWeight: "700", color: "#0284c7", fontSize: "14px", display: "block", marginBottom: "6px" }}>
-                  📍 Which state are you applying from? *
+                  {t("state_prompt")}
                 </label>
                 <input
                   type="text"
@@ -244,10 +242,10 @@ function BusinessFormContent() {
               marginBottom: "16px",
             }}
           >
-            {extracting ? "Understanding your request…" : "Find Matching Schemes →"}
+            {extracting ? t("understanding_request") : `${t("find_matching_btn")} →`}
           </button>
 
-          {/* VISUAL SECONDARY BUTTON (Part A & Part O) */}
+          {/* VISUAL SECONDARY BUTTON */}
           <div style={{ marginTop: "12px", textAlign: "center" }}>
             <button
               type="button"
@@ -269,7 +267,7 @@ function BusinessFormContent() {
                 transition: "all 0.2s ease",
               }}
             >
-              <span>✎</span> Enter details manually with Guided Form
+              <span>✎</span> {t("enter_manually")}
             </button>
           </div>
         </form>
@@ -277,17 +275,17 @@ function BusinessFormContent() {
         /* SECONDARY EXPERIENCE — GUIDED FORM */
         <form onSubmit={handleGuidedSubmit}>
           <div className="field" style={{ marginBottom: "16px" }}>
-            <label style={{ fontWeight: "600", color: "#334155" }}>Project / Purpose</label>
+            <label style={{ fontWeight: "600", color: "#334155" }}>{t("project_type_label")}</label>
             <input
               value={projectType}
               onChange={(e) => setProjectType(e.target.value)}
-              placeholder="e.g. Chicken Shop, Salon, B.Tech CS"
+              placeholder="e.g. Chicken Shop, Salon, Dairy Farm"
               style={{ width: "100%", padding: "10px 14px", borderRadius: "8px", border: "1px solid #cbd5e1" }}
             />
           </div>
 
           <div className="field" style={{ marginBottom: "16px" }}>
-            <label style={{ fontWeight: "600", color: "#334155" }}>Required Amount (₹) *</label>
+            <label style={{ fontWeight: "600", color: "#334155" }}>{t("project_cost_label")}</label>
             <input
               type="number"
               value={projectCost}
@@ -298,7 +296,7 @@ function BusinessFormContent() {
           </div>
 
           <div className="field" style={{ marginBottom: "16px" }}>
-            <label style={{ fontWeight: "600", color: "#334155" }}>Annual Family Income (₹) *</label>
+            <label style={{ fontWeight: "600", color: "#334155" }}>{t("family_income_label")}</label>
             <input
               type="number"
               value={annualIncome}
@@ -309,7 +307,7 @@ function BusinessFormContent() {
           </div>
 
           <div className="field" style={{ marginBottom: "16px" }}>
-            <label style={{ fontWeight: "600", color: "#334155" }}>Social Category *</label>
+            <label style={{ fontWeight: "600", color: "#334155" }}>{t("social_category_label")}</label>
             <select
               value={socialCategory}
               onChange={(e) => setSocialCategory(e.target.value)}
@@ -318,10 +316,10 @@ function BusinessFormContent() {
               <option value="" disabled>
                 Select social category
               </option>
-              <option value="General">General</option>
-              <option value="Scheduled Caste (SC)">Scheduled Caste (SC)</option>
-              <option value="Scheduled Tribe (ST)">Scheduled Tribe (ST)</option>
-              <option value="Other Backward Class (OBC)">Other Backward Class (OBC)</option>
+              <option value="General">{t("social_category_gen")}</option>
+              <option value="Scheduled Caste (SC)">{t("social_category_sc")}</option>
+              <option value="Scheduled Tribe (ST)">{t("social_category_st")}</option>
+              <option value="Other Backward Class (OBC)">{t("social_category_obc")}</option>
               <option value="EWS">Economically Weaker Section (EWS)</option>
               <option value="Minority">Minority</option>
               <option value="Other">Other</option>
@@ -329,7 +327,7 @@ function BusinessFormContent() {
           </div>
 
           <div className="field" style={{ marginBottom: "20px" }}>
-            <label style={{ fontWeight: "600", color: "#334155" }}>Resident State *</label>
+            <label style={{ fontWeight: "600", color: "#334155" }}>{t("state_label")}</label>
             <input
               value={stateName}
               onChange={(e) => setStateName(e.target.value)}
@@ -339,7 +337,7 @@ function BusinessFormContent() {
           </div>
 
           <button type="submit" className="btn" style={{ width: "100%", padding: "12px", fontSize: "15px", fontWeight: "700", cursor: "pointer" }}>
-            Find Matching Schemes →
+            {t("find_matching_btn")} →
           </button>
 
           <div style={{ textAlign: "center", marginTop: "16px" }}>
@@ -355,7 +353,7 @@ function BusinessFormContent() {
                 cursor: "pointer",
               }}
             >
-              ← Back to Natural Language AI Input
+              {t("back_to_natural")}
             </button>
           </div>
         </form>

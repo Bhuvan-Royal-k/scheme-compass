@@ -41,20 +41,17 @@ function PartnersContent() {
   // Single active location state model
   const [activeLocation, setActiveLocation] = useState(null);
   const [manualLocationInput, setManualLocationInput] = useState(initialQuery);
-  const [locStatus, setLocStatus] = useState("default"); // "default" | "detecting" | "success" | "denied" | "error"
+  const [locStatus, setLocStatus] = useState("default");
   const [displayPartners, setDisplayPartners] = useState([]);
   const [loading, setLoading] = useState(true);
   const [errorState, setErrorState] = useState(false);
 
-  // Core search runner driven strictly by active search coordinates
   async function executeLocationSearch(queryText, overrideCategory = selectedCategory) {
-    // 1. CLEAR OLD PARTNER RESULTS BEFORE REQUESTING NEW RESULTS
     setDisplayPartners([]);
     setErrorState(false);
     setLoading(true);
 
     try {
-      // 2. Call Mappls geocoding action
       const geo = await geocodeAddress(queryText);
 
       if (geo && geo.latitude != null && geo.longitude != null) {
@@ -65,11 +62,9 @@ function PartnersContent() {
           formattedAddress: geo.formatted_address || queryText,
         };
 
-        // Store new active location (replaces previous location coordinates completely)
         setActiveLocation(newLoc);
         setLocStatus("success");
 
-        // 3. Search Mappls nearby using the NEW coordinates
         const categoryArg = overrideCategory === "ALL" ? null : overrideCategory;
         const nearby = await getNearbyPartners(categoryArg, newLoc.latitude, newLoc.longitude, partnerName);
 
@@ -78,19 +73,17 @@ function PartnersContent() {
         return;
       }
     } catch (err) {
-      console.warn("Mappls geocoding / nearby partner discovery exception:", err.message);
+      console.warn("Geocoding / nearby partner discovery error:", err.message);
       setErrorState(true);
     }
 
     setLoading(false);
   }
 
-  // Initial load and query parameter changes
   useEffect(() => {
     executeLocationSearch(initialQuery);
   }, [selectedCategory, partnerName, initialQuery]);
 
-  // Handler for browser geolocation
   const handleUseLocation = () => {
     if (!navigator.geolocation) {
       setLocStatus("denied");
@@ -132,7 +125,6 @@ function PartnersContent() {
     );
   };
 
-  // Handler for explicit manual location search (e.g. "Kochi, Kerala", "Delhi", "Bengaluru, Karnataka")
   const handleManualSearch = (e) => {
     e.preventDefault();
     const query = manualLocationInput.trim();
@@ -144,17 +136,17 @@ function PartnersContent() {
 
   return (
     <div className="container" style={{ maxWidth: "1080px", margin: "0 auto" }}>
-      {/* HEADER SECTION (Part 3) */}
+      {/* HEADER SECTION */}
       <div style={{ marginBottom: "20px" }}>
         <h1 style={{ fontSize: "32px", fontWeight: "800", color: "#0f172a", margin: "0 0 8px 0" }}>
-          Find a Nearby Partner
+          {t("partners_title")}
         </h1>
         <p className="muted" style={{ fontSize: "16px", color: "#64748b", margin: 0 }}>
-          Find the nearest physical branch or service point for this scheme.
+          {t("partners_sub")}
         </p>
       </div>
 
-      {/* LOCATION SEARCH BOX & STATUS (Part 2 & Part 3) */}
+      {/* LOCATION SEARCH BOX */}
       <div
         style={{
           backgroundColor: "#f8fafc",
@@ -166,10 +158,10 @@ function PartnersContent() {
       >
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: "12px", marginBottom: "14px" }}>
           <div style={{ fontSize: "15px", color: "#0f172a" }}>
-            📍 Searching near:{" "}
+            {t("searching_near")}{" "}
             <b style={{ color: "#1877F2", fontSize: "16px" }}>
               {locStatus === "success" && activeLocation?.query === "Current GPS Location"
-                ? `Searching near your current location (${activeLocation.latitude.toFixed(4)}, ${activeLocation.longitude.toFixed(4)})`
+                ? `Searching near your location (${activeLocation.latitude.toFixed(4)}, ${activeLocation.longitude.toFixed(4)})`
                 : activeLocation ? activeLocation.formattedAddress : manualLocationInput}
             </b>
           </div>
@@ -191,14 +183,13 @@ function PartnersContent() {
               gap: "6px",
             }}
           >
-            {locStatus === "detecting" ? "Detecting GPS..." : "📍 Use Current Location"}
+            {locStatus === "detecting" ? t("getting_location") : t("use_current_location")}
           </button>
         </div>
 
-        {/* GPS DENIED ALERT (Part 2) */}
         {locStatus === "denied" && (
           <div style={{ padding: "10px 14px", backgroundColor: "#fef3c7", borderRadius: "8px", border: "1px solid #fde68a", marginBottom: "12px", fontSize: "14px", color: "#92400e", fontWeight: "500" }}>
-            ⚠️ Location permission unavailable. Search by city or pincode below.
+            ⚠️ {t("location_denied")}
           </div>
         )}
 
@@ -207,7 +198,7 @@ function PartnersContent() {
             type="text"
             value={manualLocationInput}
             onChange={(e) => setManualLocationInput(e.target.value)}
-            placeholder="Enter city, district or pincode (e.g. Kochi, Kerala, Delhi, Bengaluru)"
+            placeholder={t("enter_location_ph")}
             style={{
               flex: "1",
               minWidth: "280px",
@@ -222,15 +213,15 @@ function PartnersContent() {
             className="btn"
             style={{ padding: "12px 24px", fontSize: "14px", fontWeight: "700", cursor: "pointer", backgroundColor: "#1877F2" }}
           >
-            Search Location
+            {t("search_location")}
           </button>
         </form>
       </div>
 
-      {/* SECONDARY INSTITUTION FILTERS (Part 3) */}
+      {/* INSTITUTION FILTERS */}
       <div style={{ marginBottom: "24px" }}>
         <div style={{ fontSize: "12px", fontWeight: "700", textTransform: "uppercase", letterSpacing: "0.5px", color: "#94a3b8", marginBottom: "8px" }}>
-          Filter by Institution Type
+          {t("filter_by_institution")}
         </div>
         <div style={{ display: "flex", gap: "6px", flexWrap: "wrap" }}>
           {categories.map((cat) => (
@@ -256,22 +247,21 @@ function PartnersContent() {
         </div>
       </div>
 
-      {/* PARTNER CARDS RESPONSIVE GRID (Part 5, Part 7, Part 13) */}
+      {/* PARTNER CARDS */}
       <div>
         {loading ? (
           <div style={{ padding: "50px 24px", textAlign: "center", backgroundColor: "#f8fafc", borderRadius: "12px", border: "1px dashed #cbd5e1" }}>
             <p className="muted" style={{ fontSize: "16px", fontWeight: "600", color: "#0284c7", margin: 0 }}>
-              🔎 Searching Mappls nearby physical partner branches...
+              🔎 Searching nearby physical partner branches...
             </p>
           </div>
         ) : errorState ? (
-          /* ERROR STATE (Part 14) */
           <div style={{ padding: "40px", backgroundColor: "#fef2f2", borderRadius: "12px", border: "1px solid #fecaca", textAlign: "center" }}>
             <h3 style={{ margin: "0 0 8px 0", color: "#991b1b", fontSize: "18px" }}>
               Unable to load nearby locations right now.
             </h3>
             <p style={{ margin: "0 0 16px 0", color: "#7f1d1d", fontSize: "14px" }}>
-              Mappls location API encountered an error. Please try again.
+              Location service encountered an error. Please try again.
             </p>
             <button
               type="button"
@@ -283,7 +273,6 @@ function PartnersContent() {
             </button>
           </div>
         ) : displayPartners.length > 0 ? (
-          /* PHYSICAL MAPPLS CARDS GRID (Part 5 & Part 13) */
           <div
             style={{
               display: "grid",
@@ -292,7 +281,6 @@ function PartnersContent() {
             }}
           >
             {displayPartners.map((partner, index) => {
-              // Single source of truth for Mappls Directions URL
               const originObj = activeLocation
                 ? { lat: activeLocation.latitude, lng: activeLocation.longitude }
                 : { lat: 13.010144812590655, lng: 77.67634092703894 };
@@ -331,7 +319,7 @@ function PartnersContent() {
                             whiteSpace: "nowrap",
                           }}
                         >
-                          📏 {partner.distance_km} km away
+                          📏 {partner.distance_km} {t("distance_away")}
                         </span>
                       )}
                     </div>
@@ -359,7 +347,7 @@ function PartnersContent() {
                     }}
                   >
                     <span style={{ fontSize: "12px", color: "#64748b", fontWeight: "600" }}>
-                      {partner.eloc ? `Mappls Pin: ${partner.eloc}` : "Verified Physical POI"}
+                      {partner.eloc ? `${t("mappls_pin")}: ${partner.eloc}` : "Verified Physical POI"}
                     </span>
 
                     {directionsUrl ? (
@@ -381,11 +369,11 @@ function PartnersContent() {
                           gap: "4px",
                         }}
                       >
-                        🧭 Open Directions in Mappls
+                        {t("get_directions")}
                       </a>
                     ) : (
                       <span style={{ color: "#94a3b8", fontSize: "12px" }}>
-                        Mappls location unavailable
+                        Location unavailable
                       </span>
                     )}
                   </div>
@@ -394,7 +382,6 @@ function PartnersContent() {
             })}
           </div>
         ) : (
-          /* EMPTY STATE (Part 14) */
           <div style={{ padding: "40px 24px", backgroundColor: "#f8fafc", borderRadius: "12px", border: "1px solid #e2e8f0", textAlign: "center" }}>
             <h3 style={{ margin: "0 0 8px 0", color: "#334155", fontSize: "18px" }}>
               No nearby physical location found
