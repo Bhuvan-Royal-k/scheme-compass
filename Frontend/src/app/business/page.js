@@ -13,7 +13,7 @@ function BusinessFormContent() {
 
   // Normalize category from URL search params (e.g. ?type=Education or ?purpose=Education)
   const rawType = searchParams.get("type") || searchParams.get("purpose") || "Start a Business";
-  
+
   let categoryKey = "Start a Business";
   if (rawType.toLowerCase().includes("edu")) {
     categoryKey = "Education";
@@ -39,32 +39,40 @@ function BusinessFormContent() {
   const [stateName, setStateName] = useState("");
   const [errorMsg, setErrorMsg] = useState("");
 
-  const getNaturalPlaceholder = () => {
+  const getCategoryDetails = () => {
     switch (categoryKey) {
       case "Education":
-        return t("natural_ph_edu");
+        return {
+          naturalHeading: t("natural_heading_edu"),
+          naturalPh: t("natural_ph_edu"),
+          guidedHeading: t("form_heading_edu"),
+          guidedSub: t("form_sub_edu"),
+        };
       case "Expand My Business":
-        return t("natural_ph_growth");
+        return {
+          naturalHeading: t("natural_heading_growth"),
+          naturalPh: t("natural_ph_growth"),
+          guidedHeading: t("form_heading_growth"),
+          guidedSub: t("form_sub_growth"),
+        };
       case "Other Financial Need":
-        return t("natural_ph_money");
+        return {
+          naturalHeading: t("natural_heading_money"),
+          naturalPh: t("natural_ph_money"),
+          guidedHeading: t("form_heading_money"),
+          guidedSub: t("form_sub_money"),
+        };
       default:
-        return t("natural_ph_biz");
+        return {
+          naturalHeading: t("natural_heading_biz"),
+          naturalPh: t("natural_ph_biz"),
+          guidedHeading: t("form_heading_biz"),
+          guidedSub: t("form_sub_biz"),
+        };
     }
   };
 
-  const getFormHeading = () => {
-    if (showGuidedForm) return t("guided_form_title");
-    switch (categoryKey) {
-      case "Education":
-        return t("form_heading_edu");
-      case "Expand My Business":
-        return t("form_heading_growth");
-      case "Other Financial Need":
-        return t("form_heading_money");
-      default:
-        return t("form_heading_biz");
-    }
-  };
+  const details = getCategoryDetails();
 
   const submitWithParams = (params) => {
     if (submitting) return;
@@ -196,12 +204,12 @@ function BusinessFormContent() {
         {t("ai_badge")}
       </span>
 
-      <h1 style={{ marginTop: "12px", marginBottom: "8px", fontSize: "28px", color: "#0f172a" }}>
-        {getFormHeading()}
+      <h1 style={{ marginTop: "12px", marginBottom: "8px", fontSize: "26px", color: "#0f172a" }}>
+        {showGuidedForm ? details.guidedHeading : details.naturalHeading}
       </h1>
 
       <p className="muted" style={{ fontSize: "15px", lineHeight: "1.5", marginBottom: "24px", color: "#64748b" }}>
-        {showGuidedForm ? t("guided_form_desc") : t("natural_form_desc")}
+        {showGuidedForm ? details.guidedSub : t("natural_form_desc")}
       </p>
 
       {errorMsg && (
@@ -221,7 +229,7 @@ function BusinessFormContent() {
                 setNaturalText(e.target.value);
                 if (extractedData) setExtractedData(null);
               }}
-              placeholder={getNaturalPlaceholder()}
+              placeholder={details.naturalPh}
               style={{
                 width: "100%",
                 padding: "16px",

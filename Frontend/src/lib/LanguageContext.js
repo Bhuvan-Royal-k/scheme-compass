@@ -50,7 +50,7 @@ const translations = {
     natural_form_desc: "Describe your need in your own words. Our AI will understand it and find relevant government schemes.",
     guided_form_title: "Guided Application Form",
     guided_form_desc: "Fill in your details manually to discover matching government schemes.",
-    natural_input_ph: 'e.g. "I need a ₹2.5 lakh business loan to start a chicken shop in Kerala. I am SC and my annual family income is ₹1.5 lakh."',
+    natural_input_ph: "e.g. \"I need a ₹2.5 lakh business loan to start a chicken shop in Kerala. I am SC and my annual family income is ₹1.5 lakh.\"",
     understanding_request: "Understanding your request…",
     find_matching_btn: "Find Matching Schemes",
     enter_manually: "Enter details manually with Guided Form",
@@ -116,6 +116,72 @@ const translations = {
     back_home: "Back to Home",
     footer_motto: "More Awareness → Better Choices → Brighter Future",
     footer_copy: "© Scheme Compass • Government scheme discovery prototype",
+
+    // Category Guided Headings & Subheadings
+    form_heading_biz: "Tell us about your new business",
+    form_sub_biz: "Share a few details about the business you want to start so we can find relevant government support.",
+    natural_heading_biz: "What are you planning to start?",
+    natural_ph_biz: "e.g. \"I need a ₹2.5 lakh loan to start a chicken shop in Kerala. I am SC and my annual family income is ₹1 lakh.\"",
+
+    form_heading_edu: "Tell us about your education need",
+    form_sub_edu: "Share your course and financial details so we can find education-related government support.",
+    natural_heading_edu: "What education support do you need?",
+    natural_ph_edu: "e.g. \"I need financial support for my daughter's college education. We live in Karnataka and our annual family income is ₹2 lakh.\"",
+
+    form_heading_growth: "Tell us about your business expansion",
+    form_sub_growth: "Share details about your existing business and what you need to expand it.",
+    natural_heading_growth: "How do you want to grow your business?",
+    natural_ph_growth: "e.g. \"I run a small tailoring business and need ₹3 lakh for new machines to expand in Karnataka.\"",
+
+    form_heading_money: "Tell us what financial support you need",
+    form_sub_money: "Describe your need and we'll look for relevant government schemes.",
+    natural_heading_money: "What kind of financial support do you need?",
+    natural_ph_money: "e.g. \"I need financial assistance for my family. I live in Tamil Nadu and my annual family income is ₹1.5 lakh.\"",
+
+    // Guided Form Labels & Placeholders
+    label_biz_type: "Business / Project Type",
+    ph_biz_type: "e.g. Chicken Shop, Salon, Dairy Farm",
+
+    label_edu_purpose: "Course / Education Purpose",
+    ph_edu_purpose: "e.g. Engineering, Nursing, Polytechnic",
+
+    label_existing_biz: "Existing Business Type",
+    ph_existing_biz: "e.g. Tailoring Shop, Grocery Store, Dairy Farm",
+
+    label_expansion_purpose: "Expansion Purpose",
+    ph_expansion_purpose: "e.g. New machinery, equipment, larger shop",
+
+    label_other_need: "Describe Your Financial Need",
+    ph_other_need: "e.g. Housing support, family assistance, livelihood support",
+
+    label_req_amount: "Required Amount (₹) *",
+    ph_req_amount_biz: "e.g. ₹2,50,000",
+    ph_req_amount_edu: "e.g. ₹2,00,000",
+    ph_req_amount_growth: "e.g. ₹3,00,000",
+    ph_req_amount_money: "e.g. ₹1,50,000",
+
+    label_project_cost: "Estimated Project Cost (₹)",
+    ph_project_cost: "e.g. ₹3,00,000",
+
+    label_expansion_cost: "Estimated Expansion Cost (₹)",
+    ph_expansion_cost: "e.g. ₹4,00,000",
+
+    label_family_income: "Annual Family Income (₹) *",
+    ph_family_income: "e.g. ₹1,50,000",
+
+    label_social_category: "Social Category *",
+    ph_social_category: "Select social category",
+
+    label_state: "Resident State *",
+    ph_state: "e.g. Kerala, Karnataka, Tamil Nadu",
+
+    cat_gen: "General",
+    cat_sc: "Scheduled Caste (SC)",
+    cat_st: "Scheduled Tribe (ST)",
+    cat_obc: "Other Backward Class (OBC)",
+    cat_ews: "Economically Weaker Section (EWS)",
+    cat_minority: "Minority",
+    cat_other: "Other",
   },
   ta: {
     brand_title: "ஸ்கீம்",
@@ -141,7 +207,7 @@ const translations = {
     need_biz_title: "தொழில் தொடங்க",
     need_biz_desc: "புதிய தொழில் தொடங்க நிதி உதவிகளை ஆராயுங்கள்.",
     need_edu_title: "கல்வி உதவி",
-    need_edu_desc: "கல்வி கடன்கள் மற்றும் நிதி உதவிகளைக் கண்டறியவும்.",
+    need_edu_desc: "கல்வி கடன்கள் மற்றும் நிதி உதவிகளக் கண்டறியவும்.",
     need_growth_title: "தொழில் விரிவாக்கம்",
     need_growth_desc: "உங்கள் தொழிலை வளர்க்க ஆதரவைக் கண்டறியவும்.",
     need_money_title: "பிற நிதி தேவைகள்",
@@ -164,7 +230,7 @@ const translations = {
     natural_form_desc: "உங்கள் சொந்த வார்த்தைகளில் உங்கள் தேவையை விவரியுங்கள். எங்கள் AI அதை புரிந்து கொண்டு பொருத்தமான திட்டங்களை கண்டறியும்.",
     guided_form_title: "வழிகாட்டப்பட்ட விண்ணப்பப் படிவம்",
     guided_form_desc: "பொருந்தும் அரசு திட்டங்களை கண்டறிய உங்கள் விவரங்களை கைமுறையாக நிரப்பவும்.",
-    natural_input_ph: 'எ.கா. "கேரளாவில் கோழிப் பண்ணை தொடங்க 2.5 லட்சம் கடன் தேவை. எனது வருமானம் 1.5 லட்சம்."',
+    natural_input_ph: "எ.கா. \"கேரளாவில் கோழிப் பண்ணை தொடங்க 2.5 லட்சம் கடன் தேவை. எனது வருமானம் 1.5 லட்சம்.\"",
     understanding_request: "உங்கள் கோரிக்கையைப் புரிந்துகொள்கிறது…",
     find_matching_btn: "பொருந்தும் திட்டங்களைக் கண்டறியவும்",
     enter_manually: "படிவத்தின் மூலம் கைமுறையாக உள்ளிடவும்",
@@ -230,6 +296,72 @@ const translations = {
     back_home: "முகப்பிற்குச் செல்லவும்",
     footer_motto: "அதிக விழிப்புணர்வு → சிறந்த தேர்வுகள் → பிரகாசமான எதிர்காலம்",
     footer_copy: "© ஸ்கீம் காம்பஸ் • அரசு திட்ட கண்டுபிடிப்பு முன்மாதிரி",
+
+    // Category Guided Headings & Subheadings
+    form_heading_biz: "உங்கள் புதிய தொழிலைப் பற்றி எங்களிடம் கூறுங்கள்",
+    form_sub_biz: "நீங்கள் தொடங்க விரும்பும் தொழிலைப் பற்றிய விவரங்களைப் பகிர்ந்து கொள்ளுங்கள்.",
+    natural_heading_biz: "நீங்கள் என்ன தொழில் தொடங்க திட்டமிடுகிறீர்கள்?",
+    natural_ph_biz: "எ.கா. \"கேரளாவில் கோழிப் பண்ணை தொடங்க 2.5 லட்சம் கடன் தேவை. நான் எஸ்சி பிரிவு, எனது குடும்ப ஆண்டு வருமானம் 1 லட்சம்.\"",
+
+    form_heading_edu: "உங்கள் கல்வித் தேவையைப் பற்றி எங்களிடம் கூறுங்கள்",
+    form_sub_edu: "உங்கள் படிப்பு மற்றும் நிதி விவரங்களைப் பகிர்ந்து கொள்ளுங்கள்.",
+    natural_heading_edu: "உங்களுக்கு என்ன கல்வி உதவி தேவை?",
+    natural_ph_edu: "எ.கா. \"எனது மகளின் கல்லூரி படிப்பிற்கு நிதி உதவி தேவை. நாங்கள் கர்நாடகாவைச் சேர்ந்தவர்கள், எங்கள் குடும்ப ஆண்டு வருமானம் 2 லட்சம்.\"",
+
+    form_heading_growth: "உங்கள் தொழில் விரிவாக்கத்தைப் பற்றி எங்களிடம் கூறுங்கள்",
+    form_sub_growth: "தற்போதுள்ள தொழில் மற்றும் விரிவாக்கத் தேவைகளின் விவரங்களைப் பகிர்ந்து கொள்ளுங்கள்.",
+    natural_heading_growth: "உங்கள் தொழிலை எப்படி வளர்க்க விரும்புகிறீர்கள்?",
+    natural_ph_growth: "எ.கா. \"நான் ஒரு சிறிய தையல் கடை நடத்தி வருகிறேன், புதிய இயந்திரங்களை வாங்கி கர்நாடகாவில் தொழிலை விரிவாக்க 3 லட்சம் தேவை.\"",
+
+    form_heading_money: "உங்களுக்கு என்ன நிதி உதவி தேவை என்று கூறுங்கள்",
+    form_sub_money: "உங்கள் தேவையை விவரியுங்கள், பொருத்தமான அரசு திட்டங்களை தேடுகிறோம்.",
+    natural_heading_money: "உங்களுக்கு எந்த ರೀತಿಯ நிதி உதவி தேவை?",
+    natural_ph_money: "எ.கா. \"எனது குடும்பத் தேவைகளுக்கு நிதி உதவி தேவை. நான் தமிழ்நாட்டில் வசிக்கிறேன், எங்கள் குடும்ப ஆண்டு வருமானம் 1.5 லட்சம்.\"",
+
+    // Guided Form Labels & Placeholders
+    label_biz_type: "தொழில் / திட்ட வகை",
+    ph_biz_type: "எ.கா. கோழிப் பண்ணை, சலூன், பால் பண்ணை",
+
+    label_edu_purpose: "படிப்பு / கல்வி நோக்கம்",
+    ph_edu_purpose: "எ.கா. பொறியியல் படிப்பு, செவிலியர் படிப்பு, பாலிடெக்னிக்",
+
+    label_existing_biz: "தற்போதுள்ள தொழில் வகை",
+    ph_existing_biz: "எ.கா. தையல் கடை, மளிகைக் கடை, பால் பண்ணை",
+
+    label_expansion_purpose: "விரிவாக்க நோக்கம்",
+    ph_expansion_purpose: "எ.கா. புதிய இயந்திரங்கள், பெரிய கடை, கூடுதல் உபகரணங்கள்",
+
+    label_other_need: "உங்கள் நிதித் தேவையை விவரிக்கவும்",
+    ph_other_need: "எ.கா. வீட்டு உதவி, குடும்ப உதவி, அவசர நிதித் தேவை",
+
+    label_req_amount: "தேவையான தொகை (₹) *",
+    ph_req_amount_biz: "எ.கா. ₹2,50,000",
+    ph_req_amount_edu: "எ.கா. ₹2,00,000",
+    ph_req_amount_growth: "எ.கா. ₹3,00,000",
+    ph_req_amount_money: "எ.கா. ₹1,50,000",
+
+    label_project_cost: "மதிப்பிடப்பட்ட திட்ட செலவு (₹)",
+    ph_project_cost: "எ.கா. ₹3,00,000",
+
+    label_expansion_cost: "மதிப்பிடப்பட்ட விரிவாக்க செலவு (₹)",
+    ph_expansion_cost: "எ.கா. ₹4,00,000",
+
+    label_family_income: "ஆண்டு குடும்ப வருமானம் (₹) *",
+    ph_family_income: "எ.கா. ₹1,50,000",
+
+    label_social_category: "சமூகப் பிரிவு *",
+    ph_social_category: "சமூகப் பிரிவைத் தேர்ந்தெடுக்கவும்",
+
+    label_state: "வாழும் மாநிலம் *",
+    ph_state: "எ.கா. கேரளா, கர்நாடகா, தமிழ்நாடு",
+
+    cat_gen: "பொதுப் பிரிவு (General)",
+    cat_sc: "பட்டியல் சாதி (SC)",
+    cat_st: "பட்டியல் பழங்குடி (ST)",
+    cat_obc: "இதர பிற்படுத்தப்பட்ட வகுப்பு (OBC)",
+    cat_ews: "பொருளாதாரத்தில் பின்தங்கிய பிரிவு (EWS)",
+    cat_minority: "சிறுபான்மையினர்",
+    cat_other: "இதர",
   },
   hi: {
     brand_title: "स्कीम",
@@ -278,7 +410,7 @@ const translations = {
     natural_form_desc: "अपने शब्दों में अपनी आवश्यकता का वर्णन करें। हमारा AI इसे समझेगा और प्रासंगिक योजनाएं खोजेगा।",
     guided_form_title: "मार्गदर्शित आवेदन फॉर्म",
     guided_form_desc: "मैचिंग सरकारी योजनाओं की खोज के लिए अपने विवरण मैन्युअल रूप से भरें।",
-    natural_input_ph: 'जैसे "केरल में पोल्ट्री फार्म शुरू करने के लिए 2.5 लाख का ऋण चाहिए। वार्षिक आय 1.5 लाख है।"',
+    natural_input_ph: "जैसे \"केरल में पोल्ट्री फार्म शुरू करने के लिए 2.5 लाख का ऋण चाहिए। वार्षिक आय 1.5 लाख है।\"",
     understanding_request: "आपकी आवश्यकता को समझा जा रहा है…",
     find_matching_btn: "मैचिंग योजनाएं खोजें",
     enter_manually: "गाइडेड फॉर्म के साथ मैन्युअल रूप से विवरण दर्ज करें",
@@ -344,6 +476,72 @@ const translations = {
     back_home: "मुख्य पृष्ठ पर जाएं",
     footer_motto: "अधिक जागरूकता → बेहतर विकल्प → उज्ज्वल भविष्य",
     footer_copy: "© स्कीम कंपास • सरकारी योजना खोज प्रोटोटाइप",
+
+    // Category Guided Headings & Subheadings
+    form_heading_biz: "अपने नए व्यवसाय के बारे में बताएं",
+    form_sub_biz: "आप जो व्यवसाय शुरू करना चाहते हैं, उसके बारे में कुछ विवरण साझा करें।",
+    natural_heading_biz: "आप क्या नया व्यवसाय शुरू करने की योजना बना रहे हैं?",
+    natural_ph_biz: "जैसे \"मुझे केरल में पोल्ट्री फार्म शुरू करने के लिए ₹2.5 लाख के ऋण की आवश्यकता है। मैं एससी श्रेणी से हूं और मेरी वार्षिक पारिवारिक आय ₹1 लाख है।\"",
+
+    form_heading_edu: "अपनी शिक्षा संबंधी आवश्यकता के बारे में बताएं",
+    form_sub_edu: "अपने पाठ्यक्रम और वित्तीय विवरण साझा करें।",
+    natural_heading_edu: "आपको किस प्रकार की शिक्षा सहायता की आवश्यकता है?",
+    natural_ph_edu: "जैसे \"मुझे अपनी बेटी की कॉलेज शिक्षा के लिए वित्तीय सहायता की आवश्यकता है। हम कर्नाटक से हैं और हमारी वार्षिक पारिवारिक आय ₹2 लाख है।\"",
+
+    form_heading_growth: "अपने व्यवसाय विस्तार के बारे में बताएं",
+    form_sub_growth: "अपने मौजूदा व्यवसाय और विस्तार की आवश्यकताओं का विवरण साझा करें।",
+    natural_heading_growth: "आप अपने व्यवसाय का विस्तार कैसे करना चाहते हैं?",
+    natural_ph_growth: "जैसे \"मैं सिलाई का छोटा व्यवसाय चलाता हूं और कर्नाटक में नई मशीनें खरीदने और व्यवसाय का विस्तार करने के लिए ₹3 लाख की आवश्यकता है।\"",
+
+    form_heading_money: "बताएं कि आपको किस वित्तीय सहायता की आवश्यकता है",
+    form_sub_money: "अपनी आवश्यकता का वर्णन करें और हम उपयुक्त सरकारी योजनाओं की खोज करेंगे।",
+    natural_heading_money: "आपको किस प्रकार की वित्तीय सहायता की आवश्यकता है?",
+    natural_ph_money: "जैसे \"मुझे अपने परिवार की जरूरतों के लिए वित्तीय सहायता की आवश्यकता है। मैं तमिलनाडु में रहता हूं और मेरी वार्षिक पारिवारिक आय ₹1.5 लाख है।\"",
+
+    // Guided Form Labels & Placeholders
+    label_biz_type: "व्यापार / परियोजना प्रकार",
+    ph_biz_type: "जैसे पोल्ट्री फार्म, सैलून, डेयरी फार्म",
+
+    label_edu_purpose: "पाठ्यक्रम / शिक्षा का उद्देश्य",
+    ph_edu_purpose: "जैसे इंजीनियरिंग, नर्सिंग, पॉलीटेक्निक",
+
+    label_existing_biz: "मौजूदा व्यवसाय प्रकार",
+    ph_existing_biz: "जैसे सिलाई की दुकान, किराना स्टोर, डेयरी फार्म",
+
+    label_expansion_purpose: "विस्तार का उद्देश्य",
+    ph_expansion_purpose: "जैसे नई मशीनरी, उपकरण, बड़ी दुकान",
+
+    label_other_need: "अपनी वित्तीय आवश्यकता का वर्णन करें",
+    ph_other_need: "जैसे आवास सहायता, पारिवारिक सहायता, आपातकालीन वित्तीय आवश्यकता",
+
+    label_req_amount: "आवश्यक राशि (₹) *",
+    ph_req_amount_biz: "जैसे ₹2,50,000",
+    ph_req_amount_edu: "जैसे ₹2,00,000",
+    ph_req_amount_growth: "जैसे ₹3,00,000",
+    ph_req_amount_money: "जैसे ₹1,50,000",
+
+    label_project_cost: "अनुमानित परियोजना लागत (₹)",
+    ph_project_cost: "जैसे ₹3,00,000",
+
+    label_expansion_cost: "अनुमानित विस्तार लागत (₹)",
+    ph_expansion_cost: "जैसे ₹4,00,000",
+
+    label_family_income: "वार्षिक पारिवारिक आय (₹) *",
+    ph_family_income: "जैसे ₹1,50,000",
+
+    label_social_category: "सामाजिक श्रेणी *",
+    ph_social_category: "सामाजिक श्रेणी चुनें",
+
+    label_state: "निवासी राज्य *",
+    ph_state: "जैसे केरल, कर्नाटक, तमिलनाडु",
+
+    cat_gen: "सामान्य (General)",
+    cat_sc: "अनुसूचित जाति (SC)",
+    cat_st: "अनुसूचित जनजाति (ST)",
+    cat_obc: "अन्य पिछड़ा वर्ग (OBC)",
+    cat_ews: "आर्थिक रूप से कमजोर वर्ग (EWS)",
+    cat_minority: "अल्पसंख्यक (Minority)",
+    cat_other: "अन्य",
   },
   kn: {
     brand_title: "ಸ್ಕೀಮ್",
@@ -392,7 +590,7 @@ const translations = {
     natural_form_desc: "ನಿಮ್ಮ ಸ್ವಂತ ಮಾತುಗಳಲ್ಲಿ ನಿಮ್ಮ ಅಗತ್ಯವನ್ನು ವಿವರಿಸಿ. ನಮ್ಮ AI ಅದನ್ನು ಅರ್ಥಮಾಡಿಕೊಂಡು ಸೂಕ್ತ ಯೋಜನೆಗಳನ್ನು ಹುಡುಕುತ್ತದೆ.",
     guided_form_title: "ಮಾರ್ಗದರ್ಶಿತ ಅರ್ಜಿ ನಮೂನೆ",
     guided_form_desc: "ಸೂಕ್ತ ಸರ್ಕಾರಿ ಯೋಜನೆಗಳನ್ನು ಅನ್ವೇಷಿಸಲು ನಿಮ್ಮ ವಿವರಗಳನ್ನು ಹಸ್ತಚಾಲಿತವಾಗಿ ಭರ್ತಿ ಮಾಡಿ.",
-    natural_input_ph: 'ಉದಾ. "ಕರ್ನಾಟಕದಲ್ಲಿ ಕಿರಾಣಿ ಅಂಗಡಿ ತೆರೆಯಲು ನನಗೆ 2.5 ಲಕ್ಷ ಸಾಲ ಬೇಕು. ವಾರ್ಷಿಕ ಆದಾಯ 1.5 ಲಕ್ಷ."',
+    natural_input_ph: "ಉದಾ. \"ಕರ್ನಾಟಕದಲ್ಲಿ ಕಿರಾಣಿ ಅಂಗಡಿ ತೆರೆಯಲು ನನಗೆ 2.5 ಲಕ್ಷ ಸಾಲ ಬೇಕು. ವಾರ್ಷಿಕ ಆದಾಯ 1.5 ಲಕ್ಷ.\"",
     understanding_request: "ನಿಮ್ಮ ಅಗತ್ಯವನ್ನು ಅರ್ಥಮಾಡಿಕೊಳ್ಳಲಾಗುತ್ತಿದೆ…",
     find_matching_btn: "ಸರಿಯಾಗಿ ಹೊಂದುವ ಯೋಜನೆಗಳನ್ನು ಹುಡುಕಿ",
     enter_manually: "ಮಾರ್ಗದರ್ಶಿತ ನಮೂನೆಯೊಂದಿಗೆ ವಿವರಗಳನ್ನು ಹಸ್ತಚಾಲಿತವಾಗಿ ನಮೂದಿಸಿ",
@@ -417,7 +615,7 @@ const translations = {
     state_label: "ನಿವಾಸಿ ರಾಜ್ಯ *",
     rec_evaluated: "ಮೌಲ್ಯಮಾಪನ ಮಾಡಲಾದ ಯೋಜನೆಗಳು",
     rec_title: "ಶಿಫಾರಸು ಮಾಡಲಾದ ಯೋಜನೆಗಳು",
-    rec_sub: "ನಿಮ್ಮ ಪ್ರೊಫೈಲ್ ಆಧಾರದ ಮೇಲೆ ಅತ್ಯುತ್ತமாக ಮೌಲ್ಯಮಾಪನ ಮಾಡಲಾದ ಯೋಜನೆಗಳು.",
+    rec_sub: "ನಿಮ್ಮ ಪ್ರೊಫೈಲ್ ಆಧಾರದ ಮೇಲೆ ಅತ್ಯುತ್ತಮ ಮೌಲ್ಯಮಾಪನ ಮಾಡಲಾದ ಯೋಜನೆಗಳು.",
     finding_best_schemes: "ನಿಮಗಾಗಿ ಅತ್ಯುತ್ತಮ ಯೋಜನೆಗಳನ್ನು ಹುಡುಕಲಾಗುತ್ತಿದೆ…",
     loading_step_1: "ನಿಮ್ಮ ಅಗತ್ಯವನ್ನು ಅರ್ಥಮಾಡಿಕೊಳ್ಳಲಾಗುತ್ತಿದೆ",
     loading_step_2: "ಸಂಬಂಧಿತ ಯೋಜನೆಗಳನ್ನು ಹುಡುಕಲಾಗುತ್ತಿದೆ",
@@ -439,7 +637,7 @@ const translations = {
     scheme_details_title: "ಯೋಜನೆಯ ವಿವರಗಳು",
     eligibility_docs_title: "ಅರ್ಹತೆ ಮತ್ತು ಅಗತ್ಯ ದಾಖಲೆಗಳು",
     documents: "ಅಗತ್ಯ ದಾಖಲೆಗಳು",
-    fin_support_title: "ಹಣಕಾಸು ನೆರವು ಮತ್ತು ಪ್ರಯೋಜನಗಳು",
+    fin_support_title: "ಹಣಕಾಸು ನೆರವು மற்றும் ಪ್ರಯೋಜನಗಳು",
     estimate_emi: "EMI ಅಂದಾಜಿಸಿ",
     find_nearby_partner: "ಚಾನೆಲ್ ಪಾಲುದಾರರನ್ನು ಹುಡುಕಿ",
     partners_title: "ಹತ್ತಿರದ ಪಾಲುದಾರರನ್ನು ಹುಡುಕಿ",
@@ -458,6 +656,72 @@ const translations = {
     back_home: "ಮುಖಪುಟಕ್ಕೆ ಹಿಂತಿರುಗಿ",
     footer_motto: "ಹೆಚ್ಚಿನ ಅರಿವು → ಉತ್ತಮ ಆಯ್ಕೆಗಳು → ಉಜ್ವಲ ಭವಿಷ್ಯ",
     footer_copy: "© ಸ್ಕೀಮ್ ಕಂಪಾಸ್ • ಸರ್ಕಾರಿ ಯೋಜನೆ ಅನ್ವೇಷಣೆ ಪ್ರೋಟೋಟೈಪ್",
+
+    // Category Guided Headings & Subheadings
+    form_heading_biz: "ನಿಮ್ಮ ಹೊಸ ವ್ಯಾಪಾರದ ಬಗ್ಗೆ ನಮಗೆ ತಿಳಿಸಿ",
+    form_sub_biz: "ನೀವು ಪ್ರಾರಂಭಿಸಲು ಬಯಸುವ ವ್ಯಾಪಾರದ ವಿವರಗಳನ್ನು ಹಂಚಿಕೊಳ್ಳಿ.",
+    natural_heading_biz: "ನೀವು ಯಾವ ಹೊಸ ವ್ಯಾಪಾರವನ್ನು ಪ್ರಾರಂಭಿಸಲು ಯೋಜಿಸುತ್ತಿದ್ದೀರಿ?",
+    natural_ph_biz: "ಉದಾ. \"ಕೇರಳದಲ್ಲಿ ಕೋಳಿ ಸಾಕಣೆ ಕೇಂದ್ರವನ್ನು ಪ್ರಾರಂಭಿಸಲು ನನಗೆ ₹2.5 ಲಕ್ಷ ಸಾಲ ಬೇಕಾಗಿದೆ. ನಾನು ಎಸ್‌ಸಿ ವರ್ಗಕ್ಕೆ ಸೇರಿದವನಾಗಿದ್ದು, ನನ್ನ ವಾರ್ಷಿಕ ಕೌಟುಂಬಿಕ ಆದಾಯ ₹1 ಲಕ್ಷ.\"",
+
+    form_heading_edu: "ನಿಮ್ಮ ಶಿಕ್ಷಣದ ಅಗತ್ಯದ ಬಗ್ಗೆ ನಮಗೆ ತಿಳಿಸಿ",
+    form_sub_edu: "ನಿಮ್ಮ ಕೋರ್ಸ್ ಮತ್ತು ಹಣಕಾಸಿನ ವಿವರಗಳನ್ನು ಹಂಚಿಕೊಳ್ಳಿ.",
+    natural_heading_edu: "ನಿಮಗೆ ಯಾವ ಶಿಕ್ಷಣ ಸಹಾಯ ಬೇಕಾಗಿದೆ?",
+    natural_ph_edu: "ಉದಾ. \"ನನ್ನ ಮಗಳ ಕಾಲೇಜು ಶಿಕ್ಷಣಕ್ಕಾಗಿ ನನಗೆ ಹಣಕಾಸಿನ ನೆರವು ಬೇಕಾಗಿದೆ. ನಾವು ಕರ್ನಾಟಕದವರಾಗಿದ್ದು, ನಮ್ಮ ವಾರ್ಷಿಕ ಕೌಟುಂಬಿಕ ಆದಾಯ ₹2 ಲಕ್ಷ.\"",
+
+    form_heading_growth: "ನಿಮ್ಮ ವ್ಯಾಪಾರ ವಿಸ್ತರಣೆಯ ಬಗ್ಗೆ ನಮಗೆ ತಿಳಿಸಿ",
+    form_sub_growth: "ನಿಮ್ಮ ಪ್ರಸ್ತುತ ವ್ಯಾಪಾರ ಮತ್ತು ವಿಸ್ತರಣೆಯ ಅಗತ್ಯಗಳ ವಿವರಗಳನ್ನು ಹಂಚಿಕೊಳ್ಳಿ.",
+    natural_heading_growth: "ನಿಮ್ಮ ವ್ಯಾಪಾರವನ್ನು ಹೇಗೆ ಬೆಳೆಸಲು ಬಯಸುತ್ತೀರಿ?",
+    natural_ph_growth: "ಉದಾ. \"ನಾನು ಸಣ್ಣ ದರ್ಜಿ ಅಂಗಡಿಯನ್ನು ನಡೆಸುತ್ತಿದ್ದು, ಕರ್ನಾಟಕದಲ್ಲಿ ಹೊಸ ಯಂತ್ರಗಳನ್ನು ಖರೀದಿಸಲು ಮತ್ತು ವ್ಯಾಪಾರವನ್ನು ವಿಸ್ತರಿಸಲು ₹3 ಲಕ್ಷ ಬೇಕಾಗಿದೆ.\"",
+
+    form_heading_money: "ನಿಮಗೆ ಯಾವ ಹಣಕಾಸಿನ ನೆರವು ಬೇಕು ಎಂದು ತಿಳಿಸಿ",
+    form_sub_money: "ನಿಮ್ಮ ಅಗತ್ಯವನ್ನು ವಿವರಿಸಿ ಮತ್ತು ನಾವು ಸೂಕ್ತ ಸರ್ಕಾರಿ ಯೋಜನೆಗಳನ್ನು ಹುಡುಕುತ್ತೇವೆ.",
+    natural_heading_money: "ನಿಮಗೆ ಯಾವ ರೀತಿಯ ಹಣಕಾಸು ನೆರವು ಬೇಕು?",
+    natural_ph_money: "ಉದಾ. \"ನನ್ನ ಕುಟುಂಬದ ಅಗತ್ಯಗಳಿಗಾಗಿ ನನಗೆ ಹಣಕಾಸಿನ ನೆರವು ಬೇಕಾಗಿದೆ. ನಾನು ತமிಳುನಾಡಿನಲ್ಲಿ ವಾಸಿಸುತ್ತಿದ್ದೇನೆ ಮತ್ತು ನನ್ನ ವಾರ್ಷಿಕ ಕೌಟುಂಬಿಕ ಆದಾಯ ₹1.5 ಲಕ್ಷ.\"",
+
+    // Guided Form Labels & Placeholders
+    label_biz_type: "ಯೋಜನೆಯ ಪ್ರಕಾರ / ವ್ಯಾಪಾರದ ಕಲ್ಪನೆ",
+    ph_biz_type: "ಉದಾ. ಕೋಳಿ ಸಾಕಣೆ, ಸಲೂನ್, ಹಾಲಿನ ಫಾರ್ಮ್",
+
+    label_edu_purpose: "ಕೋರ್ಸ್ / ಶಿಕ್ಷಣದ ಉದ್ದೇಶ",
+    ph_edu_purpose: "ಉದಾ. ಎಂಜಿನಿಯರಿಂಗ್, ನರ್ಸಿಂಗ್, ಪಾಲಿಟೆಕ್ನಿಕ್",
+
+    label_existing_biz: "ಪ್ರಸ್ತುತ ಇರುವ ವ್ಯಾಪಾರ ಪ್ರಕಾರ",
+    ph_existing_biz: "ಉದಾ. ದರ್ಜಿ ಅಂಗಡಿ, ಕಿರಾಣಿ ಅಂಗಡಿ, ಹಾಲಿನ ಫಾರ್ಮ್",
+
+    label_expansion_purpose: "ವಿಸ್ತರಣೆಯ ಉದ್ದೇಶ",
+    ph_expansion_purpose: "ಉದಾ. ಹೊಸ ಯಂತ್ರೋಪಕರಣಗಳು, ದೊಡ್ಡ ಅಂಗಡಿ, ಹೆಚ್ಚುವರಿ ಉಪಕರಣಗಳು",
+
+    label_other_need: "ನಿಮ್ಮ ಹಣಕಾಸಿನ ಅಗತ್ಯವನ್ನು ವಿವರಿಸಿ",
+    ph_other_need: "ಉದಾ. ವಸತಿ ಬೆಂಬಲ, ಕೌಟುಂಬಿಕ ನೆರವು, ತುರ್ತು ಹಣಕಾಸು ಅಗತ್ಯ",
+
+    label_req_amount: "ಅಗತ್ಯವಿರುವ ಮೊತ್ತ (₹) *",
+    ph_req_amount_biz: "ಉದಾ. ₹2,50,000",
+    ph_req_amount_edu: "ಉದಾ. ₹2,00,000",
+    ph_req_amount_growth: "ಉದಾ. ₹3,00,000",
+    ph_req_amount_money: "ಉದಾ. ₹1,50,000",
+
+    label_project_cost: "ಅಂದಾಜು ಯೋಜನಾ ವೆಚ್ಚ (₹)",
+    ph_project_cost: "ಉದಾ. ₹3,00,000",
+
+    label_expansion_cost: "ಅಂದಾಜು ವಿಸ್ತರಣಾ ವೆಚ್ಚ (₹)",
+    ph_expansion_cost: "ಉದಾ. ₹4,00,000",
+
+    label_family_income: "ವಾರ್ಷಿಕ ಕೌಟುಂಬಿಕ ಆದಾಯ (₹) *",
+    ph_family_income: "ಉದಾ. ₹1,50,000",
+
+    label_social_category: "ಸಾಮಾಜಿಕ ವರ್ಗ *",
+    ph_social_category: "ಸಾಮಾಜಿಕ ವರ್ಗವನ್ನು ಆಯ್ಕೆಮಾಡಿ",
+
+    label_state: "ನಿವಾಸಿ ರಾಜ್ಯ *",
+    ph_state: "ಉದಾ. ಕೇರಳ, ಕರ್ನಾಟಕ, ತಮಿಳುನಾಡು",
+
+    cat_gen: "ಸಾಮಾನ್ಯ (General)",
+    cat_sc: "ಪರಿಶಿಷ್ಟ ಜಾತಿ (SC)",
+    cat_st: "ಪರಿಶಿಷ್ಟ ಪಂಗಡ (ST)",
+    cat_obc: "ಇತರ ಹಿಂದುಳಿದ ವರ್ಗ (OBC)",
+    cat_ews: "ಆರ್ಥಿಕವಾಗಿ ಹಿಂದುಳಿದ ವರ್ಗ (EWS)",
+    cat_minority: "ಅಲ್ಪಸಂಖ್ಯಾತ",
+    cat_other: "ಇತರ",
   },
 };
 
@@ -481,7 +745,33 @@ export function LanguageProvider({ children }) {
   };
 
   const t = (key) => {
-    return translations[lang]?.[key] || translations.en?.[key] || key;
+    if (!key || typeof key !== "string") return "";
+
+    // 1. Check exact active language translation
+    if (translations[lang] && translations[lang][key]) {
+      return translations[lang][key];
+    }
+
+    // 2. Check English fallback
+    if (translations.en && translations.en[key]) {
+      return translations.en[key];
+    }
+
+    // 3. Absolute Safety Fallback: Never render raw key strings like label_biz_type or ph_biz_type
+    if (
+      key.includes("_") ||
+      key.startsWith("label_") ||
+      key.startsWith("ph_") ||
+      key.startsWith("form_") ||
+      key.startsWith("natural_")
+    ) {
+      const clean = key
+        .replace(/^(label_|ph_|form_heading_|form_sub_|natural_heading_|natural_ph_)/, "")
+        .replace(/_/g, " ");
+      return clean.charAt(0).toUpperCase() + clean.slice(1);
+    }
+
+    return key;
   };
 
   return (

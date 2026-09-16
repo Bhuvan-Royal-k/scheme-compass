@@ -393,10 +393,8 @@ function PartnersContent() {
         )}
       </div>
 
-      <br />
-
       <div style={{ display: "flex", gap: "12px", alignItems: "center", flexWrap: "wrap" }}>
-        <Link className="btn" href="/find-scheme">
+        <Link className="btn" href={searchParams.toString() ? `/recommendations?${searchParams.toString()}` : "/recommendations"}>
           {t("find_other_schemes")}
         </Link>
         <Link className="btn outline" href="/">
