@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState, Suspense } from "react";
+import { useEffect, useState, useRef, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import { Header, Footer } from "@/components/Navbar";
@@ -104,13 +104,48 @@ function RecommendationsContent() {
   const state_name = searchParams.get("state") || "";
   const social_category = searchParams.get("category") || "";
   const natural_text = searchParams.get("query") || "";
+  const searchId = searchParams.get("searchId") || "";
+
+  // Derive stable cache key for this search context
+  const searchKey = searchId
+    ? `sc_res_${searchId}`
+    : `sc_res_${purpose}_${project_type}_${project_cost}_${annual_income}_${state_name}_${social_category}_${natural_text}_${lang}`;
 
   const [recommendations, setRecommendations] = useState([]);
   const [explanation, setExplanation] = useState("");
   const [totalCandidates, setTotalCandidates] = useState(0);
   const [loading, setLoading] = useState(true);
 
+  // Keep track of loaded search key to avoid refetching during same mount lifecycle
+  const loadedKeyRef = useRef("");
+
   useEffect(() => {
+    // 1. CHECK SESSION STORAGE CACHE BEFORE MAKING ANY API CALL
+    if (typeof window !== "undefined") {
+      try {
+        const cachedStr = sessionStorage.getItem(searchKey) || (searchId ? null : sessionStorage.getItem("sc_last_search"));
+        if (cachedStr) {
+          const cachedData = JSON.parse(cachedStr);
+          if (cachedData && Array.isArray(cachedData.results) && cachedData.results.length > 0) {
+            setRecommendations(cachedData.results);
+            setExplanation(cachedData.explanation || "");
+            setTotalCandidates(cachedData.totalCandidates || cachedData.results.length);
+            setLoading(false);
+            loadedKeyRef.current = searchKey;
+            return;
+          }
+        }
+      } catch (err) {
+        console.warn("Failed to parse cached recommendations:", err);
+      }
+    }
+
+    // Don't refetch if already loaded for this exact searchKey
+    if (loadedKeyRef.current === searchKey && recommendations.length > 0) {
+      setLoading(false);
+      return;
+    }
+
     async function loadData() {
       setLoading(true);
       try {
@@ -129,42 +164,80 @@ function RecommendationsContent() {
         const data = await getRecommendations(payload);
 
         if (data && data.recommendations && data.recommendations.length > 0) {
-          setRecommendations(data.recommendations);
-          setExplanation(data.explanation || "");
-          setTotalCandidates(data.total_candidates || 0);
+          const finalRecs = data.recommendations;
+          const finalExp = data.explanation || "";
+          const finalTotal = data.total_candidates || finalRecs.length;
+
+          setRecommendations(finalRecs);
+          setExplanation(finalExp);
+          setTotalCandidates(finalTotal);
           setLoading(false);
+          loadedKeyRef.current = searchKey;
+
+          // SAVE TO SESSION STORAGE FOR INSTANT BACK-TO-RESULTS Persistent Navigation
+          if (typeof window !== "undefined") {
+            try {
+              const cachePayload = JSON.stringify({
+                results: finalRecs,
+                explanation: finalExp,
+                totalCandidates: finalTotal,
+                searchKey: searchKey,
+                timestamp: Date.now(),
+              });
+              sessionStorage.setItem(searchKey, cachePayload);
+              sessionStorage.setItem("sc_last_search", cachePayload);
+            } catch (e) {
+              console.warn("Failed to write recommendations cache:", e);
+            }
+          }
           return;
         }
       } catch (err) {
         console.warn("Recommendations query fallback:", err.message);
       }
 
-      // Fallback
+      // Fallback if recommendation engine returns empty or fails
       try {
         const convexSchemes = await getAllSchemes();
+        const fallbackRecs = convexSchemes.slice(0, 5).map((s) => ({
+          scheme_id: s._id,
+          scheme_name: s.scheme_name,
+          government_type: s.government_type,
+          channel_partner_type: s.channel_partner_type,
+          channel_partner_name: s.channel_partner_name,
+          maximum_benefit: s.maximum_benefit,
+          status: "requires_verification",
+          score: 0.85,
+          reasons: ["Matches general scheme criteria."],
+          documents_required: s.documents_required || [],
+        }));
+
         setTotalCandidates(convexSchemes.length);
-        setRecommendations(
-          convexSchemes.slice(0, 5).map((s) => ({
-            scheme_id: s._id,
-            scheme_name: s.scheme_name,
-            government_type: s.government_type,
-            channel_partner_type: s.channel_partner_type,
-            channel_partner_name: s.channel_partner_name,
-            maximum_benefit: s.maximum_benefit,
-            status: "requires_verification",
-            score: 0.85,
-            reasons: ["Matches general scheme criteria."],
-            documents_required: s.documents_required || [],
-          }))
-        );
+        setRecommendations(fallbackRecs);
+        setLoading(false);
+        loadedKeyRef.current = searchKey;
+
+        if (typeof window !== "undefined") {
+          try {
+            const cachePayload = JSON.stringify({
+              results: fallbackRecs,
+              explanation: "",
+              totalCandidates: convexSchemes.length,
+              searchKey: searchKey,
+              timestamp: Date.now(),
+            });
+            sessionStorage.setItem(searchKey, cachePayload);
+            sessionStorage.setItem("sc_last_search", cachePayload);
+          } catch (e) {}
+        }
       } catch (e) {
         console.error("Failed fallback query:", e);
+        setLoading(false);
       }
-      setLoading(false);
     }
 
     loadData();
-  }, [purpose, project_type, project_cost, annual_income, state_name, social_category, natural_text, lang]);
+  }, [searchKey, purpose, project_type, project_cost, annual_income, state_name, social_category, natural_text, lang, searchId]);
 
   const getStatusText = (status) => {
     if (status === "eligible") return t("status_eligible");

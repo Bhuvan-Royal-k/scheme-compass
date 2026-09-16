@@ -61,7 +61,7 @@ function SchemeContent({ id }) {
   const docsList = scheme?.documents_required && scheme.documents_required.length > 0 ? scheme.documents_required.join(", ") : "Required documents must be verified.";
   const descriptionText = scheme?.description && scheme.description.length > 0 ? scheme.description.join(" ") : "Suitable for eligible applicants seeking financial support.";
 
-  const backUrl = searchParams.toString() ? `/recommendations?${searchParams.toString()}` : "/find-scheme";
+  const backUrl = searchParams.toString() ? `/recommendations?${searchParams.toString()}` : "/recommendations";
 
   return (
     <div className="container" style={{ maxWidth: "960px", margin: "0 auto" }}>

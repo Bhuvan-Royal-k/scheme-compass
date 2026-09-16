@@ -10,24 +10,70 @@ function BusinessFormContent() {
   const { t, lang } = useLanguage();
   const router = useRouter();
   const searchParams = useSearchParams();
-  const initialType = searchParams.get("type") || "Start a Business";
+
+  // Normalize category from URL search params (e.g. ?type=Education or ?purpose=Education)
+  const rawType = searchParams.get("type") || searchParams.get("purpose") || "Start a Business";
+  
+  let categoryKey = "Start a Business";
+  if (rawType.toLowerCase().includes("edu")) {
+    categoryKey = "Education";
+  } else if (rawType.toLowerCase().includes("expand") || rawType.toLowerCase().includes("growth")) {
+    categoryKey = "Expand My Business";
+  } else if (rawType.toLowerCase().includes("other") || rawType.toLowerCase().includes("money")) {
+    categoryKey = "Other Financial Need";
+  }
 
   const [showGuidedForm, setShowGuidedForm] = useState(false);
   const [naturalText, setNaturalText] = useState("");
   const [extracting, setExtracting] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
   const [extractedData, setExtractedData] = useState(null);
 
-  // Form field states (auto-filled by NLU or manual input)
+  // Form field states for Guided Form / NLU extraction
   const [projectType, setProjectType] = useState("");
+  const [expansionPurpose, setExpansionPurpose] = useState("");
   const [projectCost, setProjectCost] = useState("");
+  const [estimatedCost, setEstimatedCost] = useState("");
   const [annualIncome, setAnnualIncome] = useState("");
   const [socialCategory, setSocialCategory] = useState("");
   const [stateName, setStateName] = useState("");
   const [errorMsg, setErrorMsg] = useState("");
 
+  const getNaturalPlaceholder = () => {
+    switch (categoryKey) {
+      case "Education":
+        return t("natural_ph_edu");
+      case "Expand My Business":
+        return t("natural_ph_growth");
+      case "Other Financial Need":
+        return t("natural_ph_money");
+      default:
+        return t("natural_ph_biz");
+    }
+  };
+
+  const getFormHeading = () => {
+    if (showGuidedForm) return t("guided_form_title");
+    switch (categoryKey) {
+      case "Education":
+        return t("form_heading_edu");
+      case "Expand My Business":
+        return t("form_heading_growth");
+      case "Other Financial Need":
+        return t("form_heading_money");
+      default:
+        return t("form_heading_biz");
+    }
+  };
+
   const submitWithParams = (params) => {
+    if (submitting) return;
+    setSubmitting(true);
+
+    const searchId = "s_" + Date.now() + "_" + Math.random().toString(36).substring(2, 7);
+
     const queryParams = new URLSearchParams({
-      purpose: params.purpose || initialType,
+      purpose: params.purpose || categoryKey,
       project_type: params.project_type || "",
       project_cost: params.project_cost || "",
       annual_income: params.annual_income || "",
@@ -35,6 +81,7 @@ function BusinessFormContent() {
       state: params.state || "",
       query: params.query || naturalText.trim(),
       lang: lang,
+      searchId: searchId,
     });
     router.push(`/recommendations?${queryParams.toString()}`);
   };
@@ -42,6 +89,7 @@ function BusinessFormContent() {
   // Primary Handler: Natural Language Intent Extraction & Submission
   const handleNaturalSubmit = async (e) => {
     if (e) e.preventDefault();
+    if (extracting || submitting) return;
     setErrorMsg("");
 
     if (!naturalText.trim()) {
@@ -57,7 +105,7 @@ function BusinessFormContent() {
         return;
       }
       submitWithParams({
-        purpose: extractedData.purpose || initialType,
+        purpose: extractedData.purpose || categoryKey,
         project_type: projectType || extractedData.project_type || "",
         project_cost: projectCost || (extractedData.project_cost != null ? String(extractedData.project_cost) : ""),
         annual_income: annualIncome || (extractedData.annual_income != null ? String(extractedData.annual_income) : ""),
@@ -70,7 +118,7 @@ function BusinessFormContent() {
 
     setExtracting(true);
     try {
-      const extracted = await parseIntent(naturalText.trim(), lang, { purpose: initialType });
+      const extracted = await parseIntent(naturalText.trim(), lang, { purpose: categoryKey });
       if (extracted) {
         setExtractedData(extracted);
         if (extracted.project_type) setProjectType(extracted.project_type);
@@ -82,7 +130,7 @@ function BusinessFormContent() {
         // If state was present in text (e.g. "in Kerala"), submit immediately!
         if (extracted.state_name) {
           submitWithParams({
-            purpose: extracted.purpose || initialType,
+            purpose: extracted.purpose || categoryKey,
             project_type: extracted.project_type || "",
             project_cost: extracted.project_cost != null ? String(extracted.project_cost) : "",
             annual_income: extracted.annual_income != null ? String(extracted.annual_income) : "",
@@ -103,9 +151,10 @@ function BusinessFormContent() {
     }
   };
 
-  // Secondary Handler: Guided Structured Form Submission
+  // Secondary Handler: Guided Category-Aware Structured Form Submission
   const handleGuidedSubmit = (e) => {
     e.preventDefault();
+    if (submitting) return;
     setErrorMsg("");
 
     if (!socialCategory) {
@@ -131,7 +180,7 @@ function BusinessFormContent() {
     }
 
     submitWithParams({
-      purpose: initialType,
+      purpose: categoryKey,
       project_type: projectType,
       project_cost: String(costNum),
       annual_income: String(incomeNum),
@@ -148,7 +197,7 @@ function BusinessFormContent() {
       </span>
 
       <h1 style={{ marginTop: "12px", marginBottom: "8px", fontSize: "28px", color: "#0f172a" }}>
-        {showGuidedForm ? t("guided_form_title") : t("natural_form_title")}
+        {getFormHeading()}
       </h1>
 
       <p className="muted" style={{ fontSize: "15px", lineHeight: "1.5", marginBottom: "24px", color: "#64748b" }}>
@@ -172,7 +221,7 @@ function BusinessFormContent() {
                 setNaturalText(e.target.value);
                 if (extractedData) setExtractedData(null);
               }}
-              placeholder={t("natural_input_ph")}
+              placeholder={getNaturalPlaceholder()}
               style={{
                 width: "100%",
                 padding: "16px",
@@ -202,7 +251,7 @@ function BusinessFormContent() {
               </h3>
 
               <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "10px", fontSize: "14px", marginBottom: "16px" }}>
-                <div>{t("business_project")}: <b>{projectType || extractedData.project_type || "Business"}</b></div>
+                <div>{t("business_project")}: <b>{projectType || extractedData.project_type || categoryKey}</b></div>
                 <div>{t("amount")}: <b>₹{(Number(projectCost || extractedData.project_cost) || 0).toLocaleString()}</b></div>
                 <div>{t("annual_income")}: <b>₹{(Number(annualIncome || extractedData.annual_income) || 0).toLocaleString()}</b></div>
                 <div>{t("social_category")}: <b>{socialCategory || extractedData.social_category || "General"}</b></div>
@@ -216,7 +265,7 @@ function BusinessFormContent() {
                   type="text"
                   value={stateName}
                   onChange={(e) => setStateName(e.target.value)}
-                  placeholder="e.g. Kerala, Delhi, Karnataka"
+                  placeholder={t("ph_state")}
                   style={{ width: "100%", padding: "10px 14px", borderRadius: "8px", border: "1.5px solid #0284c7", fontSize: "14px" }}
                 />
               </div>
@@ -227,14 +276,14 @@ function BusinessFormContent() {
           <button
             type="submit"
             className="btn"
-            disabled={extracting}
+            disabled={extracting || submitting}
             style={{
               width: "100%",
               padding: "14px 24px",
               fontSize: "16px",
               fontWeight: "700",
-              cursor: extracting ? "not-allowed" : "pointer",
-              backgroundColor: extracting ? "#93c5fd" : "#1877F2",
+              cursor: (extracting || submitting) ? "not-allowed" : "pointer",
+              backgroundColor: (extracting || submitting) ? "#93c5fd" : "#1877F2",
               color: "#ffffff",
               borderRadius: "10px",
               boxShadow: "0 4px 12px rgba(24, 119, 242, 0.25)",
@@ -242,7 +291,7 @@ function BusinessFormContent() {
               marginBottom: "16px",
             }}
           >
-            {extracting ? t("understanding_request") : `${t("find_matching_btn")} →`}
+            {extracting ? t("understanding_request") : submitting ? "..." : `${t("find_matching_btn")} →`}
           </button>
 
           {/* VISUAL SECONDARY BUTTON */}
@@ -272,72 +321,193 @@ function BusinessFormContent() {
           </div>
         </form>
       ) : (
-        /* SECONDARY EXPERIENCE — GUIDED FORM */
+        /* SECONDARY EXPERIENCE — CATEGORY-AWARE GUIDED FORM */
         <form onSubmit={handleGuidedSubmit}>
-          <div className="field" style={{ marginBottom: "16px" }}>
-            <label style={{ fontWeight: "600", color: "#334155" }}>{t("project_type_label")}</label>
-            <input
-              value={projectType}
-              onChange={(e) => setProjectType(e.target.value)}
-              placeholder="e.g. Chicken Shop, Salon, Dairy Farm"
-              style={{ width: "100%", padding: "10px 14px", borderRadius: "8px", border: "1px solid #cbd5e1" }}
-            />
-          </div>
+          {/* CATEGORY A: START A BUSINESS */}
+          {categoryKey === "Start a Business" && (
+            <>
+              <div className="field" style={{ marginBottom: "16px" }}>
+                <label style={{ fontWeight: "600", color: "#334155" }}>{t("label_biz_type")}</label>
+                <input
+                  value={projectType}
+                  onChange={(e) => setProjectType(e.target.value)}
+                  placeholder={t("ph_biz_type")}
+                  style={{ width: "100%", padding: "10px 14px", borderRadius: "8px", border: "1px solid #cbd5e1" }}
+                />
+              </div>
 
-          <div className="field" style={{ marginBottom: "16px" }}>
-            <label style={{ fontWeight: "600", color: "#334155" }}>{t("project_cost_label")}</label>
-            <input
-              type="number"
-              value={projectCost}
-              onChange={(e) => setProjectCost(e.target.value)}
-              placeholder="₹ Enter amount (e.g. 250000)"
-              style={{ width: "100%", padding: "10px 14px", borderRadius: "8px", border: "1px solid #cbd5e1" }}
-            />
-          </div>
+              <div className="field" style={{ marginBottom: "16px" }}>
+                <label style={{ fontWeight: "600", color: "#334155" }}>{t("label_req_amount")}</label>
+                <input
+                  type="number"
+                  value={projectCost}
+                  onChange={(e) => setProjectCost(e.target.value)}
+                  placeholder={t("ph_req_amount_biz")}
+                  style={{ width: "100%", padding: "10px 14px", borderRadius: "8px", border: "1px solid #cbd5e1" }}
+                />
+              </div>
 
+              <div className="field" style={{ marginBottom: "16px" }}>
+                <label style={{ fontWeight: "600", color: "#334155" }}>{t("label_project_cost")}</label>
+                <input
+                  type="number"
+                  value={estimatedCost}
+                  onChange={(e) => setEstimatedCost(e.target.value)}
+                  placeholder={t("ph_project_cost")}
+                  style={{ width: "100%", padding: "10px 14px", borderRadius: "8px", border: "1px solid #cbd5e1" }}
+                />
+              </div>
+            </>
+          )}
+
+          {/* CATEGORY B: EDUCATION */}
+          {categoryKey === "Education" && (
+            <>
+              <div className="field" style={{ marginBottom: "16px" }}>
+                <label style={{ fontWeight: "600", color: "#334155" }}>{t("label_edu_purpose")}</label>
+                <input
+                  value={projectType}
+                  onChange={(e) => setProjectType(e.target.value)}
+                  placeholder={t("ph_edu_purpose")}
+                  style={{ width: "100%", padding: "10px 14px", borderRadius: "8px", border: "1px solid #cbd5e1" }}
+                />
+              </div>
+
+              <div className="field" style={{ marginBottom: "16px" }}>
+                <label style={{ fontWeight: "600", color: "#334155" }}>{t("label_req_amount")}</label>
+                <input
+                  type="number"
+                  value={projectCost}
+                  onChange={(e) => setProjectCost(e.target.value)}
+                  placeholder={t("ph_req_amount_edu")}
+                  style={{ width: "100%", padding: "10px 14px", borderRadius: "8px", border: "1px solid #cbd5e1" }}
+                />
+              </div>
+            </>
+          )}
+
+          {/* CATEGORY C: EXPAND MY BUSINESS */}
+          {categoryKey === "Expand My Business" && (
+            <>
+              <div className="field" style={{ marginBottom: "16px" }}>
+                <label style={{ fontWeight: "600", color: "#334155" }}>{t("label_existing_biz")}</label>
+                <input
+                  value={projectType}
+                  onChange={(e) => setProjectType(e.target.value)}
+                  placeholder={t("ph_existing_biz")}
+                  style={{ width: "100%", padding: "10px 14px", borderRadius: "8px", border: "1px solid #cbd5e1" }}
+                />
+              </div>
+
+              <div className="field" style={{ marginBottom: "16px" }}>
+                <label style={{ fontWeight: "600", color: "#334155" }}>{t("label_expansion_purpose")}</label>
+                <input
+                  value={expansionPurpose}
+                  onChange={(e) => setExpansionPurpose(e.target.value)}
+                  placeholder={t("ph_expansion_purpose")}
+                  style={{ width: "100%", padding: "10px 14px", borderRadius: "8px", border: "1px solid #cbd5e1" }}
+                />
+              </div>
+
+              <div className="field" style={{ marginBottom: "16px" }}>
+                <label style={{ fontWeight: "600", color: "#334155" }}>{t("label_req_amount")}</label>
+                <input
+                  type="number"
+                  value={projectCost}
+                  onChange={(e) => setProjectCost(e.target.value)}
+                  placeholder={t("ph_req_amount_growth")}
+                  style={{ width: "100%", padding: "10px 14px", borderRadius: "8px", border: "1px solid #cbd5e1" }}
+                />
+              </div>
+
+              <div className="field" style={{ marginBottom: "16px" }}>
+                <label style={{ fontWeight: "600", color: "#334155" }}>{t("label_expansion_cost")}</label>
+                <input
+                  type="number"
+                  value={estimatedCost}
+                  onChange={(e) => setEstimatedCost(e.target.value)}
+                  placeholder={t("ph_expansion_cost")}
+                  style={{ width: "100%", padding: "10px 14px", borderRadius: "8px", border: "1px solid #cbd5e1" }}
+                />
+              </div>
+            </>
+          )}
+
+          {/* CATEGORY D: OTHER FINANCIAL NEED */}
+          {categoryKey === "Other Financial Need" && (
+            <>
+              <div className="field" style={{ marginBottom: "16px" }}>
+                <label style={{ fontWeight: "600", color: "#334155" }}>{t("label_other_need")}</label>
+                <input
+                  value={projectType}
+                  onChange={(e) => setProjectType(e.target.value)}
+                  placeholder={t("ph_other_need")}
+                  style={{ width: "100%", padding: "10px 14px", borderRadius: "8px", border: "1px solid #cbd5e1" }}
+                />
+              </div>
+
+              <div className="field" style={{ marginBottom: "16px" }}>
+                <label style={{ fontWeight: "600", color: "#334155" }}>{t("label_req_amount")}</label>
+                <input
+                  type="number"
+                  value={projectCost}
+                  onChange={(e) => setProjectCost(e.target.value)}
+                  placeholder={t("ph_req_amount_money")}
+                  style={{ width: "100%", padding: "10px 14px", borderRadius: "8px", border: "1px solid #cbd5e1" }}
+                />
+              </div>
+            </>
+          )}
+
+          {/* COMMON FIELDS FOR ALL CATEGORIES */}
           <div className="field" style={{ marginBottom: "16px" }}>
-            <label style={{ fontWeight: "600", color: "#334155" }}>{t("family_income_label")}</label>
+            <label style={{ fontWeight: "600", color: "#334155" }}>{t("label_family_income")}</label>
             <input
               type="number"
               value={annualIncome}
               onChange={(e) => setAnnualIncome(e.target.value)}
-              placeholder="₹ Enter income (e.g. 150000)"
+              placeholder={t("ph_family_income")}
               style={{ width: "100%", padding: "10px 14px", borderRadius: "8px", border: "1px solid #cbd5e1" }}
             />
           </div>
 
           <div className="field" style={{ marginBottom: "16px" }}>
-            <label style={{ fontWeight: "600", color: "#334155" }}>{t("social_category_label")}</label>
+            <label style={{ fontWeight: "600", color: "#334155" }}>{t("label_social_category")}</label>
             <select
               value={socialCategory}
               onChange={(e) => setSocialCategory(e.target.value)}
               style={{ width: "100%", padding: "10px 14px", borderRadius: "8px", border: "1px solid #cbd5e1", color: socialCategory === "" ? "#64748b" : "#0f172a" }}
             >
               <option value="" disabled>
-                Select social category
+                {t("ph_social_category")}
               </option>
-              <option value="General">{t("social_category_gen")}</option>
-              <option value="Scheduled Caste (SC)">{t("social_category_sc")}</option>
-              <option value="Scheduled Tribe (ST)">{t("social_category_st")}</option>
-              <option value="Other Backward Class (OBC)">{t("social_category_obc")}</option>
-              <option value="EWS">Economically Weaker Section (EWS)</option>
-              <option value="Minority">Minority</option>
-              <option value="Other">Other</option>
+              <option value="General">{t("cat_gen")}</option>
+              <option value="Scheduled Caste (SC)">{t("cat_sc")}</option>
+              <option value="Scheduled Tribe (ST)">{t("cat_st")}</option>
+              <option value="Other Backward Class (OBC)">{t("cat_obc")}</option>
+              <option value="EWS">{t("cat_ews")}</option>
+              <option value="Minority">{t("cat_minority")}</option>
+              <option value="Other">{t("cat_other")}</option>
             </select>
           </div>
 
           <div className="field" style={{ marginBottom: "20px" }}>
-            <label style={{ fontWeight: "600", color: "#334155" }}>{t("state_label")}</label>
+            <label style={{ fontWeight: "600", color: "#334155" }}>{t("label_state")}</label>
             <input
               value={stateName}
               onChange={(e) => setStateName(e.target.value)}
-              placeholder="e.g. Kerala, Delhi, Karnataka"
+              placeholder={t("ph_state")}
               style={{ width: "100%", padding: "10px 14px", borderRadius: "8px", border: "1px solid #cbd5e1" }}
             />
           </div>
 
-          <button type="submit" className="btn" style={{ width: "100%", padding: "12px", fontSize: "15px", fontWeight: "700", cursor: "pointer" }}>
-            {t("find_matching_btn")} →
+          <button
+            type="submit"
+            className="btn"
+            disabled={submitting}
+            style={{ width: "100%", padding: "12px", fontSize: "15px", fontWeight: "700", cursor: submitting ? "not-allowed" : "pointer" }}
+          >
+            {submitting ? "..." : `${t("find_matching_btn")} →`}
           </button>
 
           <div style={{ textAlign: "center", marginTop: "16px" }}>
